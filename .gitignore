@@ -1,0 +1,22 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# Generated coverage and static-analysis caches
+coverage/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/

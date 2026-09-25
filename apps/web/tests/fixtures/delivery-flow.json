@@ -1,0 +1,646 @@
+{
+  "sprint": {
+    "id": "ATLAS-SPRINT-08",
+    "name": "Sprint 08",
+    "project": "Atlas",
+    "backlog": "Core Services",
+    "start_date": "2030-04-08",
+    "end_date": "2030-04-19",
+    "timezone": "UTC"
+  },
+  "workflow_states": [
+    "Development",
+    "Code Integration",
+    "Ready for QA",
+    "QA",
+    "Returned to DEV",
+    "Blocked",
+    "Closed"
+  ],
+  "daily_snapshots": [
+    {
+      "sprint_day": 1,
+      "date": "2030-04-08",
+      "states": {
+        "Development": 5,
+        "Code Integration": 0,
+        "Ready for QA": 1,
+        "QA": 4,
+        "Returned to DEV": 0,
+        "Blocked": 0,
+        "Closed": 0
+      },
+      "story_states": {
+        "US-101": "QA",
+        "US-102": "QA",
+        "US-103": "QA",
+        "US-104": "QA",
+        "US-105": "Development",
+        "US-106": "Development",
+        "US-107": "Development",
+        "US-108": "Development",
+        "US-109": "Development",
+        "US-110": "Ready for QA"
+      },
+      "open_stories": 10,
+      "closed_stories": 0,
+      "total_active_scope": 10
+    },
+    {
+      "sprint_day": 2,
+      "date": "2030-04-09",
+      "states": {
+        "Development": 5,
+        "Code Integration": 0,
+        "Ready for QA": 0,
+        "QA": 4,
+        "Returned to DEV": 0,
+        "Blocked": 0,
+        "Closed": 1
+      },
+      "story_states": {
+        "US-101": "Closed",
+        "US-102": "QA",
+        "US-103": "QA",
+        "US-104": "QA",
+        "US-105": "Development",
+        "US-106": "Development",
+        "US-107": "Development",
+        "US-108": "Development",
+        "US-109": "Development",
+        "US-110": "QA"
+      },
+      "open_stories": 9,
+      "closed_stories": 1,
+      "total_active_scope": 10
+    },
+    {
+      "sprint_day": 3,
+      "date": "2030-04-10",
+      "states": {
+        "Development": 5,
+        "Code Integration": 0,
+        "Ready for QA": 0,
+        "QA": 3,
+        "Returned to DEV": 1,
+        "Blocked": 0,
+        "Closed": 1
+      },
+      "story_states": {
+        "US-101": "Closed",
+        "US-102": "Returned to DEV",
+        "US-103": "QA",
+        "US-104": "QA",
+        "US-105": "Development",
+        "US-106": "Development",
+        "US-107": "Development",
+        "US-108": "Development",
+        "US-109": "Development",
+        "US-110": "QA"
+      },
+      "open_stories": 9,
+      "closed_stories": 1,
+      "total_active_scope": 10
+    },
+    {
+      "sprint_day": 4,
+      "date": "2030-04-11",
+      "states": {
+        "Development": 4,
+        "Code Integration": 1,
+        "Ready for QA": 0,
+        "QA": 2,
+        "Returned to DEV": 2,
+        "Blocked": 0,
+        "Closed": 1
+      },
+      "story_states": {
+        "US-101": "Closed",
+        "US-102": "Returned to DEV",
+        "US-103": "QA",
+        "US-104": "Returned to DEV",
+        "US-105": "Code Integration",
+        "US-106": "Development",
+        "US-107": "Development",
+        "US-108": "Development",
+        "US-109": "Development",
+        "US-110": "QA"
+      },
+      "open_stories": 9,
+      "closed_stories": 1,
+      "total_active_scope": 10
+    },
+    {
+      "sprint_day": 5,
+      "date": "2030-04-12",
+      "states": {
+        "Development": 4,
+        "Code Integration": 0,
+        "Ready for QA": 1,
+        "QA": 2,
+        "Returned to DEV": 2,
+        "Blocked": 0,
+        "Closed": 1
+      },
+      "story_states": {
+        "US-101": "Closed",
+        "US-102": "Returned to DEV",
+        "US-103": "QA",
+        "US-104": "Returned to DEV",
+        "US-105": "Ready for QA",
+        "US-106": "Development",
+        "US-107": "Development",
+        "US-108": "Development",
+        "US-109": "Development",
+        "US-110": "QA"
+      },
+      "open_stories": 9,
+      "closed_stories": 1,
+      "total_active_scope": 10
+    },
+    {
+      "sprint_day": 6,
+      "date": "2030-04-15",
+      "states": {
+        "Development": 5,
+        "Code Integration": 0,
+        "Ready for QA": 1,
+        "QA": 2,
+        "Returned to DEV": 1,
+        "Blocked": 0,
+        "Closed": 2
+      },
+      "story_states": {
+        "US-101": "Closed",
+        "US-102": "Ready for QA",
+        "US-103": "QA",
+        "US-104": "Returned to DEV",
+        "US-105": "QA",
+        "US-106": "Development",
+        "US-107": "Development",
+        "US-108": "Development",
+        "US-109": "Development",
+        "US-110": "Closed",
+        "US-111": "Development"
+      },
+      "open_stories": 9,
+      "closed_stories": 2,
+      "total_active_scope": 11
+    },
+    {
+      "sprint_day": 7,
+      "date": "2030-04-16",
+      "states": {
+        "Development": 4,
+        "Code Integration": 1,
+        "Ready for QA": 0,
+        "QA": 1,
+        "Returned to DEV": 2,
+        "Blocked": 0,
+        "Closed": 3
+      },
+      "story_states": {
+        "US-101": "Closed",
+        "US-102": "Closed",
+        "US-103": "QA",
+        "US-104": "Returned to DEV",
+        "US-105": "Returned to DEV",
+        "US-106": "Code Integration",
+        "US-107": "Development",
+        "US-108": "Development",
+        "US-109": "Development",
+        "US-110": "Closed",
+        "US-111": "Development"
+      },
+      "open_stories": 8,
+      "closed_stories": 3,
+      "total_active_scope": 11
+    },
+    {
+      "sprint_day": 8,
+      "date": "2030-04-17",
+      "states": {
+        "Development": 3,
+        "Code Integration": 1,
+        "Ready for QA": 1,
+        "QA": 0,
+        "Returned to DEV": 2,
+        "Blocked": 0,
+        "Closed": 4
+      },
+      "story_states": {
+        "US-101": "Closed",
+        "US-102": "Closed",
+        "US-103": "Closed",
+        "US-104": "Returned to DEV",
+        "US-105": "Returned to DEV",
+        "US-106": "Ready for QA",
+        "US-107": "Development",
+        "US-108": "Development",
+        "US-109": "Development",
+        "US-110": "Closed",
+        "US-111": "Code Integration"
+      },
+      "open_stories": 7,
+      "closed_stories": 4,
+      "total_active_scope": 11
+    },
+    {
+      "sprint_day": 9,
+      "date": "2030-04-18",
+      "states": {
+        "Development": 3,
+        "Code Integration": 0,
+        "Ready for QA": 1,
+        "QA": 2,
+        "Returned to DEV": 1,
+        "Blocked": 0,
+        "Closed": 4
+      },
+      "story_states": {
+        "US-101": "Closed",
+        "US-102": "Closed",
+        "US-103": "Closed",
+        "US-104": "Returned to DEV",
+        "US-105": "Ready for QA",
+        "US-106": "QA",
+        "US-107": "Development",
+        "US-108": "Development",
+        "US-109": "Development",
+        "US-110": "Closed",
+        "US-111": "QA"
+      },
+      "open_stories": 7,
+      "closed_stories": 4,
+      "total_active_scope": 11
+    },
+    {
+      "sprint_day": 10,
+      "date": "2030-04-19",
+      "states": {
+        "Development": 2,
+        "Code Integration": 1,
+        "Ready for QA": 0,
+        "QA": 0,
+        "Returned to DEV": 1,
+        "Blocked": 0,
+        "Closed": 7
+      },
+      "story_states": {
+        "US-101": "Closed",
+        "US-102": "Closed",
+        "US-103": "Closed",
+        "US-104": "Returned to DEV",
+        "US-105": "Closed",
+        "US-106": "Closed",
+        "US-107": "Code Integration",
+        "US-108": "Development",
+        "US-109": "Development",
+        "US-110": "Closed",
+        "US-111": "Closed"
+      },
+      "open_stories": 4,
+      "closed_stories": 7,
+      "total_active_scope": 11
+    }
+  ],
+  "daily_movements": [
+    {
+      "sprint_day": 1,
+      "date": "2030-04-08",
+      "movements": [],
+      "scope_entries": [
+        {
+          "event_id": "EVT-001",
+          "work_item_id": "US-101",
+          "timestamp": "2030-04-08T09:00:00Z",
+          "from_state": null,
+          "to_state": "QA"
+        },
+        {
+          "event_id": "EVT-002",
+          "work_item_id": "US-102",
+          "timestamp": "2030-04-08T09:00:00Z",
+          "from_state": null,
+          "to_state": "QA"
+        },
+        {
+          "event_id": "EVT-003",
+          "work_item_id": "US-103",
+          "timestamp": "2030-04-08T09:00:00Z",
+          "from_state": null,
+          "to_state": "QA"
+        },
+        {
+          "event_id": "EVT-004",
+          "work_item_id": "US-104",
+          "timestamp": "2030-04-08T09:00:00Z",
+          "from_state": null,
+          "to_state": "QA"
+        },
+        {
+          "event_id": "EVT-005",
+          "work_item_id": "US-105",
+          "timestamp": "2030-04-08T09:00:00Z",
+          "from_state": null,
+          "to_state": "Development"
+        },
+        {
+          "event_id": "EVT-006",
+          "work_item_id": "US-106",
+          "timestamp": "2030-04-08T09:00:00Z",
+          "from_state": null,
+          "to_state": "Development"
+        },
+        {
+          "event_id": "EVT-007",
+          "work_item_id": "US-107",
+          "timestamp": "2030-04-08T09:00:00Z",
+          "from_state": null,
+          "to_state": "Development"
+        },
+        {
+          "event_id": "EVT-008",
+          "work_item_id": "US-108",
+          "timestamp": "2030-04-08T09:00:00Z",
+          "from_state": null,
+          "to_state": "Development"
+        },
+        {
+          "event_id": "EVT-009",
+          "work_item_id": "US-109",
+          "timestamp": "2030-04-08T09:00:00Z",
+          "from_state": null,
+          "to_state": "Development"
+        },
+        {
+          "event_id": "EVT-010",
+          "work_item_id": "US-110",
+          "timestamp": "2030-04-08T09:00:00Z",
+          "from_state": null,
+          "to_state": "Ready for QA"
+        }
+      ]
+    },
+    {
+      "sprint_day": 2,
+      "date": "2030-04-09",
+      "movements": [
+        {
+          "event_id": "EVT-011",
+          "work_item_id": "US-110",
+          "timestamp": "2030-04-09T10:00:00Z",
+          "from_state": "Ready for QA",
+          "to_state": "QA"
+        },
+        {
+          "event_id": "EVT-013",
+          "work_item_id": "US-101",
+          "timestamp": "2030-04-09T15:00:00Z",
+          "from_state": "QA",
+          "to_state": "Closed"
+        }
+      ],
+      "scope_entries": []
+    },
+    {
+      "sprint_day": 3,
+      "date": "2030-04-10",
+      "movements": [
+        {
+          "event_id": "EVT-015",
+          "work_item_id": "US-102",
+          "timestamp": "2030-04-10T10:05:00Z",
+          "from_state": "QA",
+          "to_state": "Returned to DEV"
+        }
+      ],
+      "scope_entries": []
+    },
+    {
+      "sprint_day": 4,
+      "date": "2030-04-11",
+      "movements": [
+        {
+          "event_id": "EVT-017",
+          "work_item_id": "US-104",
+          "timestamp": "2030-04-11T11:05:00Z",
+          "from_state": "QA",
+          "to_state": "Returned to DEV"
+        },
+        {
+          "event_id": "EVT-018",
+          "work_item_id": "US-105",
+          "timestamp": "2030-04-11T12:00:00Z",
+          "from_state": "Development",
+          "to_state": "Code Integration"
+        }
+      ],
+      "scope_entries": []
+    },
+    {
+      "sprint_day": 5,
+      "date": "2030-04-12",
+      "movements": [
+        {
+          "event_id": "EVT-019",
+          "work_item_id": "US-105",
+          "timestamp": "2030-04-12T11:00:00Z",
+          "from_state": "Code Integration",
+          "to_state": "Ready for QA"
+        }
+      ],
+      "scope_entries": []
+    },
+    {
+      "sprint_day": 6,
+      "date": "2030-04-15",
+      "movements": [
+        {
+          "event_id": "EVT-020",
+          "work_item_id": "US-105",
+          "timestamp": "2030-04-15T09:00:00Z",
+          "from_state": "Ready for QA",
+          "to_state": "QA"
+        },
+        {
+          "event_id": "EVT-023",
+          "work_item_id": "US-102",
+          "timestamp": "2030-04-15T12:00:00Z",
+          "from_state": "Returned to DEV",
+          "to_state": "Code Integration"
+        },
+        {
+          "event_id": "EVT-024",
+          "work_item_id": "US-110",
+          "timestamp": "2030-04-15T12:00:00Z",
+          "from_state": "QA",
+          "to_state": "Closed"
+        },
+        {
+          "event_id": "EVT-025",
+          "work_item_id": "US-102",
+          "timestamp": "2030-04-15T15:00:00Z",
+          "from_state": "Code Integration",
+          "to_state": "Ready for QA"
+        }
+      ],
+      "scope_entries": [
+        {
+          "event_id": "EVT-021",
+          "work_item_id": "US-111",
+          "timestamp": "2030-04-15T09:30:00Z",
+          "from_state": null,
+          "to_state": "Development"
+        }
+      ]
+    },
+    {
+      "sprint_day": 7,
+      "date": "2030-04-16",
+      "movements": [
+        {
+          "event_id": "EVT-026",
+          "work_item_id": "US-102",
+          "timestamp": "2030-04-16T09:00:00Z",
+          "from_state": "Ready for QA",
+          "to_state": "QA"
+        },
+        {
+          "event_id": "EVT-028",
+          "work_item_id": "US-105",
+          "timestamp": "2030-04-16T11:05:00Z",
+          "from_state": "QA",
+          "to_state": "Returned to DEV"
+        },
+        {
+          "event_id": "EVT-029",
+          "work_item_id": "US-106",
+          "timestamp": "2030-04-16T12:00:00Z",
+          "from_state": "Development",
+          "to_state": "Code Integration"
+        },
+        {
+          "event_id": "EVT-032",
+          "work_item_id": "US-102",
+          "timestamp": "2030-04-16T15:00:00Z",
+          "from_state": "QA",
+          "to_state": "Closed"
+        }
+      ],
+      "scope_entries": []
+    },
+    {
+      "sprint_day": 8,
+      "date": "2030-04-17",
+      "movements": [
+        {
+          "event_id": "EVT-033",
+          "work_item_id": "US-106",
+          "timestamp": "2030-04-17T11:00:00Z",
+          "from_state": "Code Integration",
+          "to_state": "Ready for QA"
+        },
+        {
+          "event_id": "EVT-034",
+          "work_item_id": "US-111",
+          "timestamp": "2030-04-17T14:00:00Z",
+          "from_state": "Development",
+          "to_state": "Code Integration"
+        },
+        {
+          "event_id": "EVT-036",
+          "work_item_id": "US-103",
+          "timestamp": "2030-04-17T16:00:00Z",
+          "from_state": "QA",
+          "to_state": "Closed"
+        }
+      ],
+      "scope_entries": []
+    },
+    {
+      "sprint_day": 9,
+      "date": "2030-04-18",
+      "movements": [
+        {
+          "event_id": "EVT-037",
+          "work_item_id": "US-106",
+          "timestamp": "2030-04-18T09:00:00Z",
+          "from_state": "Ready for QA",
+          "to_state": "QA"
+        },
+        {
+          "event_id": "EVT-038",
+          "work_item_id": "US-111",
+          "timestamp": "2030-04-18T10:00:00Z",
+          "from_state": "Code Integration",
+          "to_state": "Ready for QA"
+        },
+        {
+          "event_id": "EVT-039",
+          "work_item_id": "US-111",
+          "timestamp": "2030-04-18T11:00:00Z",
+          "from_state": "Ready for QA",
+          "to_state": "QA"
+        },
+        {
+          "event_id": "EVT-040",
+          "work_item_id": "US-105",
+          "timestamp": "2030-04-18T12:00:00Z",
+          "from_state": "Returned to DEV",
+          "to_state": "Code Integration"
+        },
+        {
+          "event_id": "EVT-041",
+          "work_item_id": "US-105",
+          "timestamp": "2030-04-18T15:00:00Z",
+          "from_state": "Code Integration",
+          "to_state": "Ready for QA"
+        }
+      ],
+      "scope_entries": []
+    },
+    {
+      "sprint_day": 10,
+      "date": "2030-04-19",
+      "movements": [
+        {
+          "event_id": "EVT-042",
+          "work_item_id": "US-105",
+          "timestamp": "2030-04-19T09:00:00Z",
+          "from_state": "Ready for QA",
+          "to_state": "QA"
+        },
+        {
+          "event_id": "EVT-043",
+          "work_item_id": "US-107",
+          "timestamp": "2030-04-19T11:00:00Z",
+          "from_state": "Development",
+          "to_state": "Code Integration"
+        },
+        {
+          "event_id": "EVT-046",
+          "work_item_id": "US-105",
+          "timestamp": "2030-04-19T15:00:00Z",
+          "from_state": "QA",
+          "to_state": "Closed"
+        },
+        {
+          "event_id": "EVT-048",
+          "work_item_id": "US-106",
+          "timestamp": "2030-04-19T16:00:00Z",
+          "from_state": "QA",
+          "to_state": "Closed"
+        },
+        {
+          "event_id": "EVT-050",
+          "work_item_id": "US-111",
+          "timestamp": "2030-04-19T17:00:00Z",
+          "from_state": "QA",
+          "to_state": "Closed"
+        }
+      ],
+      "scope_entries": []
+    }
+  ]
+}

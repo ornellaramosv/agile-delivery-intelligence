@@ -1,0 +1,123 @@
+[
+  {
+    "id": "US-101",
+    "title": "Validate service configuration payloads",
+    "backlog": "Core Services",
+    "type": "User Story",
+    "state": "Closed",
+    "original_baseline": true,
+    "scope_added_after_baseline": false,
+    "carry_over": false,
+    "source": "roadmap"
+  },
+  {
+    "id": "US-102",
+    "title": "Preserve pagination cursors across catalogue requests",
+    "backlog": "Core Services",
+    "type": "User Story",
+    "state": "Closed",
+    "original_baseline": true,
+    "scope_added_after_baseline": false,
+    "carry_over": false,
+    "source": "roadmap"
+  },
+  {
+    "id": "US-103",
+    "title": "Return consistent error details for service lookups",
+    "backlog": "Core Services",
+    "type": "User Story",
+    "state": "Closed",
+    "original_baseline": true,
+    "scope_added_after_baseline": false,
+    "carry_over": false,
+    "source": "roadmap"
+  },
+  {
+    "id": "US-104",
+    "title": "Prevent duplicate reservations during concurrent requests",
+    "backlog": "Core Services",
+    "type": "User Story",
+    "state": "Returned to DEV",
+    "original_baseline": true,
+    "scope_added_after_baseline": false,
+    "carry_over": false,
+    "source": "roadmap"
+  },
+  {
+    "id": "US-105",
+    "title": "Publish service change notifications",
+    "backlog": "Core Services",
+    "type": "User Story",
+    "state": "Closed",
+    "original_baseline": true,
+    "scope_added_after_baseline": false,
+    "carry_over": false,
+    "source": "roadmap"
+  },
+  {
+    "id": "US-106",
+    "title": "Support filtered service catalogue searches",
+    "backlog": "Core Services",
+    "type": "User Story",
+    "state": "Closed",
+    "original_baseline": true,
+    "scope_added_after_baseline": false,
+    "carry_over": false,
+    "source": "roadmap"
+  },
+  {
+    "id": "US-107",
+    "title": "Integrate configuration version retrieval",
+    "backlog": "Core Services",
+    "type": "User Story",
+    "state": "Code Integration",
+    "original_baseline": true,
+    "scope_added_after_baseline": false,
+    "carry_over": false,
+    "source": "roadmap"
+  },
+  {
+    "id": "US-108",
+    "title": "Add bulk service registration validation",
+    "backlog": "Core Services",
+    "type": "User Story",
+    "state": "Development",
+    "original_baseline": true,
+    "scope_added_after_baseline": false,
+    "carry_over": false,
+    "source": "roadmap"
+  },
+  {
+    "id": "US-109",
+    "title": "Support service metadata patch requests",
+    "backlog": "Core Services",
+    "type": "User Story",
+    "state": "Development",
+    "original_baseline": true,
+    "scope_added_after_baseline": false,
+    "carry_over": false,
+    "source": "roadmap"
+  },
+  {
+    "id": "US-110",
+    "title": "Certify retry handling for service updates",
+    "backlog": "Core Services",
+    "type": "User Story",
+    "state": "Closed",
+    "original_baseline": true,
+    "scope_added_after_baseline": false,
+    "carry_over": true,
+    "source": "roadmap"
+  },
+  {
+    "id": "US-111",
+    "title": "Correct client incident involving duplicate notification delivery",
+    "backlog": "Core Services",
+    "type": "User Story",
+    "state": "Closed",
+    "original_baseline": false,
+    "scope_added_after_baseline": true,
+    "carry_over": false,
+    "source": "client_incident"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "agile-delivery-intelligence",
+  "private": true,
+  "workspaces": [
+    "apps/web"
+  ],
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace @adi/web",
+    "build": "npm run build --workspace @adi/web",
+    "lint": "npm run lint --workspace @adi/web",
+    "typecheck": "npm run typecheck --workspace @adi/web",
+    "test": "npm run test --workspace @adi/web"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "ATLAS-SPRINT-08",
+  "name": "Sprint 08",
+  "project": "Atlas",
+  "backlog": "Core Services",
+  "start_date": "2030-04-08",
+  "end_date": "2030-04-19",
+  "timezone": "UTC",
+  "snapshot_at": "2030-04-19T18:00:00Z",
+  "baseline_at": "2030-04-08T09:00:00Z",
+  "original_baseline_work_item_ids": [
+    "US-101",
+    "US-102",
+    "US-103",
+    "US-104",
+    "US-105",
+    "US-106",
+    "US-107",
+    "US-108",
+    "US-109",
+    "US-110"
+  ],
+  "working_days": [
+    {
+      "sprint_day": 1,
+      "date": "2030-04-08"
+    },
+    {
+      "sprint_day": 2,
+      "date": "2030-04-09"
+    },
+    {
+      "sprint_day": 3,
+      "date": "2030-04-10"
+    },
+    {
+      "sprint_day": 4,
+      "date": "2030-04-11"
+    },
+    {
+      "sprint_day": 5,
+      "date": "2030-04-12"
+    },
+    {
+      "sprint_day": 6,
+      "date": "2030-04-15"
+    },
+    {
+      "sprint_day": 7,
+      "date": "2030-04-16"
+    },
+    {
+      "sprint_day": 8,
+      "date": "2030-04-17"
+    },
+    {
+      "sprint_day": 9,
+      "date": "2030-04-18"
+    },
+    {
+      "sprint_day": 10,
+      "date": "2030-04-19"
+    }
+  ]
+}

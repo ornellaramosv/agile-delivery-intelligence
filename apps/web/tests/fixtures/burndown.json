@@ -1,0 +1,587 @@
+{
+  "sprint": {
+    "id": "ATLAS-SPRINT-08",
+    "name": "Sprint 08",
+    "project": "Atlas",
+    "backlog": "Core Services",
+    "start_date": "2030-04-08",
+    "end_date": "2030-04-19",
+    "timezone": "UTC"
+  },
+  "configuration": {
+    "flatline_threshold_days": 2
+  },
+  "daily_snapshots": [
+    {
+      "sprint_day": 1,
+      "date": "2030-04-08",
+      "original_baseline": 10,
+      "open_baseline_stories": 10,
+      "open_scope_added_stories": 0,
+      "open_closure_blocking_bugs": 0,
+      "current_remaining_work": 10,
+      "closed_baseline_stories": 0,
+      "closed_scope_added_stories": 0,
+      "scope_added_total": 0,
+      "active_rework_bugs": [],
+      "composition": {
+        "open_baseline_story_ids": [
+          "US-101",
+          "US-102",
+          "US-103",
+          "US-104",
+          "US-105",
+          "US-106",
+          "US-107",
+          "US-108",
+          "US-109",
+          "US-110"
+        ],
+        "open_scope_added_story_ids": [],
+        "open_closure_blocking_bug_ids": []
+      },
+      "explanation": {
+        "day": 1,
+        "movement": null,
+        "delta": null,
+        "causes": []
+      }
+    },
+    {
+      "sprint_day": 2,
+      "date": "2030-04-09",
+      "original_baseline": 10,
+      "open_baseline_stories": 9,
+      "open_scope_added_stories": 0,
+      "open_closure_blocking_bugs": 0,
+      "current_remaining_work": 9,
+      "closed_baseline_stories": 1,
+      "closed_scope_added_stories": 0,
+      "scope_added_total": 0,
+      "active_rework_bugs": [],
+      "composition": {
+        "open_baseline_story_ids": [
+          "US-102",
+          "US-103",
+          "US-104",
+          "US-105",
+          "US-106",
+          "US-107",
+          "US-108",
+          "US-109",
+          "US-110"
+        ],
+        "open_scope_added_story_ids": [],
+        "open_closure_blocking_bug_ids": []
+      },
+      "explanation": {
+        "day": 2,
+        "movement": "down",
+        "delta": -1,
+        "causes": [
+          {
+            "type": "story_closed",
+            "id": "US-101",
+            "work_item_id": "US-101",
+            "effect": -1,
+            "event_id": "EVT-013",
+            "timestamp": "2030-04-09T15:00:00Z"
+          }
+        ]
+      }
+    },
+    {
+      "sprint_day": 3,
+      "date": "2030-04-10",
+      "original_baseline": 10,
+      "open_baseline_stories": 9,
+      "open_scope_added_stories": 0,
+      "open_closure_blocking_bugs": 1,
+      "current_remaining_work": 10,
+      "closed_baseline_stories": 1,
+      "closed_scope_added_stories": 0,
+      "scope_added_total": 0,
+      "active_rework_bugs": [
+        "BUG-001"
+      ],
+      "composition": {
+        "open_baseline_story_ids": [
+          "US-102",
+          "US-103",
+          "US-104",
+          "US-105",
+          "US-106",
+          "US-107",
+          "US-108",
+          "US-109",
+          "US-110"
+        ],
+        "open_scope_added_story_ids": [],
+        "open_closure_blocking_bug_ids": [
+          "BUG-001"
+        ]
+      },
+      "explanation": {
+        "day": 3,
+        "movement": "up",
+        "delta": 1,
+        "causes": [
+          {
+            "type": "closure_blocking_bug_created",
+            "id": "BUG-001",
+            "work_item_id": "US-102",
+            "effect": 1,
+            "event_id": "EVT-014",
+            "timestamp": "2030-04-10T10:00:00Z"
+          }
+        ]
+      }
+    },
+    {
+      "sprint_day": 4,
+      "date": "2030-04-11",
+      "original_baseline": 10,
+      "open_baseline_stories": 9,
+      "open_scope_added_stories": 0,
+      "open_closure_blocking_bugs": 2,
+      "current_remaining_work": 11,
+      "closed_baseline_stories": 1,
+      "closed_scope_added_stories": 0,
+      "scope_added_total": 0,
+      "active_rework_bugs": [
+        "BUG-001",
+        "BUG-002"
+      ],
+      "composition": {
+        "open_baseline_story_ids": [
+          "US-102",
+          "US-103",
+          "US-104",
+          "US-105",
+          "US-106",
+          "US-107",
+          "US-108",
+          "US-109",
+          "US-110"
+        ],
+        "open_scope_added_story_ids": [],
+        "open_closure_blocking_bug_ids": [
+          "BUG-001",
+          "BUG-002"
+        ]
+      },
+      "explanation": {
+        "day": 4,
+        "movement": "up",
+        "delta": 1,
+        "causes": [
+          {
+            "type": "closure_blocking_bug_created",
+            "id": "BUG-002",
+            "work_item_id": "US-104",
+            "effect": 1,
+            "event_id": "EVT-016",
+            "timestamp": "2030-04-11T11:00:00Z"
+          }
+        ]
+      }
+    },
+    {
+      "sprint_day": 5,
+      "date": "2030-04-12",
+      "original_baseline": 10,
+      "open_baseline_stories": 9,
+      "open_scope_added_stories": 0,
+      "open_closure_blocking_bugs": 2,
+      "current_remaining_work": 11,
+      "closed_baseline_stories": 1,
+      "closed_scope_added_stories": 0,
+      "scope_added_total": 0,
+      "active_rework_bugs": [
+        "BUG-001",
+        "BUG-002"
+      ],
+      "composition": {
+        "open_baseline_story_ids": [
+          "US-102",
+          "US-103",
+          "US-104",
+          "US-105",
+          "US-106",
+          "US-107",
+          "US-108",
+          "US-109",
+          "US-110"
+        ],
+        "open_scope_added_story_ids": [],
+        "open_closure_blocking_bug_ids": [
+          "BUG-001",
+          "BUG-002"
+        ]
+      },
+      "explanation": {
+        "day": 5,
+        "movement": "flat",
+        "delta": 0,
+        "causes": []
+      }
+    },
+    {
+      "sprint_day": 6,
+      "date": "2030-04-15",
+      "original_baseline": 10,
+      "open_baseline_stories": 8,
+      "open_scope_added_stories": 1,
+      "open_closure_blocking_bugs": 2,
+      "current_remaining_work": 11,
+      "closed_baseline_stories": 2,
+      "closed_scope_added_stories": 0,
+      "scope_added_total": 1,
+      "active_rework_bugs": [
+        "BUG-001",
+        "BUG-002"
+      ],
+      "composition": {
+        "open_baseline_story_ids": [
+          "US-102",
+          "US-103",
+          "US-104",
+          "US-105",
+          "US-106",
+          "US-107",
+          "US-108",
+          "US-109"
+        ],
+        "open_scope_added_story_ids": [
+          "US-111"
+        ],
+        "open_closure_blocking_bug_ids": [
+          "BUG-001",
+          "BUG-002"
+        ]
+      },
+      "explanation": {
+        "day": 6,
+        "movement": "flat",
+        "delta": 0,
+        "causes": [
+          {
+            "type": "scope_added",
+            "id": "US-111",
+            "work_item_id": "US-111",
+            "effect": 1,
+            "event_id": "EVT-021",
+            "timestamp": "2030-04-15T09:30:00Z"
+          },
+          {
+            "type": "story_closed",
+            "id": "US-110",
+            "work_item_id": "US-110",
+            "effect": -1,
+            "event_id": "EVT-024",
+            "timestamp": "2030-04-15T12:00:00Z"
+          }
+        ]
+      }
+    },
+    {
+      "sprint_day": 7,
+      "date": "2030-04-16",
+      "original_baseline": 10,
+      "open_baseline_stories": 7,
+      "open_scope_added_stories": 1,
+      "open_closure_blocking_bugs": 2,
+      "current_remaining_work": 10,
+      "closed_baseline_stories": 3,
+      "closed_scope_added_stories": 0,
+      "scope_added_total": 1,
+      "active_rework_bugs": [
+        "BUG-002",
+        "BUG-003"
+      ],
+      "composition": {
+        "open_baseline_story_ids": [
+          "US-103",
+          "US-104",
+          "US-105",
+          "US-106",
+          "US-107",
+          "US-108",
+          "US-109"
+        ],
+        "open_scope_added_story_ids": [
+          "US-111"
+        ],
+        "open_closure_blocking_bug_ids": [
+          "BUG-002",
+          "BUG-003"
+        ]
+      },
+      "explanation": {
+        "day": 7,
+        "movement": "down",
+        "delta": -1,
+        "causes": [
+          {
+            "type": "closure_blocking_bug_created",
+            "id": "BUG-003",
+            "work_item_id": "US-105",
+            "effect": 1,
+            "event_id": "EVT-027",
+            "timestamp": "2030-04-16T11:00:00Z"
+          },
+          {
+            "type": "closure_blocking_bug_resolved",
+            "id": "BUG-001",
+            "work_item_id": "US-102",
+            "effect": -1,
+            "event_id": "EVT-031",
+            "timestamp": "2030-04-16T14:10:00Z"
+          },
+          {
+            "type": "story_closed",
+            "id": "US-102",
+            "work_item_id": "US-102",
+            "effect": -1,
+            "event_id": "EVT-032",
+            "timestamp": "2030-04-16T15:00:00Z"
+          }
+        ]
+      }
+    },
+    {
+      "sprint_day": 8,
+      "date": "2030-04-17",
+      "original_baseline": 10,
+      "open_baseline_stories": 6,
+      "open_scope_added_stories": 1,
+      "open_closure_blocking_bugs": 2,
+      "current_remaining_work": 9,
+      "closed_baseline_stories": 4,
+      "closed_scope_added_stories": 0,
+      "scope_added_total": 1,
+      "active_rework_bugs": [
+        "BUG-002",
+        "BUG-003"
+      ],
+      "composition": {
+        "open_baseline_story_ids": [
+          "US-104",
+          "US-105",
+          "US-106",
+          "US-107",
+          "US-108",
+          "US-109"
+        ],
+        "open_scope_added_story_ids": [
+          "US-111"
+        ],
+        "open_closure_blocking_bug_ids": [
+          "BUG-002",
+          "BUG-003"
+        ]
+      },
+      "explanation": {
+        "day": 8,
+        "movement": "down",
+        "delta": -1,
+        "causes": [
+          {
+            "type": "story_closed",
+            "id": "US-103",
+            "work_item_id": "US-103",
+            "effect": -1,
+            "event_id": "EVT-036",
+            "timestamp": "2030-04-17T16:00:00Z"
+          }
+        ]
+      }
+    },
+    {
+      "sprint_day": 9,
+      "date": "2030-04-18",
+      "original_baseline": 10,
+      "open_baseline_stories": 6,
+      "open_scope_added_stories": 1,
+      "open_closure_blocking_bugs": 2,
+      "current_remaining_work": 9,
+      "closed_baseline_stories": 4,
+      "closed_scope_added_stories": 0,
+      "scope_added_total": 1,
+      "active_rework_bugs": [
+        "BUG-002",
+        "BUG-003"
+      ],
+      "composition": {
+        "open_baseline_story_ids": [
+          "US-104",
+          "US-105",
+          "US-106",
+          "US-107",
+          "US-108",
+          "US-109"
+        ],
+        "open_scope_added_story_ids": [
+          "US-111"
+        ],
+        "open_closure_blocking_bug_ids": [
+          "BUG-002",
+          "BUG-003"
+        ]
+      },
+      "explanation": {
+        "day": 9,
+        "movement": "flat",
+        "delta": 0,
+        "causes": []
+      }
+    },
+    {
+      "sprint_day": 10,
+      "date": "2030-04-19",
+      "original_baseline": 10,
+      "open_baseline_stories": 4,
+      "open_scope_added_stories": 0,
+      "open_closure_blocking_bugs": 1,
+      "current_remaining_work": 5,
+      "closed_baseline_stories": 6,
+      "closed_scope_added_stories": 1,
+      "scope_added_total": 1,
+      "active_rework_bugs": [
+        "BUG-002"
+      ],
+      "composition": {
+        "open_baseline_story_ids": [
+          "US-104",
+          "US-107",
+          "US-108",
+          "US-109"
+        ],
+        "open_scope_added_story_ids": [],
+        "open_closure_blocking_bug_ids": [
+          "BUG-002"
+        ]
+      },
+      "explanation": {
+        "day": 10,
+        "movement": "down",
+        "delta": -4,
+        "causes": [
+          {
+            "type": "closure_blocking_bug_resolved",
+            "id": "BUG-003",
+            "work_item_id": "US-105",
+            "effect": -1,
+            "event_id": "EVT-045",
+            "timestamp": "2030-04-19T14:10:00Z"
+          },
+          {
+            "type": "story_closed",
+            "id": "US-105",
+            "work_item_id": "US-105",
+            "effect": -1,
+            "event_id": "EVT-046",
+            "timestamp": "2030-04-19T15:00:00Z"
+          },
+          {
+            "type": "story_closed",
+            "id": "US-106",
+            "work_item_id": "US-106",
+            "effect": -1,
+            "event_id": "EVT-048",
+            "timestamp": "2030-04-19T16:00:00Z"
+          },
+          {
+            "type": "story_closed",
+            "id": "US-111",
+            "work_item_id": "US-111",
+            "effect": -1,
+            "event_id": "EVT-050",
+            "timestamp": "2030-04-19T17:00:00Z"
+          }
+        ]
+      }
+    }
+  ],
+  "insights": [
+    {
+      "type": "upward_movement",
+      "sprint_day": 3,
+      "previous_remaining": 9,
+      "current_remaining": 10,
+      "delta": 1,
+      "causes": [
+        {
+          "type": "closure_blocking_bug_created",
+          "id": "BUG-001",
+          "work_item_id": "US-102",
+          "effect": 1,
+          "event_id": "EVT-014",
+          "timestamp": "2030-04-10T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "upward_movement",
+      "sprint_day": 4,
+      "previous_remaining": 10,
+      "current_remaining": 11,
+      "delta": 1,
+      "causes": [
+        {
+          "type": "closure_blocking_bug_created",
+          "id": "BUG-002",
+          "work_item_id": "US-104",
+          "effect": 1,
+          "event_id": "EVT-016",
+          "timestamp": "2030-04-11T11:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "flatline",
+      "start_day": 5,
+      "end_day": 6,
+      "number_of_days": 2,
+      "remaining_work": 11,
+      "contributing_context": [
+        {
+          "sprint_day": 5,
+          "causes": [],
+          "event_ids": [
+            "EVT-019"
+          ]
+        },
+        {
+          "sprint_day": 6,
+          "causes": [
+            {
+              "type": "scope_added",
+              "id": "US-111",
+              "work_item_id": "US-111",
+              "effect": 1,
+              "event_id": "EVT-021",
+              "timestamp": "2030-04-15T09:30:00Z"
+            },
+            {
+              "type": "story_closed",
+              "id": "US-110",
+              "work_item_id": "US-110",
+              "effect": -1,
+              "event_id": "EVT-024",
+              "timestamp": "2030-04-15T12:00:00Z"
+            }
+          ],
+          "event_ids": [
+            "EVT-020",
+            "EVT-021",
+            "EVT-022",
+            "EVT-023",
+            "EVT-024",
+            "EVT-025"
+          ]
+        }
+      ]
+    }
+  ]
+}

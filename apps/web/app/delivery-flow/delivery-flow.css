@@ -1,0 +1,28 @@
+.delivery-flow .flow-swatch { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 2px; flex-shrink: 0; }
+.delivery-flow .flow-composition { margin: 1rem 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.5rem 1.5rem; }
+.delivery-flow .flow-composition > div { padding: 0.65rem 0; border-top: 1px solid var(--border); }
+.delivery-flow .flow-composition dt { display: flex; gap: 0.45rem; align-items: center; font-size: 0.78rem; color: var(--muted); }
+.delivery-flow .flow-composition dd { margin: 0.2rem 0 0; font-size: 1.4rem; font-weight: 600; }
+.delivery-flow .flow-legend { margin-top: 1rem; }
+.delivery-flow .flow-days { list-style: none; margin: 1rem 0 0; padding: 0; }
+.delivery-flow .flow-day { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 1.5rem; border-top: 1px solid var(--border); padding: 1.25rem 0; }
+.delivery-flow .flow-transitions, .delivery-flow .flow-entry ul { list-style: none; margin: 0; padding: 0; }
+.delivery-flow .flow-transitions li { padding: 0.6rem 0.8rem; border-left: 3px solid var(--border); margin-bottom: 0.5rem; overflow-wrap: anywhere; }
+.delivery-flow .flow-transitions p { margin: 0.2rem 0; }
+.delivery-flow .flow-transitions .flow-qa-return { border-color: #79618c; background: #efebf3; }
+.delivery-flow .flow-return-label { display: inline-block; font-size: 0.72rem; color: #594579; margin-left: 0.8rem; }
+.delivery-flow .flow-entry { padding: 0.8rem; background: #edf1f5; margin-bottom: 0.75rem; }
+.delivery-flow .flow-entry ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; font-size: 0.8rem; }
+.delivery-flow .flow-guidance { border-top: 1px solid var(--border); margin-top: 2rem; padding-top: 1rem; }
+.delivery-flow .flow-guidance p { margin: 0.3rem 0; }
+.delivery-flow .flow-data-table { margin-top: 1rem; font-size: 0.8rem; }
+.delivery-flow summary { cursor: pointer; color: #145a88; }
+.delivery-flow .flow-table-scroll { overflow-x: auto; }
+.delivery-flow table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+.delivery-flow th, .delivery-flow td { padding: 0.5rem; text-align: left; border-bottom: 1px solid var(--border); }
+.delivery-flow caption { text-align: left; color: var(--muted); }
+@media (max-width: 640px) {
+  .delivery-flow .flow-composition { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .delivery-flow .flow-day { grid-template-columns: minmax(0, 1fr); gap: 0.75rem; }
+  .delivery-flow .flow-entry ul { grid-template-columns: minmax(0, 1fr); }
+}

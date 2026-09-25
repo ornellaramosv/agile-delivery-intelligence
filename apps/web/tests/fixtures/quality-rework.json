@@ -1,0 +1,394 @@
+{
+  "sprint": {
+    "id": "ATLAS-SPRINT-08",
+    "name": "Sprint 08",
+    "project": "Atlas",
+    "backlog": "Core Services",
+    "start_date": "2030-04-08",
+    "end_date": "2030-04-19",
+    "timezone": "UTC"
+  },
+  "quality_summary": {
+    "eligible_qa_stories": 7,
+    "first_pass_successes": 4,
+    "first_pass_failures": 3,
+    "first_pass_qa_rate": 0.5714285714285714,
+    "stories_with_rework": 3,
+    "total_rework_cycles": 3,
+    "active_rework_cycles_at_sprint_end": 1,
+    "resolved_rework_cycles": 2,
+    "rework_bug_count": 3,
+    "rework_task_count": 7,
+    "rework_estimated_hours": 45,
+    "rework_completed_hours": 45,
+    "rework_remaining_hours": 8
+  },
+  "stories": [
+    {
+      "work_item_id": "US-101",
+      "source": "roadmap",
+      "carry_over": false,
+      "reached_qa": true,
+      "first_pass_population": true,
+      "first_pass_outcome": "passed",
+      "outcome_reason": null,
+      "final_state": "Closed",
+      "rework_cycles": 0,
+      "related_bugs": [],
+      "evidence": {
+        "first_qa_event_id": "EVT-001",
+        "first_attempt_outcome_event_id": "EVT-012",
+        "acceptance_event_ids": [
+          "EVT-012"
+        ]
+      },
+      "rework_effort": {
+        "tasks": 0,
+        "task_ids": [],
+        "estimated_hours": 0,
+        "completed_hours": 0,
+        "remaining_hours": 0
+      }
+    },
+    {
+      "work_item_id": "US-102",
+      "source": "roadmap",
+      "carry_over": false,
+      "reached_qa": true,
+      "first_pass_population": true,
+      "first_pass_outcome": "failed",
+      "outcome_reason": null,
+      "final_state": "Closed",
+      "rework_cycles": 1,
+      "related_bugs": [
+        "BUG-001"
+      ],
+      "evidence": {
+        "first_qa_event_id": "EVT-002",
+        "first_attempt_outcome_event_id": "EVT-015",
+        "acceptance_event_ids": [
+          "EVT-030"
+        ]
+      },
+      "rework_effort": {
+        "tasks": 3,
+        "task_ids": [
+          "TASK-003",
+          "TASK-004",
+          "TASK-005"
+        ],
+        "estimated_hours": 13,
+        "completed_hours": 15,
+        "remaining_hours": 0
+      }
+    },
+    {
+      "work_item_id": "US-103",
+      "source": "roadmap",
+      "carry_over": false,
+      "reached_qa": true,
+      "first_pass_population": true,
+      "first_pass_outcome": "passed",
+      "outcome_reason": null,
+      "final_state": "Closed",
+      "rework_cycles": 0,
+      "related_bugs": [],
+      "evidence": {
+        "first_qa_event_id": "EVT-003",
+        "first_attempt_outcome_event_id": "EVT-035",
+        "acceptance_event_ids": [
+          "EVT-035"
+        ]
+      },
+      "rework_effort": {
+        "tasks": 0,
+        "task_ids": [],
+        "estimated_hours": 0,
+        "completed_hours": 0,
+        "remaining_hours": 0
+      }
+    },
+    {
+      "work_item_id": "US-104",
+      "source": "roadmap",
+      "carry_over": false,
+      "reached_qa": true,
+      "first_pass_population": true,
+      "first_pass_outcome": "failed",
+      "outcome_reason": null,
+      "final_state": "Returned to DEV",
+      "rework_cycles": 1,
+      "related_bugs": [
+        "BUG-002"
+      ],
+      "evidence": {
+        "first_qa_event_id": "EVT-004",
+        "first_attempt_outcome_event_id": "EVT-017",
+        "acceptance_event_ids": []
+      },
+      "rework_effort": {
+        "tasks": 1,
+        "task_ids": [
+          "TASK-008"
+        ],
+        "estimated_hours": 16,
+        "completed_hours": 12,
+        "remaining_hours": 8
+      }
+    },
+    {
+      "work_item_id": "US-105",
+      "source": "roadmap",
+      "carry_over": false,
+      "reached_qa": true,
+      "first_pass_population": true,
+      "first_pass_outcome": "failed",
+      "outcome_reason": null,
+      "final_state": "Closed",
+      "rework_cycles": 1,
+      "related_bugs": [
+        "BUG-003"
+      ],
+      "evidence": {
+        "first_qa_event_id": "EVT-020",
+        "first_attempt_outcome_event_id": "EVT-028",
+        "acceptance_event_ids": [
+          "EVT-044"
+        ]
+      },
+      "rework_effort": {
+        "tasks": 3,
+        "task_ids": [
+          "TASK-012",
+          "TASK-013",
+          "TASK-014"
+        ],
+        "estimated_hours": 16,
+        "completed_hours": 18,
+        "remaining_hours": 0
+      }
+    },
+    {
+      "work_item_id": "US-106",
+      "source": "roadmap",
+      "carry_over": false,
+      "reached_qa": true,
+      "first_pass_population": true,
+      "first_pass_outcome": "passed",
+      "outcome_reason": null,
+      "final_state": "Closed",
+      "rework_cycles": 0,
+      "related_bugs": [],
+      "evidence": {
+        "first_qa_event_id": "EVT-037",
+        "first_attempt_outcome_event_id": "EVT-047",
+        "acceptance_event_ids": [
+          "EVT-047"
+        ]
+      },
+      "rework_effort": {
+        "tasks": 0,
+        "task_ids": [],
+        "estimated_hours": 0,
+        "completed_hours": 0,
+        "remaining_hours": 0
+      }
+    },
+    {
+      "work_item_id": "US-107",
+      "source": "roadmap",
+      "carry_over": false,
+      "reached_qa": false,
+      "first_pass_population": false,
+      "first_pass_outcome": "not_reached_qa",
+      "outcome_reason": "no_qa_attempt_in_sprint",
+      "final_state": "Code Integration",
+      "rework_cycles": 0,
+      "related_bugs": [],
+      "evidence": {
+        "first_qa_event_id": null,
+        "first_attempt_outcome_event_id": null,
+        "acceptance_event_ids": []
+      },
+      "rework_effort": {
+        "tasks": 0,
+        "task_ids": [],
+        "estimated_hours": 0,
+        "completed_hours": 0,
+        "remaining_hours": 0
+      }
+    },
+    {
+      "work_item_id": "US-108",
+      "source": "roadmap",
+      "carry_over": false,
+      "reached_qa": false,
+      "first_pass_population": false,
+      "first_pass_outcome": "not_reached_qa",
+      "outcome_reason": "no_qa_attempt_in_sprint",
+      "final_state": "Development",
+      "rework_cycles": 0,
+      "related_bugs": [],
+      "evidence": {
+        "first_qa_event_id": null,
+        "first_attempt_outcome_event_id": null,
+        "acceptance_event_ids": []
+      },
+      "rework_effort": {
+        "tasks": 0,
+        "task_ids": [],
+        "estimated_hours": 0,
+        "completed_hours": 0,
+        "remaining_hours": 0
+      }
+    },
+    {
+      "work_item_id": "US-109",
+      "source": "roadmap",
+      "carry_over": false,
+      "reached_qa": false,
+      "first_pass_population": false,
+      "first_pass_outcome": "not_reached_qa",
+      "outcome_reason": "no_qa_attempt_in_sprint",
+      "final_state": "Development",
+      "rework_cycles": 0,
+      "related_bugs": [],
+      "evidence": {
+        "first_qa_event_id": null,
+        "first_attempt_outcome_event_id": null,
+        "acceptance_event_ids": []
+      },
+      "rework_effort": {
+        "tasks": 0,
+        "task_ids": [],
+        "estimated_hours": 0,
+        "completed_hours": 0,
+        "remaining_hours": 0
+      }
+    },
+    {
+      "work_item_id": "US-110",
+      "source": "roadmap",
+      "carry_over": true,
+      "reached_qa": true,
+      "first_pass_population": true,
+      "first_pass_outcome": "passed",
+      "outcome_reason": null,
+      "final_state": "Closed",
+      "rework_cycles": 0,
+      "related_bugs": [],
+      "evidence": {
+        "first_qa_event_id": "EVT-011",
+        "first_attempt_outcome_event_id": "EVT-022",
+        "acceptance_event_ids": [
+          "EVT-022"
+        ]
+      },
+      "rework_effort": {
+        "tasks": 0,
+        "task_ids": [],
+        "estimated_hours": 0,
+        "completed_hours": 0,
+        "remaining_hours": 0
+      }
+    },
+    {
+      "work_item_id": "US-111",
+      "source": "client_incident",
+      "carry_over": false,
+      "reached_qa": true,
+      "first_pass_population": false,
+      "first_pass_outcome": "excluded",
+      "outcome_reason": "client_incident_excluded_in_v0.1",
+      "final_state": "Closed",
+      "rework_cycles": 0,
+      "related_bugs": [],
+      "evidence": {
+        "first_qa_event_id": "EVT-039",
+        "first_attempt_outcome_event_id": "EVT-049",
+        "acceptance_event_ids": [
+          "EVT-049"
+        ]
+      },
+      "rework_effort": {
+        "tasks": 0,
+        "task_ids": [],
+        "estimated_hours": 0,
+        "completed_hours": 0,
+        "remaining_hours": 0
+      }
+    }
+  ],
+  "rework_cycles": [
+    {
+      "id": "EVT-015",
+      "work_item_id": "US-102",
+      "cycle_number": 1,
+      "sprint_day": 3,
+      "timestamp": "2030-04-10T10:05:00Z",
+      "related_bug_id": "BUG-001",
+      "qa_rejection_event_id": "EVT-015",
+      "bug_detection_event_id": "EVT-014",
+      "return_to_dev_event_id": "EVT-015",
+      "qa_recertification_event_ids": [
+        "EVT-026"
+      ],
+      "acceptance_event_id": "EVT-030",
+      "status": "completed",
+      "bug_resolution_event_id": "EVT-031",
+      "bug_resolution_status": "resolved",
+      "bug_record_status": "Closed"
+    },
+    {
+      "id": "EVT-017",
+      "work_item_id": "US-104",
+      "cycle_number": 1,
+      "sprint_day": 4,
+      "timestamp": "2030-04-11T11:05:00Z",
+      "related_bug_id": "BUG-002",
+      "qa_rejection_event_id": "EVT-017",
+      "bug_detection_event_id": "EVT-016",
+      "return_to_dev_event_id": "EVT-017",
+      "qa_recertification_event_ids": [],
+      "acceptance_event_id": null,
+      "status": "active",
+      "bug_resolution_event_id": null,
+      "bug_resolution_status": "unresolved",
+      "bug_record_status": "Open"
+    },
+    {
+      "id": "EVT-028",
+      "work_item_id": "US-105",
+      "cycle_number": 1,
+      "sprint_day": 7,
+      "timestamp": "2030-04-16T11:05:00Z",
+      "related_bug_id": "BUG-003",
+      "qa_rejection_event_id": "EVT-028",
+      "bug_detection_event_id": "EVT-027",
+      "return_to_dev_event_id": "EVT-028",
+      "qa_recertification_event_ids": [
+        "EVT-042"
+      ],
+      "acceptance_event_id": "EVT-044",
+      "status": "completed",
+      "bug_resolution_event_id": "EVT-045",
+      "bug_resolution_status": "resolved",
+      "bug_record_status": "Closed"
+    }
+  ],
+  "rework_effort": {
+    "tasks": 7,
+    "task_ids": [
+      "TASK-003",
+      "TASK-004",
+      "TASK-005",
+      "TASK-008",
+      "TASK-012",
+      "TASK-013",
+      "TASK-014"
+    ],
+    "estimated_hours": 45,
+    "completed_hours": 45,
+    "remaining_hours": 8
+  }
+}

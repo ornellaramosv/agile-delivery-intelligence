@@ -1,0 +1,29 @@
+.quality-rework .qa-ratio { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.3rem; }
+.quality-rework .qa-meter { display: block; width: 100%; height: 1rem; margin: 0.6rem 0 1rem; appearance: none; background: #e4e9ed; border: none; border-radius: 3px; }
+.quality-rework .qa-meter::-webkit-meter-bar { background: #e4e9ed; border: none; height: 1rem; border-radius: 3px; }
+.quality-rework .qa-meter::-webkit-meter-optimum-value { background: #536f8a; }
+.quality-rework .qa-meter::-moz-meter-bar { background: #536f8a; }
+.quality-rework .qa-population-heading { margin-top: 1.5rem; }
+.quality-rework .qa-population { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1.5rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.quality-rework .qa-population article { border-top: 1px solid var(--border); padding: 0.8rem 0; }
+.quality-rework .qa-story-title { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; justify-content: space-between; }
+.quality-rework .qa-outcome, .quality-rework .quality-cycle-status { background: #e8edf1; padding: 0.1rem 0.5rem; border-radius: 3px; font-size: 0.75rem; }
+.quality-rework .qa-failed { background: #eeeaf4; color: #594579; }
+.quality-rework .quality-overview, .quality-rework .quality-effort-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0; }
+.quality-rework .quality-overview { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.quality-rework dt { font-size: 0.76rem; color: var(--muted); }
+.quality-rework dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+.quality-rework .quality-overview dd { font-size: 1.4rem; }
+.quality-rework .rework-stories, .quality-rework .rework-cycle-list { padding: 0; list-style: none; }
+.quality-rework .rework-stories > li { border-top: 1px solid var(--border); padding: 1.3rem 0; }
+.quality-rework .rework-story-meta { font-size: 0.83rem; margin: 0.3rem 0; }
+.quality-rework .rework-cycle-list > li { padding: 1rem; margin: 0.75rem 0; border-left: 3px solid #cbd5df; background: #edf1f5; overflow-wrap: anywhere; }
+.quality-rework .rework-cycle-list p { margin: 0.25rem 0; }
+.quality-rework .rework-cycle-list .quality-active { border-color: #79618c; background: #efebf3; }
+.quality-rework .quality-active .quality-cycle-status { background: #e1d8eb; color: #594579; }
+.quality-rework .quality-guidance { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.quality-rework .quality-guidance p { margin: 0.3rem 0; }
+@media (max-width: 640px) {
+  .quality-rework .qa-population { grid-template-columns: minmax(0, 1fr); }
+  .quality-rework .quality-overview, .quality-rework .quality-effort-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
