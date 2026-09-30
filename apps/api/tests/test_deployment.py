@@ -7,6 +7,16 @@ import subprocess
 import sys
 
 
+def test_backend_config_preserves_python_framework_detection():
+    root = Path(__file__).resolve().parents[3]
+    config = json.loads((root / "vercel.json").read_text())
+    assert config["framework"] == "fastapi"
+    # Vercel's detector treats an empty buildCommand/outputDirectory as static.
+    assert config["buildCommand"] is None
+    assert config.get("outputDirectory") is None
+    assert config["installCommand"] == "uv pip install -r requirements.txt"
+
+
 def test_root_adapter_in_isolated_bundle_from_unrelated_directory(tmp_path):
     root = Path(__file__).resolve().parents[3]
     bundle = tmp_path / "bundle"

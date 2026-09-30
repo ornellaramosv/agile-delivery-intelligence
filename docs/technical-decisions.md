@@ -101,7 +101,7 @@ Frozen story IDs, bug IDs, dates, workflow events, task effort, initial states, 
 ## Manual Vercel deployment hardening
 
 - Keep separate projects: FastAPI at repository root and Next.js at `apps/web`. Root preserves fixture paths; per-project JSON overrides competing framework/install/build detection. See [manual deployment](deployment-vercel.md).
-- Python builder supplies uv; explicitly install the existing requirements with `uv pip install -r requirements.txt`. No npm or custom build step runs for backend. Exclude frontend/test/cache files without duplicating fixture data.
+- Python builder supplies uv; explicitly install the existing requirements with `uv pip install -r requirements.txt`. No npm or custom build step runs for backend. Use `buildCommand: null` (automatic FastAPI behavior), never an empty string: Vercel interprets the latter as static output and skips Python detection. Exclude frontend/test/cache files without duplicating fixture data.
 - Retain supported, locally validated Python 3.14. Select Node 24.x in the frontend manifest and install its workspace from the root lockfile. No dependency upgrades.
 - Require a valid API origin in production before server-side fetching; preserve localhost fallback for development and existing unavailable UI. No CORS, routing, domain or frozen-data changes.
 - Local validation does not certify Vercel cloud packaging. Manual endpoint and UI verification remains mandatory; no provider authentication or deployment is part of this task.

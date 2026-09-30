@@ -99,7 +99,7 @@ QA performs certification/validation. A return from QA to DEV represents require
 
 ## Automated validation
 
-Latest verified suite: **89 backend tests**, **21 dataset tests**, and **69 frontend tests**; **lint, TypeScript checks, and production build passing**.
+Latest verified suite: **90 backend tests**, **21 dataset tests**, and **69 frontend tests**; **lint, TypeScript checks, and production build passing**.
 
 Coverage includes event reconstruction, immutable baseline and fixture checks, synthetic domain cases, API/domain parity, and frontend presentation and loading/error/empty states. These are validation evidence, not a quality score.
 
