@@ -6,7 +6,7 @@ ADI is a delivery-intelligence layer that turns Agile execution data into delive
 
 Azure DevOps, Jira, ClickUp, and Linear are strong work-tracking systems. ADI explores a complementary intelligence layer; it does not replace them. The current demo uses fictional JSON data, with no external integrations.
 
-**Status: Active portfolio project** · **v0.1.0 — Sprint Intelligence: Feature complete, deployed, and undergoing public release finalization.**
+**Status: Active portfolio project** · **v0.1.0 — Sprint Intelligence: Released.**
 
 Three implemented views connect remaining work, workflow position, and QA/rework evidence. **All displayed project and sprint data are fictional demo data.**
 
@@ -218,7 +218,7 @@ docs/    # Product principles, intelligence semantics, decisions, screenshots
 
 ## Roadmap
 
-**Current:** v0.1.0 — Sprint Intelligence is feature complete, deployed, and in final public release preparation. This is an active portfolio project, not a claim of enterprise production readiness.
+**Current:** v0.1.0 — Sprint Intelligence is released and deployed. This is an active portfolio project, not a claim of enterprise production readiness.
 
 **Future planned exploration — not implemented:** Capacity Health, Impediment Intelligence, Portfolio Intelligence, Carry-over Intelligence, Release Readiness, and external work-tracking integrations. No delivery timelines are committed.
 
