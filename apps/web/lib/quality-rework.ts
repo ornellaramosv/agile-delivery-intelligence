@@ -1,3 +1,5 @@
+import { getApiOrigin } from "./api-origin";
+
 /** Read-only Quality & Rework API contract. No frontend metric calculations. */
 export type FirstPassOutcome = "passed" | "failed" | "not_reached_qa" | "excluded" | null;
 export type ReworkEffort = { tasks: number; task_ids: string[]; estimated_hours: number; completed_hours: number; remaining_hours: number };
@@ -26,7 +28,7 @@ export type QualityReworkResult = {
   quality_summary: QualitySummary; stories: QualityStory[]; rework_cycles: ReworkCycle[]; rework_effort: ReworkEffort;
 };
 export async function getSprintQualityRework(): Promise<QualityReworkResult> {
-  const origin = process.env.ADI_API_BASE_URL ?? "http://127.0.0.1:8000";
+  const origin = getApiOrigin();
   const response = await fetch(new URL("/demo/sprint-08/quality-rework", origin), {
     cache: "no-store", signal: AbortSignal.timeout(10_000),
   });

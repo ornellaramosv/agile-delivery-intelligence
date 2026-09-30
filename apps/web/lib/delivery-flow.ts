@@ -1,3 +1,5 @@
+import { getApiOrigin } from "./api-origin";
+
 /** API presentation contract. State names and their order come from the backend. */
 export type FlowSnapshot = {
   sprint_day: number;
@@ -30,7 +32,7 @@ export type DeliveryFlowResult = {
 
 /** Server-side fetch, consistent with the Burndown service. */
 export async function getSprintDeliveryFlow(): Promise<DeliveryFlowResult> {
-  const origin = process.env.ADI_API_BASE_URL ?? "http://127.0.0.1:8000";
+  const origin = getApiOrigin();
   const response = await fetch(new URL("/demo/sprint-08/delivery-flow", origin), {
     cache: "no-store", signal: AbortSignal.timeout(10_000),
   });

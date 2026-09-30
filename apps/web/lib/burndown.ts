@@ -1,3 +1,5 @@
+import { getApiOrigin } from "./api-origin";
+
 /** Presentation contract for GET /demo/sprint-08/burndown. No domain calculations. */
 export type Movement = "up" | "flat" | "down";
 
@@ -55,7 +57,7 @@ export type BurndownResult = {
 
 /** Called only by the Next.js server page. The browser never needs the API origin. */
 export async function getSprintBurndown(): Promise<BurndownResult> {
-  const origin = process.env.ADI_API_BASE_URL ?? "http://127.0.0.1:8000";
+  const origin = getApiOrigin();
   const response = await fetch(new URL("/demo/sprint-08/burndown", origin), {
     cache: "no-store",
     signal: AbortSignal.timeout(10_000),

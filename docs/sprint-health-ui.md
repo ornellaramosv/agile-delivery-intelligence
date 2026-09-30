@@ -38,7 +38,7 @@ References: [Recharts](https://recharts.org/), [accessibility documentation](htt
 
 ## Local setup
 
-Run the FastAPI application on port 8000 and the frontend on port 3000 as described in the root README. The Next.js server defaults to `http://127.0.0.1:8000` for the API. To change it, copy `apps/web/.env.example` to `apps/web/.env.local`, set `ADI_API_BASE_URL`, and restart the frontend. This is a server-only variable; no public API URL, proxy route, or backend CORS changes are needed.
+Run the FastAPI application on port 8000 and the frontend on port 3000 as described in the root README. In development, the Next.js server defaults to `http://127.0.0.1:8000` for the API. Production requires `ADI_API_BASE_URL`; see [deployment instructions](deployment-vercel.md). To change it, copy `apps/web/.env.example` to `apps/web/.env.local`, set `ADI_API_BASE_URL`, and restart the frontend. This is a server-only variable; no public API URL, proxy route, or backend CORS changes are needed.
 
 A production build does not require the API to be running; Sprint Health is rendered dynamically when requested. At runtime, the API must be reachable from the Next.js server.
 

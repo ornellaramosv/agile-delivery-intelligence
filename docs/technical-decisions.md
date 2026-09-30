@@ -6,7 +6,7 @@
 - Pin ESLint 9.39.5 for compatibility with Next.js's React lint plugin. ESLint 10 failed when loading `react/display-name` during verification. npm marks ESLint 9 as deprecated; revisit the pin when the plugin supports ESLint 10.
 - Keep API consumption centralized. Each Sprint Intelligence page fetches its read-only demo result on the Next.js server.
 - Separate FastAPI application composition from the health router. Use pytest and FastAPI's TestClient for the single endpoint test. Retain FastAPI's default API documentation.
-- Use Node.js 24+ and Python 3.14+ as the documented development baseline, matching the available runtimes used for verification.
+- Use Node.js 24.x and Python 3.14 as the development/deployment baseline, matching the available runtimes used for verification.
 - Record exact frontend dependencies in `package-lock.json` and pin direct backend dependencies in requirements files. Python transitive dependencies remain resolver-managed. Keep Python testing dependencies separate from runtime dependencies; the current Starlette TestClient uses `httpx2`.
 - Keep fictional scenario data as separate human-readable JSON files under `data/demo/sprint-08/`. Use string identifiers and UTC timestamps, a fixed baseline membership list, final snapshots, and traceable workflow events. Demo services consume the fixture through pure domain engines. See its README and `data/schema.md` for data conventions and future modeling questions.
 - Validate the fixture with Python standard-library `unittest` under `data/tests/`, independently of FastAPI and without adding dependencies. Fixture assertions do not implement product metrics.
@@ -96,3 +96,12 @@ Frozen story IDs, bug IDs, dates, workflow events, task effort, initial states, 
 - Confirmed publication decision: no open-source license is granted at this stage; no LICENSE file is added.
 - QA performs certification/validation. `qa_passed` records certification success; `closed` records the final completed story state. Existing quality API acceptance-named fields and cycle-completion calculations remain unchanged. No universal claim about organizational product-acceptance ownership is implied.
 - Prepare the local unborn branch as `main` and use the approved author name. Author email still requires confirmation before any first commit; no email is invented or changed. No commit, remote, release, or deployment is part of this preparation.
+
+
+## Manual Vercel deployment hardening
+
+- Keep separate projects: FastAPI at repository root and Next.js at `apps/web`. Root preserves fixture paths; per-project JSON overrides competing framework/install/build detection. See [manual deployment](deployment-vercel.md).
+- Python builder supplies uv; explicitly install the existing requirements with `uv pip install -r requirements.txt`. No npm or custom build step runs for backend. Exclude frontend/test/cache files without duplicating fixture data.
+- Retain supported, locally validated Python 3.14. Select Node 24.x in the frontend manifest and install its workspace from the root lockfile. No dependency upgrades.
+- Require a valid API origin in production before server-side fetching; preserve localhost fallback for development and existing unavailable UI. No CORS, routing, domain or frozen-data changes.
+- Local validation does not certify Vercel cloud packaging. Manual endpoint and UI verification remains mandatory; no provider authentication or deployment is part of this task.

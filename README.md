@@ -99,7 +99,7 @@ QA performs certification/validation. A return from QA to DEV represents require
 
 ## Automated validation
 
-Latest verified suite: **88 backend tests**, **21 dataset tests**, and **59 frontend tests**; **lint, TypeScript checks, and production build passing**.
+Latest verified suite: **89 backend tests**, **21 dataset tests**, and **69 frontend tests**; **lint, TypeScript checks, and production build passing**.
 
 Coverage includes event reconstruction, immutable baseline and fixture checks, synthetic domain cases, API/domain parity, and frontend presentation and loading/error/empty states. These are validation evidence, not a quality score.
 
@@ -119,12 +119,16 @@ From `apps/api`, with its virtual environment active:
 python -m pytest -W error
 ```
 
+## Manual deployment
+
+Follow [Vercel deployment instructions](docs/deployment-vercel.md) for fresh backend and frontend imports. Configuration is prepared; successful live deployment is not yet claimed.
+
 ## Local setup
 
 ### Prerequisites
 
-- Node.js **24+** with npm, matching the configured `engines` requirement and lockfile.
-- Python **3.14+** with pip and venv, the documented development baseline; verified with Python 3.14.6. A Python version constraint is not currently enforced by project configuration.
+- Node.js **24.x** with npm, matching the configured `engines` requirement and lockfile.
+- Python **3.14** with pip and venv, selected by root `.python-version`; locally verified with Python 3.14.6.
 
 ### Frontend
 
