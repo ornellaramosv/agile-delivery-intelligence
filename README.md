@@ -6,9 +6,15 @@ ADI is a delivery-intelligence layer that turns Agile execution data into delive
 
 Azure DevOps, Jira, ClickUp, and Linear are strong work-tracking systems. ADI explores a complementary intelligence layer; it does not replace them. The current demo uses fictional JSON data, with no external integrations.
 
-**Status: Active portfolio project** · **v0.1.0 — Sprint Intelligence: Feature complete — pending portfolio release preparation.**
+**Status: Active portfolio project** · **v0.1.0 — Sprint Intelligence: Feature complete, deployed, and undergoing public release finalization.**
 
 Three implemented views connect remaining work, workflow position, and QA/rework evidence. **All displayed project and sprint data are fictional demo data.**
+
+## Live Demo
+
+🚀 **[View ADI Live](https://adi-web-five.vercel.app)**
+
+The live environment uses a fully fictional Sprint 08 dataset created exclusively for demonstration and portfolio purposes.
 
 [Explore the views](#v010--sprint-intelligence) · [Architecture](#architecture) · [Run locally](#local-setup) · [Validation](#automated-validation)
 
@@ -96,6 +102,7 @@ QA performs certification/validation. A return from QA to DEV represents require
 | Backend | Python, FastAPI, Uvicorn |
 | Testing and tooling | pytest, Python unittest, Vitest, React Testing Library, jsdom, ESLint, TypeScript checks |
 | Data | Frozen fictional JSON fixture, dataset version v1 |
+| Deployment | Vercel — separate Next.js frontend and FastAPI backend projects |
 
 ## Automated validation
 
@@ -119,9 +126,18 @@ From `apps/api`, with its virtual environment active:
 python -m pytest -W error
 ```
 
-## Manual deployment
+## Deployment
 
-Follow [Vercel deployment instructions](docs/deployment-vercel.md) for fresh backend and frontend imports. Configuration is prepared; successful live deployment is not yet claimed.
+ADI v0.1.0 is deployed as two independent Vercel projects:
+
+- **Live application:** [https://adi-web-five.vercel.app](https://adi-web-five.vercel.app)
+- **Read-only API:** [https://adi-api.vercel.app](https://adi-api.vercel.app)
+
+The frontend communicates with the FastAPI backend server-side through `ADI_API_BASE_URL`.
+
+The production deployment has been manually validated across Sprint Health, Delivery Flow, and Quality & Rework, including desktop and mobile layouts.
+
+For deployment configuration and fresh-import instructions, see [Vercel deployment instructions](docs/deployment-vercel.md).
 
 ## Local setup
 
@@ -165,13 +181,19 @@ GET /demo/sprint-08/quality-rework
 
 ### API configuration
 
-The Next.js server defaults to `http://127.0.0.1:8000`. To use a different API address, run from the repository root:
+In local development, the Next.js server defaults to `http://127.0.0.1:8000`.
+
+To use a different API address, run from the repository root:
 
 ```sh
 cp apps/web/.env.example apps/web/.env.local
 ```
 
-Set `ADI_API_BASE_URL` in that file and restart the frontend. This variable is server-only. No database, external credentials, or Docker setup is needed.
+Set `ADI_API_BASE_URL` in that file and restart the frontend. This variable is server-only.
+
+Production requires `ADI_API_BASE_URL` to point to the deployed backend origin.
+
+No database, external credentials, or Docker setup is needed.
 
 ## Repository structure
 
@@ -191,11 +213,12 @@ docs/    # Product principles, intelligence semantics, decisions, screenshots
 - [Quality & Rework Intelligence](docs/quality-rework-intelligence.md)
 - [Technical Decisions](docs/technical-decisions.md)
 - [Sprint 08 Audit](data/demo/sprint-08/AUDIT.md)
+- [Vercel Deployment](docs/deployment-vercel.md)
 - [Milestones](docs/milestones.md)
 
 ## Roadmap
 
-**Current:** v0.1.0 — Sprint Intelligence is feature complete and undergoing public release preparation. This is an active portfolio project, not a claim of enterprise production readiness.
+**Current:** v0.1.0 — Sprint Intelligence is feature complete, deployed, and in final public release preparation. This is an active portfolio project, not a claim of enterprise production readiness.
 
 **Future planned exploration — not implemented:** Capacity Health, Impediment Intelligence, Portfolio Intelligence, Carry-over Intelligence, Release Readiness, and external work-tracking integrations. No delivery timelines are committed.
 
