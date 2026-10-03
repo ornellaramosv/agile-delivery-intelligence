@@ -77,7 +77,7 @@ Click **Deploy**. Next.js uses dynamic server rendering, not static export. The 
 ## Technical decisions and validation boundary
 
 - Root npm metadata plus Python manifests at root and `apps/api` allow competing detection candidates. The observed `npm install --prefix=../..` is consistent with parent-workspace npm detection for a nested root. Exact failed-project history is unknown without provider logs; retained UI settings may also contribute.
-- Backend JSON explicitly selects FastAPI, Python installation, and the automatic FastAPI build behavior (`buildCommand: null`). The Python builder provides `uv` and a build virtual environment. The custom command installs requirements there; the builder vendors runtime dependencies. Root requirements delegate to the single runtime pin list under `apps/api`.
+- Backend JSON explicitly selects FastAPI, Python installation, and the automatic FastAPI build behavior (`buildCommand: null`). The Python builder provides `uv` and a build virtual environment. The custom command installs requirements there; the builder vendors runtime dependencies. Root `requirements.txt` directly lists the runtime pins so Vercel can analyze it without following includes. `apps/api/requirements.txt` delegates to that root file for local installation.
 - Uvicorn remains for local/conventional ASGI hosting; Vercel does not need it as a process supervisor. pytest and httpx2 remain test-only dependencies in `requirements-dev.txt`.
 - No unique requirement for Python 3.14 was identified, but it is the validated project baseline and a supported Vercel runtime. Downgrading would not solve the npm ambiguity, so retain it.
 - Python bundles project files by default. Backend `excludeFiles` removes frontend code/dependencies, docs, tests and caches while retaining the original `apps/api/app` and `data/demo/sprint-08` hierarchy. No fixture duplication or include override is necessary.
@@ -115,7 +115,7 @@ Click **Deploy**. Next.js uses dynamic server rendering, not static export. The 
 
 - Clean npm workspace install in a temporary checkout: passed; no dependency versions changed.
 - Clean Python runtime-only installation using the configured uv command: passed; pip check passed. Development dependencies installed separately for testing.
-- Backend: 90 tests passed, including isolated adapter/fixture/route test. Dataset: 21 passed. Frontend: 69 passed. Lint, TypeScript and production build passed.
+- Backend: 91 tests passed, including isolated adapter/fixture/route test. Dataset: 21 passed. Frontend: 69 passed. Lint, TypeScript and production build passed.
 - Local Uvicorn HTTP checks: health and all three demo endpoints passed; demo payloads exactly matched existing frontend reference fixtures. Local production Next.js served all three views with API-fetched sprint metadata. Temporary servers were stopped.
 - Vercel JSON field validation passed against the public schema. Its mixed-draft meta-schema prevented strict validation of the provider schema itself; meta-schema validation was disabled for field checks. Exclusion-glob checks retained required app/data files and excluded frontend/tests. Actual cloud bundling remains unverified.
 - npm reported the existing ESLint 9 deprecation and two dependency install-script policy warnings, but installation and all checks passed. Preserve the documented ESLint compatibility choice; no broad upgrade was performed.
@@ -128,3 +128,7 @@ The previous `buildCommand: ""` reproduced the exact error about `index.py` not 
 The correction is `buildCommand: null`, which retains FastAPI's default behavior without running the root npm build. Leave Build Command and Output Directory Override switches **off**; do not enter an empty custom command or output directory. Keep the root, adapter and `functions.index.py` exclusion configuration unchanged.
 
 Reproduced locally with the published `@vercel/fs-detectors` library: the previous configuration returns `unused_function`; the corrected configuration selects `@vercel/python` with no detection errors. This is a build-plan check, not a cloud deployment.
+
+### Correction: root requirements include parsing
+
+Vercel CLI 61.1.0 failed before installation while parsing root `-r apps/api/requirements.txt`. Root `requirements.txt` now directly contains the unchanged FastAPI and Uvicorn pins. The local API requirements file includes the root manifest instead. This keeps one canonical runtime dependency list and preserves local/development install commands. No package versions changed. Retry with the commit containing this correction; Vercel UI settings remain unchanged.

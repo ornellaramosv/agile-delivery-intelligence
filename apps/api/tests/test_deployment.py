@@ -7,6 +7,17 @@ import subprocess
 import sys
 
 
+def test_deployment_requirements_are_self_contained():
+    root = Path(__file__).resolve().parents[3]
+    # Vercel analyzes the root manifest before running our install command.
+    # Nested -r includes failed in that phase on CLI 61.1.0.
+    requirements = [line.strip() for line in (root / "requirements.txt").read_text().splitlines()
+                    if line.strip() and not line.startswith("#")]
+    assert all(not line.startswith("-") for line in requirements)
+    assert {line.split("==")[0] for line in requirements} == {"fastapi", "uvicorn"}
+    assert (root / "apps/api/requirements.txt").read_text().strip() == "-r ../../requirements.txt"
+
+
 def test_backend_config_preserves_python_framework_detection():
     root = Path(__file__).resolve().parents[3]
     config = json.loads((root / "vercel.json").read_text())

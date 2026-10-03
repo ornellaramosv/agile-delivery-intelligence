@@ -105,3 +105,5 @@ Frozen story IDs, bug IDs, dates, workflow events, task effort, initial states, 
 - Retain supported, locally validated Python 3.14. Select Node 24.x in the frontend manifest and install its workspace from the root lockfile. No dependency upgrades.
 - Require a valid API origin in production before server-side fetching; preserve localhost fallback for development and existing unavailable UI. No CORS, routing, domain or frozen-data changes.
 - Local validation does not certify Vercel cloud packaging. Manual endpoint and UI verification remains mandatory; no provider authentication or deployment is part of this task.
+
+- Vercel CLI 61.1.0 failed when its pre-install parser followed a root requirements include. Keep the canonical runtime pins directly in root `requirements.txt`; `apps/api/requirements.txt` references it for local development. No dependency versions changed.
