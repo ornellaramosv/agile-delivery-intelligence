@@ -1,6 +1,6 @@
-# Capacity Health — v0.2 backend slice
+# Capacity Health — v0.2 Current Sprint
 
-Capacity Health asks: **Can we still finish the remaining work with the capacity we have left?** It uses team-level DEV and QA hours, never individual rankings or utilization scores. The data foundation, pure domain engine, fixture service, and read-only API are implemented. There is no Capacity Health frontend or v0.2 release yet.
+Capacity Health asks: **Can we still finish the remaining work with the capacity we have left?** It uses team-level DEV and QA hours, never individual rankings or utilization scores. The data foundation, pure domain engine, fixture service, and read-only API are implemented. The Current Sprint frontend is available at `/capacity-health`. Retrospective UI and the v0.2 release are not implemented.
 
 ## Capacity and progress
 
@@ -153,6 +153,14 @@ Current Sprint uses these observations to answer the remaining-capacity question
 
 Added scope: 10% by story count; 6.91% by estimated effort overall, 7.09% DEV and 6.38% QA. Day 10's answer is **no: DEV is short by 45 h**. Figures in this documentation are audit expectations, never engine constants.
 
+## Current Sprint frontend
+
+`/capacity-health` uses a typed server-side client with the existing API origin, no-store fetching and timeout. Native GET selectors send the selected Day 1–10 and comparison, always requesting `mode=current_sprint`. No metric is calculated in browser or frontend server code: counts, gaps, totals, answers, support history and release summaries come directly from the API.
+
+The page prioritizes the backend answer and hour-based gap, keeps story progress separate, and presents DEV/QA side by side (stacked on mobile). Support forecast/reserve/actual and historical evidence have equal column prominence. Details expose change evidence, including post-planning story IDs. Critical context is conditional on active disruptions; release content is hidden when not applicable. Nulls display as unavailable, with no health colors or inferred recommendations. Loading, API-unavailable and empty states follow the established pages.
+
+Targeted frontend tests cover presentation and request parameters; local desktop/mobile checks cover rendering and selectors. No full repository suite, deployment, tag or release is part of this slice.
+
 ## Non-goals
 
-No frontend, SLA intelligence, individual productivity, rankings, aggregate health score, utilization score, good/bad labels, traffic-light thresholds, AI, recommendations, persistence, integrations, deployment, or release/tag creation. Capacity Health does not change Sprint Intelligence units or behavior.
+No Retrospective UI, SLA intelligence, individual productivity, rankings, aggregate health score, utilization score, good/bad labels, traffic-light thresholds, AI, recommendations, persistence, integrations, deployment, or release/tag creation. Capacity Health does not change Sprint Intelligence units or behavior.

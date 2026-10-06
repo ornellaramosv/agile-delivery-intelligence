@@ -1,0 +1,4031 @@
+{
+  "sprint": {
+    "id": "ATLAS-SPRINT-08",
+    "name": "Sprint 08",
+    "project": "Atlas",
+    "backlog": "Core Services",
+    "start_date": "2030-04-08",
+    "end_date": "2030-04-19"
+  },
+  "mode_context": {
+    "mode": "current_sprint",
+    "comparison": "since_planning",
+    "sprint_day": 10,
+    "snapshot_at": "2030-04-19T18:00:00Z",
+    "comparison_at": "2030-04-08T09:00:00Z",
+    "primary_answer": {
+      "answer": "no",
+      "reason": "No \u2014 DEV is short by 45.00 h based on known demand.",
+      "missing_inputs": []
+    }
+  },
+  "planning": {
+    "snapshot_at": "2030-04-08T09:00:00Z",
+    "disciplines": {
+      "DEV": {
+        "gross_capacity_hours": 200.0,
+        "planned_product_capacity_hours": 187.0,
+        "support": {
+          "forecast_hours": 12.6,
+          "forecast_status": "calculated",
+          "forecasted_new_cases": 5.3,
+          "expected_hours_per_case": 2.0,
+          "reserved_hours": 13.0,
+          "actual_hours": 0,
+          "reserve_vs_forecast_hours": 0.4,
+          "actual_vs_reserve_hours": -13.0,
+          "actual_vs_forecast_hours": -12.6,
+          "critical_actual_hours": 0.0
+        },
+        "regression": {
+          "forecast_hours": 0.0,
+          "forecast_status": "not_applicable",
+          "reserved_hours": 0.0,
+          "actual_hours": 0.0,
+          "reserve_vs_forecast_hours": 0.0,
+          "actual_vs_reserve_hours": 0.0,
+          "actual_vs_forecast_hours": 0.0
+        },
+        "consumption": {
+          "baseline_delivery_hours": 0.0,
+          "rework_hours": 0.0,
+          "post_planning_scope_hours": 0.0,
+          "support_hours": 0.0,
+          "release_regression_hours": 0.0,
+          "technical_enablement_hours": 0.0,
+          "total_hours": 0.0
+        },
+        "remaining_delivery": {
+          "baseline_hours": 141.0,
+          "rework_hours": 0.0,
+          "post_planning_scope_hours": 0.0,
+          "total_hours": 141.0
+        },
+        "capacity": {
+          "future_scheduled_capacity_hours": 200.0,
+          "remaining_support_demand_hours": 12.6,
+          "known_critical_support_remaining_hours": 0,
+          "remaining_regression_demand_hours": 0.0,
+          "remaining_technical_demand_hours": 0,
+          "remaining_non_delivery_demand_hours": 12.6,
+          "known_non_delivery_demand_lower_bound_hours": 12.6,
+          "maximum_possible_delivery_capacity_hours": 187.4,
+          "non_delivery_capacity_shortfall_hours": 0.0,
+          "non_delivery_shortfall_lower_bound_hours": 0.0,
+          "effective_remaining_capacity_hours": 187.4,
+          "capacity_gap_hours": 46.4,
+          "capacity_pressure": 0.7524,
+          "capacity_exhausted": false,
+          "uncovered_delivery_demand_hours": 0.0,
+          "uncovered_delivery_demand_lower_bound_hours": 0.0,
+          "missing_inputs": []
+        }
+      },
+      "QA": {
+        "gross_capacity_hours": 100.0,
+        "planned_product_capacity_hours": 81.0,
+        "support": {
+          "forecast_hours": 16.9,
+          "forecast_status": "calculated",
+          "forecasted_new_cases": 5.3,
+          "expected_hours_per_case": 3.0,
+          "reserved_hours": 10.0,
+          "actual_hours": 0,
+          "reserve_vs_forecast_hours": -6.9,
+          "actual_vs_reserve_hours": -10.0,
+          "actual_vs_forecast_hours": -16.9,
+          "critical_actual_hours": 0.0
+        },
+        "regression": {
+          "forecast_hours": 8.38,
+          "forecast_status": "calculated",
+          "reserved_hours": 9.0,
+          "actual_hours": 0.0,
+          "reserve_vs_forecast_hours": 0.62,
+          "actual_vs_reserve_hours": -9.0,
+          "actual_vs_forecast_hours": -8.38
+        },
+        "consumption": {
+          "baseline_delivery_hours": 0.0,
+          "rework_hours": 0.0,
+          "post_planning_scope_hours": 0.0,
+          "support_hours": 0.0,
+          "release_regression_hours": 0.0,
+          "technical_enablement_hours": 0.0,
+          "total_hours": 0.0
+        },
+        "remaining_delivery": {
+          "baseline_hours": 47.0,
+          "rework_hours": 0.0,
+          "post_planning_scope_hours": 0.0,
+          "total_hours": 47.0
+        },
+        "capacity": {
+          "future_scheduled_capacity_hours": 100.0,
+          "remaining_support_demand_hours": 16.9,
+          "known_critical_support_remaining_hours": 0,
+          "remaining_regression_demand_hours": 8.38,
+          "remaining_technical_demand_hours": 0,
+          "remaining_non_delivery_demand_hours": 25.28,
+          "known_non_delivery_demand_lower_bound_hours": 25.28,
+          "maximum_possible_delivery_capacity_hours": 74.72,
+          "non_delivery_capacity_shortfall_hours": 0.0,
+          "non_delivery_shortfall_lower_bound_hours": 0.0,
+          "effective_remaining_capacity_hours": 74.72,
+          "capacity_gap_hours": 27.72,
+          "capacity_pressure": 0.629,
+          "capacity_exhausted": false,
+          "uncovered_delivery_demand_hours": 0.0,
+          "uncovered_delivery_demand_lower_bound_hours": 0.0,
+          "missing_inputs": []
+        }
+      }
+    }
+  },
+  "disciplines": {
+    "DEV": {
+      "gross_capacity_hours": 200.0,
+      "planned_product_capacity_hours": 187.0,
+      "support": {
+        "forecast_hours": 12.6,
+        "forecast_status": "calculated",
+        "forecasted_new_cases": 5.3,
+        "expected_hours_per_case": 2.0,
+        "reserved_hours": 13.0,
+        "actual_hours": 7.0,
+        "reserve_vs_forecast_hours": 0.4,
+        "actual_vs_reserve_hours": -6.0,
+        "actual_vs_forecast_hours": -5.6,
+        "critical_actual_hours": 0.0
+      },
+      "regression": {
+        "forecast_hours": 0.0,
+        "forecast_status": "not_applicable",
+        "reserved_hours": 0.0,
+        "actual_hours": 0.0,
+        "reserve_vs_forecast_hours": 0.0,
+        "actual_vs_reserve_hours": 0.0,
+        "actual_vs_forecast_hours": 0.0
+      },
+      "consumption": {
+        "baseline_delivery_hours": 118.0,
+        "rework_hours": 38.0,
+        "post_planning_scope_hours": 11.0,
+        "support_hours": 7.0,
+        "release_regression_hours": 0.0,
+        "technical_enablement_hours": 5.0,
+        "total_hours": 179.0
+      },
+      "remaining_delivery": {
+        "baseline_hours": 37.0,
+        "rework_hours": 8.0,
+        "post_planning_scope_hours": 0.0,
+        "total_hours": 45.0
+      },
+      "capacity": {
+        "future_scheduled_capacity_hours": 0,
+        "remaining_support_demand_hours": 5.6,
+        "known_critical_support_remaining_hours": 0,
+        "remaining_regression_demand_hours": 0.0,
+        "remaining_technical_demand_hours": 2.0,
+        "remaining_non_delivery_demand_hours": 7.6,
+        "known_non_delivery_demand_lower_bound_hours": 7.6,
+        "maximum_possible_delivery_capacity_hours": 0.0,
+        "non_delivery_capacity_shortfall_hours": 7.6,
+        "non_delivery_shortfall_lower_bound_hours": 7.6,
+        "effective_remaining_capacity_hours": 0.0,
+        "capacity_gap_hours": -45.0,
+        "capacity_pressure": null,
+        "capacity_exhausted": true,
+        "uncovered_delivery_demand_hours": 45.0,
+        "uncovered_delivery_demand_lower_bound_hours": 45.0,
+        "missing_inputs": []
+      }
+    },
+    "QA": {
+      "gross_capacity_hours": 100.0,
+      "planned_product_capacity_hours": 81.0,
+      "support": {
+        "forecast_hours": 16.9,
+        "forecast_status": "calculated",
+        "forecasted_new_cases": 5.3,
+        "expected_hours_per_case": 3.0,
+        "reserved_hours": 10.0,
+        "actual_hours": 10.0,
+        "reserve_vs_forecast_hours": -6.9,
+        "actual_vs_reserve_hours": 0.0,
+        "actual_vs_forecast_hours": -6.9,
+        "critical_actual_hours": 0.0
+      },
+      "regression": {
+        "forecast_hours": 8.38,
+        "forecast_status": "calculated",
+        "reserved_hours": 9.0,
+        "actual_hours": 11.0,
+        "reserve_vs_forecast_hours": 0.62,
+        "actual_vs_reserve_hours": 2.0,
+        "actual_vs_forecast_hours": 2.62
+      },
+      "consumption": {
+        "baseline_delivery_hours": 50.0,
+        "rework_hours": 7.0,
+        "post_planning_scope_hours": 3.0,
+        "support_hours": 10.0,
+        "release_regression_hours": 11.0,
+        "technical_enablement_hours": 0.0,
+        "total_hours": 81.0
+      },
+      "remaining_delivery": {
+        "baseline_hours": 0.0,
+        "rework_hours": 0.0,
+        "post_planning_scope_hours": 0.0,
+        "total_hours": 0.0
+      },
+      "capacity": {
+        "future_scheduled_capacity_hours": 0,
+        "remaining_support_demand_hours": 6.9,
+        "known_critical_support_remaining_hours": 0,
+        "remaining_regression_demand_hours": 0.0,
+        "remaining_technical_demand_hours": 0.0,
+        "remaining_non_delivery_demand_hours": 6.9,
+        "known_non_delivery_demand_lower_bound_hours": 6.9,
+        "maximum_possible_delivery_capacity_hours": 0.0,
+        "non_delivery_capacity_shortfall_hours": 6.9,
+        "non_delivery_shortfall_lower_bound_hours": 6.9,
+        "effective_remaining_capacity_hours": 0.0,
+        "capacity_gap_hours": 0.0,
+        "capacity_pressure": null,
+        "capacity_exhausted": true,
+        "uncovered_delivery_demand_hours": 0.0,
+        "uncovered_delivery_demand_lower_bound_hours": 0.0,
+        "missing_inputs": []
+      }
+    }
+  },
+  "daily_capacity": [
+    {
+      "sprint_day": 1,
+      "timestamp": "2030-04-08T18:00:00Z",
+      "disciplines": {
+        "DEV": {
+          "gross_capacity_hours": 200.0,
+          "planned_product_capacity_hours": 187.0,
+          "support": {
+            "forecast_hours": 12.6,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 2.0,
+            "reserved_hours": 13.0,
+            "actual_hours": 2.0,
+            "reserve_vs_forecast_hours": 0.4,
+            "actual_vs_reserve_hours": -11.0,
+            "actual_vs_forecast_hours": -10.6,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 0.0,
+            "forecast_status": "not_applicable",
+            "reserved_hours": 0.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.0,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": 0.0
+          },
+          "consumption": {
+            "baseline_delivery_hours": 16.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 2.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 18.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 139.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 139.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 180.0,
+            "remaining_support_demand_hours": 10.6,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 0,
+            "remaining_non_delivery_demand_hours": 10.6,
+            "known_non_delivery_demand_lower_bound_hours": 10.6,
+            "maximum_possible_delivery_capacity_hours": 169.4,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 169.4,
+            "capacity_gap_hours": 30.4,
+            "capacity_pressure": 0.8205,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        },
+        "QA": {
+          "gross_capacity_hours": 100.0,
+          "planned_product_capacity_hours": 81.0,
+          "support": {
+            "forecast_hours": 16.9,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 3.0,
+            "reserved_hours": 10.0,
+            "actual_hours": 1.0,
+            "reserve_vs_forecast_hours": -6.9,
+            "actual_vs_reserve_hours": -9.0,
+            "actual_vs_forecast_hours": -15.9,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 8.38,
+            "forecast_status": "calculated",
+            "reserved_hours": 9.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.62,
+            "actual_vs_reserve_hours": -9.0,
+            "actual_vs_forecast_hours": -8.38
+          },
+          "consumption": {
+            "baseline_delivery_hours": 7.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 1.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 8.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 42.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 42.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 90.0,
+            "remaining_support_demand_hours": 15.9,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 8.38,
+            "remaining_technical_demand_hours": 0,
+            "remaining_non_delivery_demand_hours": 24.28,
+            "known_non_delivery_demand_lower_bound_hours": 24.28,
+            "maximum_possible_delivery_capacity_hours": 65.72,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 65.72,
+            "capacity_gap_hours": 23.72,
+            "capacity_pressure": 0.6391,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        }
+      },
+      "primary_answer": {
+        "answer": "yes",
+        "reason": "Yes \u2014 effective capacity covers remaining delivery hours in every required discipline.",
+        "missing_inputs": []
+      }
+    },
+    {
+      "sprint_day": 2,
+      "timestamp": "2030-04-09T18:00:00Z",
+      "disciplines": {
+        "DEV": {
+          "gross_capacity_hours": 200.0,
+          "planned_product_capacity_hours": 187.0,
+          "support": {
+            "forecast_hours": 12.6,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 2.0,
+            "reserved_hours": 13.0,
+            "actual_hours": 2.0,
+            "reserve_vs_forecast_hours": 0.4,
+            "actual_vs_reserve_hours": -11.0,
+            "actual_vs_forecast_hours": -10.6,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 0.0,
+            "forecast_status": "not_applicable",
+            "reserved_hours": 0.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.0,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": 0.0
+          },
+          "consumption": {
+            "baseline_delivery_hours": 32.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 2.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 34.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 123.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 123.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 160.0,
+            "remaining_support_demand_hours": 10.6,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 0,
+            "remaining_non_delivery_demand_hours": 10.6,
+            "known_non_delivery_demand_lower_bound_hours": 10.6,
+            "maximum_possible_delivery_capacity_hours": 149.4,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 149.4,
+            "capacity_gap_hours": 26.4,
+            "capacity_pressure": 0.8233,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        },
+        "QA": {
+          "gross_capacity_hours": 100.0,
+          "planned_product_capacity_hours": 81.0,
+          "support": {
+            "forecast_hours": 16.9,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 3.0,
+            "reserved_hours": 10.0,
+            "actual_hours": 2.0,
+            "reserve_vs_forecast_hours": -6.9,
+            "actual_vs_reserve_hours": -8.0,
+            "actual_vs_forecast_hours": -14.9,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 8.38,
+            "forecast_status": "calculated",
+            "reserved_hours": 9.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.62,
+            "actual_vs_reserve_hours": -9.0,
+            "actual_vs_forecast_hours": -8.38
+          },
+          "consumption": {
+            "baseline_delivery_hours": 15.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 2.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 17.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 34.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 34.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 80.0,
+            "remaining_support_demand_hours": 14.9,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 8.38,
+            "remaining_technical_demand_hours": 0,
+            "remaining_non_delivery_demand_hours": 23.28,
+            "known_non_delivery_demand_lower_bound_hours": 23.28,
+            "maximum_possible_delivery_capacity_hours": 56.72,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 56.72,
+            "capacity_gap_hours": 22.72,
+            "capacity_pressure": 0.5994,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        }
+      },
+      "primary_answer": {
+        "answer": "yes",
+        "reason": "Yes \u2014 effective capacity covers remaining delivery hours in every required discipline.",
+        "missing_inputs": []
+      }
+    },
+    {
+      "sprint_day": 3,
+      "timestamp": "2030-04-10T18:00:00Z",
+      "disciplines": {
+        "DEV": {
+          "gross_capacity_hours": 200.0,
+          "planned_product_capacity_hours": 187.0,
+          "support": {
+            "forecast_hours": 12.6,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 2.0,
+            "reserved_hours": 13.0,
+            "actual_hours": 2.0,
+            "reserve_vs_forecast_hours": 0.4,
+            "actual_vs_reserve_hours": -11.0,
+            "actual_vs_forecast_hours": -10.6,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 0.0,
+            "forecast_status": "not_applicable",
+            "reserved_hours": 0.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.0,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": 0.0
+          },
+          "consumption": {
+            "baseline_delivery_hours": 48.0,
+            "rework_hours": 2.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 2.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 52.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 107.0,
+            "rework_hours": 10.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 117.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 140.0,
+            "remaining_support_demand_hours": 10.6,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 0,
+            "remaining_non_delivery_demand_hours": 10.6,
+            "known_non_delivery_demand_lower_bound_hours": 10.6,
+            "maximum_possible_delivery_capacity_hours": 129.4,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 129.4,
+            "capacity_gap_hours": 12.4,
+            "capacity_pressure": 0.9042,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        },
+        "QA": {
+          "gross_capacity_hours": 100.0,
+          "planned_product_capacity_hours": 81.0,
+          "support": {
+            "forecast_hours": 16.9,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 3.0,
+            "reserved_hours": 10.0,
+            "actual_hours": 4.0,
+            "reserve_vs_forecast_hours": -6.9,
+            "actual_vs_reserve_hours": -6.0,
+            "actual_vs_forecast_hours": -12.9,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 8.38,
+            "forecast_status": "calculated",
+            "reserved_hours": 9.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.62,
+            "actual_vs_reserve_hours": -9.0,
+            "actual_vs_forecast_hours": -8.38
+          },
+          "consumption": {
+            "baseline_delivery_hours": 22.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 4.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 26.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 27.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 27.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 70.0,
+            "remaining_support_demand_hours": 12.9,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 8.38,
+            "remaining_technical_demand_hours": 0,
+            "remaining_non_delivery_demand_hours": 21.28,
+            "known_non_delivery_demand_lower_bound_hours": 21.28,
+            "maximum_possible_delivery_capacity_hours": 48.72,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 48.72,
+            "capacity_gap_hours": 21.72,
+            "capacity_pressure": 0.5542,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        }
+      },
+      "primary_answer": {
+        "answer": "yes",
+        "reason": "Yes \u2014 effective capacity covers remaining delivery hours in every required discipline.",
+        "missing_inputs": []
+      }
+    },
+    {
+      "sprint_day": 4,
+      "timestamp": "2030-04-11T18:00:00Z",
+      "disciplines": {
+        "DEV": {
+          "gross_capacity_hours": 200.0,
+          "planned_product_capacity_hours": 187.0,
+          "support": {
+            "forecast_hours": 12.6,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 2.0,
+            "reserved_hours": 13.0,
+            "actual_hours": 2.0,
+            "reserve_vs_forecast_hours": 0.4,
+            "actual_vs_reserve_hours": -11.0,
+            "actual_vs_forecast_hours": -10.6,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 0.0,
+            "forecast_status": "not_applicable",
+            "reserved_hours": 0.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.0,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": 0.0
+          },
+          "consumption": {
+            "baseline_delivery_hours": 64.0,
+            "rework_hours": 7.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 2.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 73.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 91.0,
+            "rework_hours": 25.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 116.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 120.0,
+            "remaining_support_demand_hours": 10.6,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 3.0,
+            "remaining_non_delivery_demand_hours": 13.6,
+            "known_non_delivery_demand_lower_bound_hours": 13.6,
+            "maximum_possible_delivery_capacity_hours": 106.4,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 106.4,
+            "capacity_gap_hours": -9.6,
+            "capacity_pressure": 1.0902,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 9.6,
+            "uncovered_delivery_demand_lower_bound_hours": 9.6,
+            "missing_inputs": []
+          }
+        },
+        "QA": {
+          "gross_capacity_hours": 100.0,
+          "planned_product_capacity_hours": 81.0,
+          "support": {
+            "forecast_hours": 16.9,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 3.0,
+            "reserved_hours": 10.0,
+            "actual_hours": 6.0,
+            "reserve_vs_forecast_hours": -6.9,
+            "actual_vs_reserve_hours": -4.0,
+            "actual_vs_forecast_hours": -10.9,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 8.38,
+            "forecast_status": "calculated",
+            "reserved_hours": 9.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.62,
+            "actual_vs_reserve_hours": -9.0,
+            "actual_vs_forecast_hours": -8.38
+          },
+          "consumption": {
+            "baseline_delivery_hours": 28.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 6.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 34.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 21.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 21.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 60.0,
+            "remaining_support_demand_hours": 10.9,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 8.38,
+            "remaining_technical_demand_hours": 0.0,
+            "remaining_non_delivery_demand_hours": 19.28,
+            "known_non_delivery_demand_lower_bound_hours": 19.28,
+            "maximum_possible_delivery_capacity_hours": 40.72,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 40.72,
+            "capacity_gap_hours": 19.72,
+            "capacity_pressure": 0.5157,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        }
+      },
+      "primary_answer": {
+        "answer": "no",
+        "reason": "No \u2014 DEV is short by 9.60 h based on known demand.",
+        "missing_inputs": []
+      }
+    },
+    {
+      "sprint_day": 5,
+      "timestamp": "2030-04-12T18:00:00Z",
+      "disciplines": {
+        "DEV": {
+          "gross_capacity_hours": 200.0,
+          "planned_product_capacity_hours": 187.0,
+          "support": {
+            "forecast_hours": 12.6,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 2.0,
+            "reserved_hours": 13.0,
+            "actual_hours": 5.0,
+            "reserve_vs_forecast_hours": 0.4,
+            "actual_vs_reserve_hours": -8.0,
+            "actual_vs_forecast_hours": -7.6,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 0.0,
+            "forecast_status": "not_applicable",
+            "reserved_hours": 0.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.0,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": 0.0
+          },
+          "consumption": {
+            "baseline_delivery_hours": 76.0,
+            "rework_hours": 12.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 5.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 93.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 79.0,
+            "rework_hours": 20.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 99.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 100.0,
+            "remaining_support_demand_hours": 7.6,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 7.0,
+            "remaining_non_delivery_demand_hours": 14.6,
+            "known_non_delivery_demand_lower_bound_hours": 14.6,
+            "maximum_possible_delivery_capacity_hours": 85.4,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 85.4,
+            "capacity_gap_hours": -13.6,
+            "capacity_pressure": 1.1593,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 13.6,
+            "uncovered_delivery_demand_lower_bound_hours": 13.6,
+            "missing_inputs": []
+          }
+        },
+        "QA": {
+          "gross_capacity_hours": 100.0,
+          "planned_product_capacity_hours": 81.0,
+          "support": {
+            "forecast_hours": 16.9,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 3.0,
+            "reserved_hours": 10.0,
+            "actual_hours": 8.0,
+            "reserve_vs_forecast_hours": -6.9,
+            "actual_vs_reserve_hours": -2.0,
+            "actual_vs_forecast_hours": -8.9,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 8.38,
+            "forecast_status": "calculated",
+            "reserved_hours": 9.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.62,
+            "actual_vs_reserve_hours": -9.0,
+            "actual_vs_forecast_hours": -8.38
+          },
+          "consumption": {
+            "baseline_delivery_hours": 33.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 8.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 41.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 16.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 16.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 50.0,
+            "remaining_support_demand_hours": 8.9,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 8.38,
+            "remaining_technical_demand_hours": 0.0,
+            "remaining_non_delivery_demand_hours": 17.28,
+            "known_non_delivery_demand_lower_bound_hours": 17.28,
+            "maximum_possible_delivery_capacity_hours": 32.72,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 32.72,
+            "capacity_gap_hours": 16.72,
+            "capacity_pressure": 0.489,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        }
+      },
+      "primary_answer": {
+        "answer": "no",
+        "reason": "No \u2014 DEV is short by 13.60 h based on known demand.",
+        "missing_inputs": []
+      }
+    },
+    {
+      "sprint_day": 6,
+      "timestamp": "2030-04-15T18:00:00Z",
+      "disciplines": {
+        "DEV": {
+          "gross_capacity_hours": 200.0,
+          "planned_product_capacity_hours": 187.0,
+          "support": {
+            "forecast_hours": 12.6,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 2.0,
+            "reserved_hours": 13.0,
+            "actual_hours": 5.0,
+            "reserve_vs_forecast_hours": 0.4,
+            "actual_vs_reserve_hours": -8.0,
+            "actual_vs_forecast_hours": -7.6,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 0.0,
+            "forecast_status": "not_applicable",
+            "reserved_hours": 0.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.0,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": 0.0
+          },
+          "consumption": {
+            "baseline_delivery_hours": 85.0,
+            "rework_hours": 18.0,
+            "post_planning_scope_hours": 3.0,
+            "support_hours": 5.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 3.0,
+            "total_hours": 114.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 70.0,
+            "rework_hours": 14.0,
+            "post_planning_scope_hours": 8.0,
+            "total_hours": 92.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 80.0,
+            "remaining_support_demand_hours": 7.6,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 4.0,
+            "remaining_non_delivery_demand_hours": 11.6,
+            "known_non_delivery_demand_lower_bound_hours": 11.6,
+            "maximum_possible_delivery_capacity_hours": 68.4,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 68.4,
+            "capacity_gap_hours": -23.6,
+            "capacity_pressure": 1.345,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 23.6,
+            "uncovered_delivery_demand_lower_bound_hours": 23.6,
+            "missing_inputs": []
+          }
+        },
+        "QA": {
+          "gross_capacity_hours": 100.0,
+          "planned_product_capacity_hours": 81.0,
+          "support": {
+            "forecast_hours": 16.9,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 3.0,
+            "reserved_hours": 10.0,
+            "actual_hours": 9.0,
+            "reserve_vs_forecast_hours": -6.9,
+            "actual_vs_reserve_hours": -1.0,
+            "actual_vs_forecast_hours": -7.9,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 8.38,
+            "forecast_status": "calculated",
+            "reserved_hours": 9.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.62,
+            "actual_vs_reserve_hours": -9.0,
+            "actual_vs_forecast_hours": -8.38
+          },
+          "consumption": {
+            "baseline_delivery_hours": 40.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 9.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 49.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 10.0,
+            "rework_hours": 3.0,
+            "post_planning_scope_hours": 3.0,
+            "total_hours": 16.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 40.0,
+            "remaining_support_demand_hours": 7.9,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 8.38,
+            "remaining_technical_demand_hours": 0.0,
+            "remaining_non_delivery_demand_hours": 16.28,
+            "known_non_delivery_demand_lower_bound_hours": 16.28,
+            "maximum_possible_delivery_capacity_hours": 23.72,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 23.72,
+            "capacity_gap_hours": 7.72,
+            "capacity_pressure": 0.6745,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        }
+      },
+      "primary_answer": {
+        "answer": "no",
+        "reason": "No \u2014 DEV is short by 23.60 h based on known demand.",
+        "missing_inputs": []
+      }
+    },
+    {
+      "sprint_day": 7,
+      "timestamp": "2030-04-16T18:00:00Z",
+      "disciplines": {
+        "DEV": {
+          "gross_capacity_hours": 200.0,
+          "planned_product_capacity_hours": 187.0,
+          "support": {
+            "forecast_hours": 12.6,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 2.0,
+            "reserved_hours": 13.0,
+            "actual_hours": 7.0,
+            "reserve_vs_forecast_hours": 0.4,
+            "actual_vs_reserve_hours": -6.0,
+            "actual_vs_forecast_hours": -5.6,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 0.0,
+            "forecast_status": "not_applicable",
+            "reserved_hours": 0.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.0,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": 0.0
+          },
+          "consumption": {
+            "baseline_delivery_hours": 95.0,
+            "rework_hours": 24.0,
+            "post_planning_scope_hours": 6.0,
+            "support_hours": 7.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 3.0,
+            "total_hours": 135.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 60.0,
+            "rework_hours": 22.0,
+            "post_planning_scope_hours": 5.0,
+            "total_hours": 87.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 60.0,
+            "remaining_support_demand_hours": 5.6,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 4.0,
+            "remaining_non_delivery_demand_hours": 9.6,
+            "known_non_delivery_demand_lower_bound_hours": 9.6,
+            "maximum_possible_delivery_capacity_hours": 50.4,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 50.4,
+            "capacity_gap_hours": -36.6,
+            "capacity_pressure": 1.7262,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 36.6,
+            "uncovered_delivery_demand_lower_bound_hours": 36.6,
+            "missing_inputs": []
+          }
+        },
+        "QA": {
+          "gross_capacity_hours": 100.0,
+          "planned_product_capacity_hours": 81.0,
+          "support": {
+            "forecast_hours": 16.9,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 3.0,
+            "reserved_hours": 10.0,
+            "actual_hours": 10.0,
+            "reserve_vs_forecast_hours": -6.9,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": -6.9,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 8.38,
+            "forecast_status": "calculated",
+            "reserved_hours": 9.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.62,
+            "actual_vs_reserve_hours": -9.0,
+            "actual_vs_forecast_hours": -8.38
+          },
+          "consumption": {
+            "baseline_delivery_hours": 44.0,
+            "rework_hours": 3.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 10.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 57.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 6.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 3.0,
+            "total_hours": 9.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 30.0,
+            "remaining_support_demand_hours": 6.9,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 8.38,
+            "remaining_technical_demand_hours": 0.0,
+            "remaining_non_delivery_demand_hours": 15.28,
+            "known_non_delivery_demand_lower_bound_hours": 15.28,
+            "maximum_possible_delivery_capacity_hours": 14.72,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 14.72,
+            "capacity_gap_hours": 5.72,
+            "capacity_pressure": 0.6114,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        }
+      },
+      "primary_answer": {
+        "answer": "no",
+        "reason": "No \u2014 DEV is short by 36.60 h based on known demand.",
+        "missing_inputs": []
+      }
+    },
+    {
+      "sprint_day": 8,
+      "timestamp": "2030-04-17T18:00:00Z",
+      "disciplines": {
+        "DEV": {
+          "gross_capacity_hours": 200.0,
+          "planned_product_capacity_hours": 187.0,
+          "support": {
+            "forecast_hours": 12.6,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 2.0,
+            "reserved_hours": 13.0,
+            "actual_hours": 7.0,
+            "reserve_vs_forecast_hours": 0.4,
+            "actual_vs_reserve_hours": -6.0,
+            "actual_vs_forecast_hours": -5.6,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 0.0,
+            "forecast_status": "not_applicable",
+            "reserved_hours": 0.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.0,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": 0.0
+          },
+          "consumption": {
+            "baseline_delivery_hours": 103.0,
+            "rework_hours": 31.0,
+            "post_planning_scope_hours": 10.0,
+            "support_hours": 7.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 5.0,
+            "total_hours": 156.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 52.0,
+            "rework_hours": 15.0,
+            "post_planning_scope_hours": 1.0,
+            "total_hours": 68.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 40.0,
+            "remaining_support_demand_hours": 5.6,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 2.0,
+            "remaining_non_delivery_demand_hours": 7.6,
+            "known_non_delivery_demand_lower_bound_hours": 7.6,
+            "maximum_possible_delivery_capacity_hours": 32.4,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 32.4,
+            "capacity_gap_hours": -35.6,
+            "capacity_pressure": 2.0988,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 35.6,
+            "uncovered_delivery_demand_lower_bound_hours": 35.6,
+            "missing_inputs": []
+          }
+        },
+        "QA": {
+          "gross_capacity_hours": 100.0,
+          "planned_product_capacity_hours": 81.0,
+          "support": {
+            "forecast_hours": 16.9,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 3.0,
+            "reserved_hours": 10.0,
+            "actual_hours": 10.0,
+            "reserve_vs_forecast_hours": -6.9,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": -6.9,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 8.38,
+            "forecast_status": "calculated",
+            "reserved_hours": 9.0,
+            "actual_hours": 6.0,
+            "reserve_vs_forecast_hours": 0.62,
+            "actual_vs_reserve_hours": -3.0,
+            "actual_vs_forecast_hours": -2.38
+          },
+          "consumption": {
+            "baseline_delivery_hours": 45.0,
+            "rework_hours": 3.0,
+            "post_planning_scope_hours": 0.0,
+            "support_hours": 10.0,
+            "release_regression_hours": 6.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 64.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 5.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 3.0,
+            "total_hours": 8.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 20.0,
+            "remaining_support_demand_hours": 6.9,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 5.0,
+            "remaining_technical_demand_hours": 0.0,
+            "remaining_non_delivery_demand_hours": 11.9,
+            "known_non_delivery_demand_lower_bound_hours": 11.9,
+            "maximum_possible_delivery_capacity_hours": 8.1,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 8.1,
+            "capacity_gap_hours": 0.1,
+            "capacity_pressure": 0.9877,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        }
+      },
+      "primary_answer": {
+        "answer": "no",
+        "reason": "No \u2014 DEV is short by 35.60 h based on known demand.",
+        "missing_inputs": []
+      }
+    },
+    {
+      "sprint_day": 9,
+      "timestamp": "2030-04-18T18:00:00Z",
+      "disciplines": {
+        "DEV": {
+          "gross_capacity_hours": 200.0,
+          "planned_product_capacity_hours": 187.0,
+          "support": {
+            "forecast_hours": 12.6,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 2.0,
+            "reserved_hours": 13.0,
+            "actual_hours": 7.0,
+            "reserve_vs_forecast_hours": 0.4,
+            "actual_vs_reserve_hours": -6.0,
+            "actual_vs_forecast_hours": -5.6,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 0.0,
+            "forecast_status": "not_applicable",
+            "reserved_hours": 0.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.0,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": 0.0
+          },
+          "consumption": {
+            "baseline_delivery_hours": 109.0,
+            "rework_hours": 36.0,
+            "post_planning_scope_hours": 11.0,
+            "support_hours": 7.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 5.0,
+            "total_hours": 168.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 46.0,
+            "rework_hours": 10.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 56.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 20.0,
+            "remaining_support_demand_hours": 5.6,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 2.0,
+            "remaining_non_delivery_demand_hours": 7.6,
+            "known_non_delivery_demand_lower_bound_hours": 7.6,
+            "maximum_possible_delivery_capacity_hours": 12.4,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 12.4,
+            "capacity_gap_hours": -43.6,
+            "capacity_pressure": 4.5161,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 43.6,
+            "uncovered_delivery_demand_lower_bound_hours": 43.6,
+            "missing_inputs": []
+          }
+        },
+        "QA": {
+          "gross_capacity_hours": 100.0,
+          "planned_product_capacity_hours": 81.0,
+          "support": {
+            "forecast_hours": 16.9,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 3.0,
+            "reserved_hours": 10.0,
+            "actual_hours": 10.0,
+            "reserve_vs_forecast_hours": -6.9,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": -6.9,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 8.38,
+            "forecast_status": "calculated",
+            "reserved_hours": 9.0,
+            "actual_hours": 11.0,
+            "reserve_vs_forecast_hours": 0.62,
+            "actual_vs_reserve_hours": 2.0,
+            "actual_vs_forecast_hours": 2.62
+          },
+          "consumption": {
+            "baseline_delivery_hours": 47.0,
+            "rework_hours": 3.0,
+            "post_planning_scope_hours": 1.0,
+            "support_hours": 10.0,
+            "release_regression_hours": 11.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 72.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 3.0,
+            "rework_hours": 4.0,
+            "post_planning_scope_hours": 2.0,
+            "total_hours": 9.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 10.0,
+            "remaining_support_demand_hours": 6.9,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 0.0,
+            "remaining_non_delivery_demand_hours": 6.9,
+            "known_non_delivery_demand_lower_bound_hours": 6.9,
+            "maximum_possible_delivery_capacity_hours": 3.1,
+            "non_delivery_capacity_shortfall_hours": 0.0,
+            "non_delivery_shortfall_lower_bound_hours": 0.0,
+            "effective_remaining_capacity_hours": 3.1,
+            "capacity_gap_hours": -5.9,
+            "capacity_pressure": 2.9032,
+            "capacity_exhausted": false,
+            "uncovered_delivery_demand_hours": 5.9,
+            "uncovered_delivery_demand_lower_bound_hours": 5.9,
+            "missing_inputs": []
+          }
+        }
+      },
+      "primary_answer": {
+        "answer": "no",
+        "reason": "No \u2014 DEV is short by 43.60 h based on known demand; QA is short by 5.90 h based on known demand.",
+        "missing_inputs": []
+      }
+    },
+    {
+      "sprint_day": 10,
+      "timestamp": "2030-04-19T18:00:00Z",
+      "disciplines": {
+        "DEV": {
+          "gross_capacity_hours": 200.0,
+          "planned_product_capacity_hours": 187.0,
+          "support": {
+            "forecast_hours": 12.6,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 2.0,
+            "reserved_hours": 13.0,
+            "actual_hours": 7.0,
+            "reserve_vs_forecast_hours": 0.4,
+            "actual_vs_reserve_hours": -6.0,
+            "actual_vs_forecast_hours": -5.6,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 0.0,
+            "forecast_status": "not_applicable",
+            "reserved_hours": 0.0,
+            "actual_hours": 0.0,
+            "reserve_vs_forecast_hours": 0.0,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": 0.0
+          },
+          "consumption": {
+            "baseline_delivery_hours": 118.0,
+            "rework_hours": 38.0,
+            "post_planning_scope_hours": 11.0,
+            "support_hours": 7.0,
+            "release_regression_hours": 0.0,
+            "technical_enablement_hours": 5.0,
+            "total_hours": 179.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 37.0,
+            "rework_hours": 8.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 45.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 0,
+            "remaining_support_demand_hours": 5.6,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 2.0,
+            "remaining_non_delivery_demand_hours": 7.6,
+            "known_non_delivery_demand_lower_bound_hours": 7.6,
+            "maximum_possible_delivery_capacity_hours": 0.0,
+            "non_delivery_capacity_shortfall_hours": 7.6,
+            "non_delivery_shortfall_lower_bound_hours": 7.6,
+            "effective_remaining_capacity_hours": 0.0,
+            "capacity_gap_hours": -45.0,
+            "capacity_pressure": null,
+            "capacity_exhausted": true,
+            "uncovered_delivery_demand_hours": 45.0,
+            "uncovered_delivery_demand_lower_bound_hours": 45.0,
+            "missing_inputs": []
+          }
+        },
+        "QA": {
+          "gross_capacity_hours": 100.0,
+          "planned_product_capacity_hours": 81.0,
+          "support": {
+            "forecast_hours": 16.9,
+            "forecast_status": "calculated",
+            "forecasted_new_cases": 5.3,
+            "expected_hours_per_case": 3.0,
+            "reserved_hours": 10.0,
+            "actual_hours": 10.0,
+            "reserve_vs_forecast_hours": -6.9,
+            "actual_vs_reserve_hours": 0.0,
+            "actual_vs_forecast_hours": -6.9,
+            "critical_actual_hours": 0.0
+          },
+          "regression": {
+            "forecast_hours": 8.38,
+            "forecast_status": "calculated",
+            "reserved_hours": 9.0,
+            "actual_hours": 11.0,
+            "reserve_vs_forecast_hours": 0.62,
+            "actual_vs_reserve_hours": 2.0,
+            "actual_vs_forecast_hours": 2.62
+          },
+          "consumption": {
+            "baseline_delivery_hours": 50.0,
+            "rework_hours": 7.0,
+            "post_planning_scope_hours": 3.0,
+            "support_hours": 10.0,
+            "release_regression_hours": 11.0,
+            "technical_enablement_hours": 0.0,
+            "total_hours": 81.0
+          },
+          "remaining_delivery": {
+            "baseline_hours": 0.0,
+            "rework_hours": 0.0,
+            "post_planning_scope_hours": 0.0,
+            "total_hours": 0.0
+          },
+          "capacity": {
+            "future_scheduled_capacity_hours": 0,
+            "remaining_support_demand_hours": 6.9,
+            "known_critical_support_remaining_hours": 0,
+            "remaining_regression_demand_hours": 0.0,
+            "remaining_technical_demand_hours": 0.0,
+            "remaining_non_delivery_demand_hours": 6.9,
+            "known_non_delivery_demand_lower_bound_hours": 6.9,
+            "maximum_possible_delivery_capacity_hours": 0.0,
+            "non_delivery_capacity_shortfall_hours": 6.9,
+            "non_delivery_shortfall_lower_bound_hours": 6.9,
+            "effective_remaining_capacity_hours": 0.0,
+            "capacity_gap_hours": 0.0,
+            "capacity_pressure": null,
+            "capacity_exhausted": true,
+            "uncovered_delivery_demand_hours": 0.0,
+            "uncovered_delivery_demand_lower_bound_hours": 0.0,
+            "missing_inputs": []
+          }
+        }
+      },
+      "primary_answer": {
+        "answer": "no",
+        "reason": "No \u2014 DEV is short by 45.00 h based on known demand.",
+        "missing_inputs": []
+      }
+    }
+  ],
+  "release_readiness": {
+    "release_id": "REL-08",
+    "previous_release_id": "REL-07",
+    "status": "applicable",
+    "ready_for_regression": true,
+    "scope": [
+      {
+        "work_item_id": "US-081",
+        "origin_sprint_id": "ATLAS-SPRINT-06",
+        "closed_at": "2030-04-04T15:00:00Z",
+        "certification_evidence_id": "CERT-081",
+        "closed": true
+      },
+      {
+        "work_item_id": "US-091",
+        "origin_sprint_id": "ATLAS-SPRINT-07",
+        "closed_at": "2030-04-05T15:00:00Z",
+        "certification_evidence_id": "CERT-091",
+        "closed": true
+      },
+      {
+        "work_item_id": "US-092",
+        "origin_sprint_id": "ATLAS-SPRINT-07",
+        "closed_at": "2030-04-05T15:00:00Z",
+        "certification_evidence_id": "CERT-092",
+        "closed": true
+      },
+      {
+        "work_item_id": "US-101",
+        "origin_sprint_id": "ATLAS-SPRINT-08",
+        "closed": true
+      },
+      {
+        "work_item_id": "US-102",
+        "origin_sprint_id": "ATLAS-SPRINT-08",
+        "closed": true
+      },
+      {
+        "work_item_id": "US-110",
+        "origin_sprint_id": "ATLAS-SPRINT-08",
+        "closed": true
+      }
+    ],
+    "customer_cases": [
+      {
+        "case_id": "SUP-08-001",
+        "engineering_closed": true
+      }
+    ],
+    "summary": {
+      "total_scope_items": 6,
+      "closed_scope_items": 6,
+      "pending_scope_items": 0,
+      "current_sprint_required_total": 3,
+      "current_sprint_required_closed": 3,
+      "current_sprint_required_pending": 0,
+      "included_customer_cases_total": 1,
+      "included_customer_cases_engineering_closed": 1,
+      "included_customer_cases_pending": 0
+    },
+    "current_sprint_required_ids": [
+      "US-101",
+      "US-102",
+      "US-110"
+    ],
+    "current_sprint_future_release_ids": [
+      "US-103",
+      "US-104",
+      "US-105",
+      "US-106",
+      "US-107",
+      "US-108",
+      "US-109",
+      "US-111"
+    ],
+    "regression_phase": "completed",
+    "regression_event_ids": [
+      "REG-001",
+      "REG-002"
+    ],
+    "qa_available_for_certification": true,
+    "dependency_context_ids": [
+      "DEP-001",
+      "DEP-002"
+    ],
+    "dependencies_are_readiness_gates": false
+  },
+  "scope_change": {
+    "original_baseline_items": 10,
+    "added_items": 1,
+    "added_work_item_ids": [
+      "US-111"
+    ],
+    "item_rate": 0.1,
+    "baseline_estimated_hours": 188.0,
+    "added_estimated_hours": 13.0,
+    "added_actual_hours": 14.0,
+    "effort_rate": 0.0691,
+    "by_discipline": {
+      "DEV": {
+        "baseline_estimated_hours": 141.0,
+        "added_estimated_hours": 10.0,
+        "effort_rate": 0.0709
+      },
+      "QA": {
+        "baseline_estimated_hours": 47.0,
+        "added_estimated_hours": 3.0,
+        "effort_rate": 0.0638
+      }
+    },
+    "decision_evidence": [
+      {
+        "id": "SCOPE-001",
+        "work_item_id": "US-111",
+        "support_case_id": "SUP-08-003",
+        "delivery_event_id": "EVT-021",
+        "timestamp": "2030-04-15T09:30:00Z",
+        "decision": "Validated client priority enters sprint; original baseline retained."
+      }
+    ]
+  },
+  "sprint_progress": {
+    "original_baseline": {
+      "total": 10,
+      "closed": 6,
+      "open": 4,
+      "completion_rate": 0.6
+    },
+    "current_scope": {
+      "total": 11,
+      "closed": 7,
+      "open": 4,
+      "completion_rate": 0.6364
+    },
+    "post_planning_scope": {
+      "total": 1,
+      "closed": 1,
+      "open": 0
+    }
+  },
+  "support": {
+    "history": [
+      {
+        "sprint_id": "ATLAS-SPRINT-04",
+        "recency_weight": 0.1,
+        "standard_case_count": 8,
+        "actual_hours": {
+          "DEV": 16.0,
+          "QA": 24.0,
+          "ARCHITECTURE": 6.0
+        }
+      },
+      {
+        "sprint_id": "ATLAS-SPRINT-05",
+        "recency_weight": 0.2,
+        "standard_case_count": 7,
+        "actual_hours": {
+          "DEV": 14.0,
+          "QA": 21.0,
+          "ARCHITECTURE": 4.0
+        }
+      },
+      {
+        "sprint_id": "ATLAS-SPRINT-06",
+        "recency_weight": 0.3,
+        "standard_case_count": 5,
+        "actual_hours": {
+          "DEV": 10.0,
+          "QA": 15.0,
+          "ARCHITECTURE": 2.0
+        }
+      },
+      {
+        "sprint_id": "ATLAS-SPRINT-07",
+        "recency_weight": 0.4,
+        "standard_case_count": 4,
+        "actual_hours": {
+          "DEV": 8.0,
+          "QA": 12.0,
+          "ARCHITECTURE": 1.0
+        }
+      }
+    ],
+    "cases": [
+      {
+        "case_id": "SUP-08-001",
+        "case_class": "standard",
+        "engineering_closed": true,
+        "customer_closed": true,
+        "linked_work_item_id": null,
+        "events": [
+          {
+            "id": "SUP-08-001-E1",
+            "timestamp": "2030-04-05T14:00:00Z",
+            "event_type": "received"
+          },
+          {
+            "id": "SUP-08-001-E2",
+            "timestamp": "2030-04-05T15:00:00Z",
+            "event_type": "qa_validation"
+          },
+          {
+            "id": "SUP-08-001-E3",
+            "timestamp": "2030-04-08T10:00:00Z",
+            "event_type": "technical_investigation"
+          },
+          {
+            "id": "SUP-08-001-E4",
+            "timestamp": "2030-04-09T10:00:00Z",
+            "event_type": "not_reproducible"
+          },
+          {
+            "id": "SUP-08-001-E5",
+            "timestamp": "2030-04-09T11:00:00Z",
+            "event_type": "engineering_closed"
+          }
+        ],
+        "actual_hours": {
+          "DEV": 2.0,
+          "QA": 1.0
+        },
+        "time_entry_ids": [
+          "TIME-097",
+          "TIME-098"
+        ]
+      },
+      {
+        "case_id": "SUP-08-002",
+        "case_class": "standard",
+        "engineering_closed": true,
+        "customer_closed": true,
+        "linked_work_item_id": null,
+        "events": [
+          {
+            "id": "SUP-08-002-E1",
+            "timestamp": "2030-04-09T09:00:00Z",
+            "event_type": "received"
+          },
+          {
+            "id": "SUP-08-002-E2",
+            "timestamp": "2030-04-09T10:00:00Z",
+            "event_type": "qa_validation"
+          },
+          {
+            "id": "SUP-08-002-E3",
+            "timestamp": "2030-04-10T16:10:00Z",
+            "event_type": "not_reproducible"
+          },
+          {
+            "id": "SUP-08-002-E4",
+            "timestamp": "2030-04-10T17:00:00Z",
+            "event_type": "engineering_closed"
+          }
+        ],
+        "actual_hours": {
+          "DEV": 0,
+          "QA": 3.0
+        },
+        "time_entry_ids": [
+          "TIME-099",
+          "TIME-100"
+        ]
+      },
+      {
+        "case_id": "SUP-08-003",
+        "case_class": "standard",
+        "engineering_closed": true,
+        "customer_closed": false,
+        "linked_work_item_id": "US-111",
+        "events": [
+          {
+            "id": "SUP-08-003-E1",
+            "timestamp": "2030-04-11T09:00:00Z",
+            "event_type": "received"
+          },
+          {
+            "id": "SUP-08-003-E2",
+            "timestamp": "2030-04-11T10:00:00Z",
+            "event_type": "qa_validation"
+          },
+          {
+            "id": "SUP-08-003-E3",
+            "timestamp": "2030-04-12T12:00:00Z",
+            "event_type": "technical_investigation"
+          },
+          {
+            "id": "SUP-08-003-E4",
+            "timestamp": "2030-04-15T09:30:00Z",
+            "event_type": "entered_sprint"
+          },
+          {
+            "id": "SUP-08-003-E5",
+            "timestamp": "2030-04-19T17:05:00Z",
+            "event_type": "prepared_for_future_release"
+          },
+          {
+            "id": "SUP-08-003-E6",
+            "timestamp": "2030-04-19T17:10:00Z",
+            "event_type": "engineering_closed"
+          }
+        ],
+        "actual_hours": {
+          "DEV": 3.0,
+          "QA": 5.0
+        },
+        "time_entry_ids": [
+          "TIME-101",
+          "TIME-102",
+          "TIME-103",
+          "TIME-104"
+        ]
+      },
+      {
+        "case_id": "SUP-08-004",
+        "case_class": "standard",
+        "engineering_closed": true,
+        "customer_closed": false,
+        "linked_work_item_id": null,
+        "events": [
+          {
+            "id": "SUP-08-004-E1",
+            "timestamp": "2030-04-16T09:00:00Z",
+            "event_type": "received"
+          },
+          {
+            "id": "SUP-08-004-E2",
+            "timestamp": "2030-04-16T10:00:00Z",
+            "event_type": "qa_validation"
+          },
+          {
+            "id": "SUP-08-004-E3",
+            "timestamp": "2030-04-16T12:00:00Z",
+            "event_type": "technical_investigation"
+          },
+          {
+            "id": "SUP-08-004-E4",
+            "timestamp": "2030-04-16T16:30:00Z",
+            "event_type": "not_reproducible"
+          },
+          {
+            "id": "SUP-08-004-E5",
+            "timestamp": "2030-04-16T17:00:00Z",
+            "event_type": "engineering_closed"
+          }
+        ],
+        "actual_hours": {
+          "DEV": 2.0,
+          "QA": 1.0
+        },
+        "time_entry_ids": [
+          "TIME-105",
+          "TIME-106"
+        ]
+      }
+    ],
+    "excluded_critical_history_ids": [
+      "INC-07-001"
+    ]
+  },
+  "dependencies": {
+    "items": [
+      {
+        "id": "DEP-001",
+        "type": "pipeline",
+        "owner": "DevOps",
+        "work_item_ids": [
+          "US-107"
+        ],
+        "opened_at": "2030-04-11T12:00:00Z",
+        "resolved_at": "2030-04-15T16:30:00Z",
+        "elapsed_open_hours": 100.5,
+        "technical_actual_hours": 3.0,
+        "time_entry_ids": [
+          "TIME-107"
+        ]
+      },
+      {
+        "id": "DEP-002",
+        "type": "architecture",
+        "owner": "Architecture",
+        "work_item_ids": [
+          "US-108"
+        ],
+        "opened_at": "2030-04-12T10:00:00Z",
+        "resolved_at": null,
+        "elapsed_open_hours": 176.0,
+        "technical_actual_hours": 2.0,
+        "time_entry_ids": [
+          "TIME-108"
+        ]
+      }
+    ],
+    "duration_unit": "elapsed calendar hours; not effort"
+  },
+  "critical_disruptions": [],
+  "what_changed": {
+    "comparison": "since_planning",
+    "from_at": "2030-04-08T09:00:00Z",
+    "to_at": "2030-04-19T18:00:00Z",
+    "by_discipline": {
+      "DEV": {
+        "remaining_delivery_change_hours": -96.0,
+        "consumption_change_hours": {
+          "baseline_delivery_hours": 118.0,
+          "rework_hours": 38.0,
+          "post_planning_scope_hours": 11.0,
+          "support_hours": 7.0,
+          "release_regression_hours": 0.0,
+          "technical_enablement_hours": 5.0,
+          "total_hours": 179.0
+        }
+      },
+      "QA": {
+        "remaining_delivery_change_hours": -47.0,
+        "consumption_change_hours": {
+          "baseline_delivery_hours": 50.0,
+          "rework_hours": 7.0,
+          "post_planning_scope_hours": 3.0,
+          "support_hours": 10.0,
+          "release_regression_hours": 11.0,
+          "technical_enablement_hours": 0.0,
+          "total_hours": 81.0
+        }
+      }
+    },
+    "facts": [
+      {
+        "timestamp": "2030-04-08T10:00:00Z",
+        "kind": "support_technical_investigation",
+        "evidence_id": "SUP-08-001-E3",
+        "case_id": "SUP-08-001"
+      },
+      {
+        "timestamp": "2030-04-08T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-097",
+        "category": "support",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "SUP-08-001"
+      },
+      {
+        "timestamp": "2030-04-08T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-098",
+        "category": "support",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "SUP-08-001"
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-001",
+        "task_id": "TASK-001",
+        "remaining_hours": 2.0
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-003",
+        "task_id": "TASK-002",
+        "remaining_hours": 3.0
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-012",
+        "task_id": "TASK-006",
+        "remaining_hours": 13.0
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-020",
+        "task_id": "TASK-007",
+        "remaining_hours": 7.0
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-029",
+        "task_id": "TASK-009",
+        "remaining_hours": 19.0
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-041",
+        "task_id": "TASK-015",
+        "remaining_hours": 19.0
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-051",
+        "task_id": "TASK-018",
+        "remaining_hours": 27.0
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-060",
+        "task_id": "TASK-020",
+        "remaining_hours": 34.0
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-069",
+        "task_id": "TASK-021",
+        "remaining_hours": 27.0
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-001",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-001"
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-003",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-002"
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-012",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "TASK-006"
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-020",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-007"
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-030",
+        "category": "baseline_delivery",
+        "hours": 7.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-009"
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-043",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-015"
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-054",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-018"
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-065",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-020"
+      },
+      {
+        "timestamp": "2030-04-08T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-075",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-021"
+      },
+      {
+        "timestamp": "2030-04-09T09:00:00Z",
+        "kind": "support_received",
+        "evidence_id": "SUP-08-002-E1",
+        "case_id": "SUP-08-002"
+      },
+      {
+        "timestamp": "2030-04-09T10:00:00Z",
+        "kind": "support_not_reproducible",
+        "evidence_id": "SUP-08-001-E4",
+        "case_id": "SUP-08-001"
+      },
+      {
+        "timestamp": "2030-04-09T10:00:00Z",
+        "kind": "support_qa_validation",
+        "evidence_id": "SUP-08-002-E2",
+        "case_id": "SUP-08-002"
+      },
+      {
+        "timestamp": "2030-04-09T11:00:00Z",
+        "kind": "support_engineering_closed",
+        "evidence_id": "SUP-08-001-E5",
+        "case_id": "SUP-08-001"
+      },
+      {
+        "timestamp": "2030-04-09T14:30:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-002",
+        "task_id": "TASK-001",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-09T14:30:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-002",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-001"
+      },
+      {
+        "timestamp": "2030-04-09T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-099",
+        "category": "support",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "SUP-08-002"
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-004",
+        "task_id": "TASK-002",
+        "remaining_hours": 1.0
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-013",
+        "task_id": "TASK-006",
+        "remaining_hours": 12.0
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-021",
+        "task_id": "TASK-007",
+        "remaining_hours": 5.0
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-030",
+        "task_id": "TASK-009",
+        "remaining_hours": 12.0
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-042",
+        "task_id": "TASK-015",
+        "remaining_hours": 16.0
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-052",
+        "task_id": "TASK-018",
+        "remaining_hours": 24.0
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-061",
+        "task_id": "TASK-020",
+        "remaining_hours": 32.0
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-070",
+        "task_id": "TASK-021",
+        "remaining_hours": 26.0
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-078",
+        "task_id": "TASK-022",
+        "remaining_hours": 5.0
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-004",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-002"
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-013",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "TASK-006"
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-021",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-007"
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-031",
+        "category": "baseline_delivery",
+        "hours": 7.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-009"
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-044",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-015"
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-055",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-018"
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-066",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-020"
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-076",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-021"
+      },
+      {
+        "timestamp": "2030-04-09T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-085",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "TASK-022"
+      },
+      {
+        "timestamp": "2030-04-10T10:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-005",
+        "task_id": "TASK-002",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-10T10:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-005",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "TASK-002"
+      },
+      {
+        "timestamp": "2030-04-10T10:05:00Z",
+        "kind": "rework",
+        "evidence_id": "EVT-015",
+        "work_item_id": "US-102"
+      },
+      {
+        "timestamp": "2030-04-10T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-100",
+        "category": "support",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "SUP-08-002"
+      },
+      {
+        "timestamp": "2030-04-10T16:10:00Z",
+        "kind": "support_not_reproducible",
+        "evidence_id": "SUP-08-002-E3",
+        "case_id": "SUP-08-002"
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-006",
+        "task_id": "TASK-003",
+        "remaining_hours": 8.0
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-014",
+        "task_id": "TASK-006",
+        "remaining_hours": 10.0
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-022",
+        "task_id": "TASK-007",
+        "remaining_hours": 2.0
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-031",
+        "task_id": "TASK-009",
+        "remaining_hours": 5.0
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-043",
+        "task_id": "TASK-015",
+        "remaining_hours": 13.0
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-053",
+        "task_id": "TASK-018",
+        "remaining_hours": 21.0
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-062",
+        "task_id": "TASK-020",
+        "remaining_hours": 30.0
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-071",
+        "task_id": "TASK-021",
+        "remaining_hours": 25.0
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-079",
+        "task_id": "TASK-022",
+        "remaining_hours": 4.0
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "support_engineering_closed",
+        "evidence_id": "SUP-08-002-E4",
+        "case_id": "SUP-08-002"
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-006",
+        "category": "rework",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-003"
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-014",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-006"
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-022",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "QA",
+        "reference_id": "TASK-007"
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-032",
+        "category": "baseline_delivery",
+        "hours": 7.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-009"
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-045",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-015"
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-056",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-018"
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-067",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-020"
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-077",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-021"
+      },
+      {
+        "timestamp": "2030-04-10T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-086",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "TASK-022"
+      },
+      {
+        "timestamp": "2030-04-11T09:00:00Z",
+        "kind": "support_received",
+        "evidence_id": "SUP-08-003-E1",
+        "case_id": "SUP-08-003"
+      },
+      {
+        "timestamp": "2030-04-11T10:00:00Z",
+        "kind": "support_qa_validation",
+        "evidence_id": "SUP-08-003-E2",
+        "case_id": "SUP-08-003"
+      },
+      {
+        "timestamp": "2030-04-11T11:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-023",
+        "task_id": "TASK-007",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-11T11:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-023",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-007"
+      },
+      {
+        "timestamp": "2030-04-11T11:05:00Z",
+        "kind": "rework",
+        "evidence_id": "EVT-017",
+        "work_item_id": "US-104"
+      },
+      {
+        "timestamp": "2030-04-11T12:00:00Z",
+        "kind": "dependency_opened",
+        "evidence_id": "DEP-001"
+      },
+      {
+        "timestamp": "2030-04-11T12:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-032",
+        "task_id": "TASK-009",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-11T12:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-033",
+        "category": "baseline_delivery",
+        "hours": 5.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-009"
+      },
+      {
+        "timestamp": "2030-04-11T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-101",
+        "category": "support",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "SUP-08-003"
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-007",
+        "task_id": "TASK-003",
+        "remaining_hours": 5.0
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-015",
+        "task_id": "TASK-006",
+        "remaining_hours": 7.0
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-024",
+        "task_id": "TASK-008",
+        "remaining_hours": 18.0
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-033",
+        "task_id": "TASK-010",
+        "remaining_hours": 2.0
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-044",
+        "task_id": "TASK-015",
+        "remaining_hours": 10.0
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-054",
+        "task_id": "TASK-018",
+        "remaining_hours": 18.0
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-063",
+        "task_id": "TASK-020",
+        "remaining_hours": 28.0
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-072",
+        "task_id": "TASK-021",
+        "remaining_hours": 24.0
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-080",
+        "task_id": "TASK-022",
+        "remaining_hours": 3.0
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-007",
+        "category": "rework",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-003"
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-015",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "QA",
+        "reference_id": "TASK-006"
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-024",
+        "category": "rework",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-008"
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-034",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-010"
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-046",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-015"
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-057",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-018"
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-068",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-020"
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-078",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-021"
+      },
+      {
+        "timestamp": "2030-04-11T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-087",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "TASK-022"
+      },
+      {
+        "timestamp": "2030-04-12T10:00:00Z",
+        "kind": "dependency_opened",
+        "evidence_id": "DEP-002"
+      },
+      {
+        "timestamp": "2030-04-12T11:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-034",
+        "task_id": "TASK-010",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-12T11:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-035",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-010"
+      },
+      {
+        "timestamp": "2030-04-12T12:00:00Z",
+        "kind": "support_technical_investigation",
+        "evidence_id": "SUP-08-003-E3",
+        "case_id": "SUP-08-003"
+      },
+      {
+        "timestamp": "2030-04-12T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-102",
+        "category": "support",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "SUP-08-003"
+      },
+      {
+        "timestamp": "2030-04-12T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-103",
+        "category": "support",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "SUP-08-003"
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-008",
+        "task_id": "TASK-003",
+        "remaining_hours": 2.0
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-016",
+        "task_id": "TASK-006",
+        "remaining_hours": 4.0
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-025",
+        "task_id": "TASK-008",
+        "remaining_hours": 16.0
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-045",
+        "task_id": "TASK-015",
+        "remaining_hours": 6.0
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-055",
+        "task_id": "TASK-018",
+        "remaining_hours": 15.0
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-064",
+        "task_id": "TASK-020",
+        "remaining_hours": 26.0
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-073",
+        "task_id": "TASK-021",
+        "remaining_hours": 23.0
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-081",
+        "task_id": "TASK-022",
+        "remaining_hours": 1.0
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-008",
+        "category": "rework",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-003"
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-016",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "QA",
+        "reference_id": "TASK-006"
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-025",
+        "category": "rework",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-008"
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-047",
+        "category": "baseline_delivery",
+        "hours": 4.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-015"
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-058",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-018"
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-069",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-020"
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-079",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-021"
+      },
+      {
+        "timestamp": "2030-04-12T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-088",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-022"
+      },
+      {
+        "timestamp": "2030-04-15T09:15:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-104",
+        "category": "support",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "SUP-08-003"
+      },
+      {
+        "timestamp": "2030-04-15T09:30:00Z",
+        "kind": "post_planning_scope",
+        "evidence_id": "EVT-021",
+        "work_item_id": "US-111"
+      },
+      {
+        "timestamp": "2030-04-15T09:30:00Z",
+        "kind": "support_entered_sprint",
+        "evidence_id": "SUP-08-003-E4",
+        "case_id": "SUP-08-003"
+      },
+      {
+        "timestamp": "2030-04-15T11:30:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-082",
+        "task_id": "TASK-022",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-15T11:30:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-089",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "TASK-022"
+      },
+      {
+        "timestamp": "2030-04-15T12:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-009",
+        "task_id": "TASK-003",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-15T12:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-009",
+        "category": "rework",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-003"
+      },
+      {
+        "timestamp": "2030-04-15T15:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-010",
+        "task_id": "TASK-004",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-15T15:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-010",
+        "category": "rework",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-004"
+      },
+      {
+        "timestamp": "2030-04-15T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-107",
+        "category": "technical_enablement",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "DEP-001"
+      },
+      {
+        "timestamp": "2030-04-15T16:30:00Z",
+        "kind": "dependency_resolved",
+        "evidence_id": "DEP-001"
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-017",
+        "task_id": "TASK-006",
+        "remaining_hours": 2.0
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-026",
+        "task_id": "TASK-008",
+        "remaining_hours": 14.0
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-035",
+        "task_id": "TASK-011",
+        "remaining_hours": 3.0
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-046",
+        "task_id": "TASK-015",
+        "remaining_hours": 3.0
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-056",
+        "task_id": "TASK-018",
+        "remaining_hours": 12.0
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-065",
+        "task_id": "TASK-020",
+        "remaining_hours": 24.0
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-074",
+        "task_id": "TASK-021",
+        "remaining_hours": 22.0
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-083",
+        "task_id": "TASK-023",
+        "remaining_hours": 6.0
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-017",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-006"
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-026",
+        "category": "rework",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-008"
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-036",
+        "category": "baseline_delivery",
+        "hours": 4.0,
+        "discipline": "QA",
+        "reference_id": "TASK-011"
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-048",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-015"
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-059",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-018"
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-070",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-020"
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-080",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-021"
+      },
+      {
+        "timestamp": "2030-04-15T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-090",
+        "category": "post_planning_scope",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-023"
+      },
+      {
+        "timestamp": "2030-04-16T09:00:00Z",
+        "kind": "support_received",
+        "evidence_id": "SUP-08-004-E1",
+        "case_id": "SUP-08-004"
+      },
+      {
+        "timestamp": "2030-04-16T10:00:00Z",
+        "kind": "support_qa_validation",
+        "evidence_id": "SUP-08-004-E2",
+        "case_id": "SUP-08-004"
+      },
+      {
+        "timestamp": "2030-04-16T11:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-036",
+        "task_id": "TASK-011",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-16T11:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-037",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "QA",
+        "reference_id": "TASK-011"
+      },
+      {
+        "timestamp": "2030-04-16T11:05:00Z",
+        "kind": "rework",
+        "evidence_id": "EVT-028",
+        "work_item_id": "US-105"
+      },
+      {
+        "timestamp": "2030-04-16T12:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-047",
+        "task_id": "TASK-015",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-16T12:00:00Z",
+        "kind": "support_technical_investigation",
+        "evidence_id": "SUP-08-004-E3",
+        "case_id": "SUP-08-004"
+      },
+      {
+        "timestamp": "2030-04-16T12:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-049",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-015"
+      },
+      {
+        "timestamp": "2030-04-16T14:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-011",
+        "task_id": "TASK-005",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-16T14:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-011",
+        "category": "rework",
+        "hours": 3.0,
+        "discipline": "QA",
+        "reference_id": "TASK-005"
+      },
+      {
+        "timestamp": "2030-04-16T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-105",
+        "category": "support",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "SUP-08-004"
+      },
+      {
+        "timestamp": "2030-04-16T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-106",
+        "category": "support",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "SUP-08-004"
+      },
+      {
+        "timestamp": "2030-04-16T16:30:00Z",
+        "kind": "support_not_reproducible",
+        "evidence_id": "SUP-08-004-E4",
+        "case_id": "SUP-08-004"
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-018",
+        "task_id": "TASK-006",
+        "remaining_hours": 1.0
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-027",
+        "task_id": "TASK-008",
+        "remaining_hours": 12.0
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-037",
+        "task_id": "TASK-012",
+        "remaining_hours": 8.0
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-048",
+        "task_id": "TASK-016",
+        "remaining_hours": 2.0
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-057",
+        "task_id": "TASK-018",
+        "remaining_hours": 9.0
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-066",
+        "task_id": "TASK-020",
+        "remaining_hours": 22.0
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-075",
+        "task_id": "TASK-021",
+        "remaining_hours": 21.0
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-084",
+        "task_id": "TASK-023",
+        "remaining_hours": 3.0
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "support_engineering_closed",
+        "evidence_id": "SUP-08-004-E5",
+        "case_id": "SUP-08-004"
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-018",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "TASK-006"
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-027",
+        "category": "rework",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-008"
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-038",
+        "category": "rework",
+        "hours": 4.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-012"
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-050",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-016"
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-060",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-018"
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-071",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-020"
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-081",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-021"
+      },
+      {
+        "timestamp": "2030-04-16T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-091",
+        "category": "post_planning_scope",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-023"
+      },
+      {
+        "timestamp": "2030-04-17T09:00:00Z",
+        "kind": "regression_started",
+        "evidence_id": "REG-001"
+      },
+      {
+        "timestamp": "2030-04-17T11:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-049",
+        "task_id": "TASK-016",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-17T11:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-051",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-016"
+      },
+      {
+        "timestamp": "2030-04-17T14:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-085",
+        "task_id": "TASK-023",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-17T14:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-092",
+        "category": "post_planning_scope",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-023"
+      },
+      {
+        "timestamp": "2030-04-17T15:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-019",
+        "task_id": "TASK-006",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-17T15:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-019",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "TASK-006"
+      },
+      {
+        "timestamp": "2030-04-17T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-108",
+        "category": "technical_enablement",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "DEP-002"
+      },
+      {
+        "timestamp": "2030-04-17T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-109",
+        "category": "release_regression",
+        "hours": 6.0,
+        "discipline": "QA",
+        "reference_id": "REL-08"
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-028",
+        "task_id": "TASK-008",
+        "remaining_hours": 10.0
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-038",
+        "task_id": "TASK-012",
+        "remaining_hours": 3.0
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-058",
+        "task_id": "TASK-018",
+        "remaining_hours": 6.0
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-067",
+        "task_id": "TASK-020",
+        "remaining_hours": 20.0
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-076",
+        "task_id": "TASK-021",
+        "remaining_hours": 20.0
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-086",
+        "task_id": "TASK-024",
+        "remaining_hours": 1.0
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-028",
+        "category": "rework",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-008"
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-039",
+        "category": "rework",
+        "hours": 5.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-012"
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-061",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-018"
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-072",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-020"
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-082",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-021"
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-093",
+        "category": "post_planning_scope",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-024"
+      },
+      {
+        "timestamp": "2030-04-18T10:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-087",
+        "task_id": "TASK-024",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-18T10:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-094",
+        "category": "post_planning_scope",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-024"
+      },
+      {
+        "timestamp": "2030-04-18T12:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-039",
+        "task_id": "TASK-012",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-18T12:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-040",
+        "category": "rework",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-012"
+      },
+      {
+        "timestamp": "2030-04-18T14:00:00Z",
+        "kind": "regression_completed",
+        "evidence_id": "REG-002"
+      },
+      {
+        "timestamp": "2030-04-18T14:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-110",
+        "category": "release_regression",
+        "hours": 5.0,
+        "discipline": "QA",
+        "reference_id": "REL-08"
+      },
+      {
+        "timestamp": "2030-04-18T15:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-040",
+        "task_id": "TASK-013",
+        "remaining_hours": 0.0
+      },
+      {
+        "timestamp": "2030-04-18T15:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-041",
+        "category": "rework",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-013"
+      },
+      {
+        "timestamp": "2030-04-18T16:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-050",
+        "task_id": "TASK-017",
+        "remaining_hours": 3.0
+      },
+      {
+        "timestamp": "2030-04-18T16:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-088",
+        "task_id": "TASK-025",
+        "remaining_hours": 2.0
+      },
+      {
+        "timestamp": "2030-04-18T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-052",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-017"
+      },
+      {
+        "timestamp": "2030-04-18T16:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-095",
+        "category": "post_planning_scope",
+        "hours": 1.0,
+        "discipline": "QA",
+        "reference_id": "TASK-025"
+      },
+      {
+        "timestamp": "2030-04-18T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-059",
+        "task_id": "TASK-018",
+        "remaining_hours": 3.0
+      },
+      {
+        "timestamp": "2030-04-18T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-068",
+        "task_id": "TASK-020",
+        "remaining_hours": 18.0
+      },
+      {
+        "timestamp": "2030-04-18T17:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "OBS-077",
+        "task_id": "TASK-021",
+        "remaining_hours": 19.0
+      },
+      {
+        "timestamp": "2030-04-18T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-062",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-018"
+      },
+      {
+        "timestamp": "2030-04-18T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-073",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-020"
+      },
+      {
+        "timestamp": "2030-04-18T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-083",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-021"
+      },
+      {
+        "timestamp": "2030-04-19T11:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-063",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-018"
+      },
+      {
+        "timestamp": "2030-04-19T14:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-042",
+        "category": "rework",
+        "hours": 4.0,
+        "discipline": "QA",
+        "reference_id": "TASK-014"
+      },
+      {
+        "timestamp": "2030-04-19T15:30:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-053",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "QA",
+        "reference_id": "TASK-017"
+      },
+      {
+        "timestamp": "2030-04-19T16:30:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-096",
+        "category": "post_planning_scope",
+        "hours": 2.0,
+        "discipline": "QA",
+        "reference_id": "TASK-025"
+      },
+      {
+        "timestamp": "2030-04-19T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-029",
+        "category": "rework",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-008"
+      },
+      {
+        "timestamp": "2030-04-19T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-064",
+        "category": "baseline_delivery",
+        "hours": 3.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-019"
+      },
+      {
+        "timestamp": "2030-04-19T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-074",
+        "category": "baseline_delivery",
+        "hours": 2.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-020"
+      },
+      {
+        "timestamp": "2030-04-19T17:00:00Z",
+        "kind": "effort_recorded",
+        "evidence_id": "TIME-084",
+        "category": "baseline_delivery",
+        "hours": 1.0,
+        "discipline": "DEV",
+        "reference_id": "TASK-021"
+      },
+      {
+        "timestamp": "2030-04-19T17:05:00Z",
+        "kind": "support_prepared_for_future_release",
+        "evidence_id": "SUP-08-003-E5",
+        "case_id": "SUP-08-003"
+      },
+      {
+        "timestamp": "2030-04-19T17:10:00Z",
+        "kind": "support_engineering_closed",
+        "evidence_id": "SUP-08-003-E6",
+        "case_id": "SUP-08-003"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-001",
+        "task_id": "TASK-001",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-002",
+        "task_id": "TASK-002",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-003",
+        "task_id": "TASK-003",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-004",
+        "task_id": "TASK-004",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-005",
+        "task_id": "TASK-005",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-006",
+        "task_id": "TASK-006",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-007",
+        "task_id": "TASK-007",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-008",
+        "task_id": "TASK-008",
+        "remaining_hours": 8.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-009",
+        "task_id": "TASK-009",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-010",
+        "task_id": "TASK-010",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-011",
+        "task_id": "TASK-011",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-012",
+        "task_id": "TASK-012",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-013",
+        "task_id": "TASK-013",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-014",
+        "task_id": "TASK-014",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-015",
+        "task_id": "TASK-015",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-016",
+        "task_id": "TASK-016",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-017",
+        "task_id": "TASK-017",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-018",
+        "task_id": "TASK-018",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-019",
+        "task_id": "TASK-019",
+        "remaining_hours": 3.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-020",
+        "task_id": "TASK-020",
+        "remaining_hours": 16.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-021",
+        "task_id": "TASK-021",
+        "remaining_hours": 18.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-022",
+        "task_id": "TASK-022",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-023",
+        "task_id": "TASK-023",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-024",
+        "task_id": "TASK-024",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      },
+      {
+        "timestamp": "2030-04-19T18:00:00Z",
+        "kind": "remaining_delivery_observed",
+        "evidence_id": "TASK-025",
+        "task_id": "TASK-025",
+        "remaining_hours": 0.0,
+        "source": "frozen tasks.json final observation"
+      }
+    ]
+  },
+  "retrospective_breakpoints": [
+    {
+      "timestamp": "2030-04-10T10:05:00Z",
+      "kind": "rework",
+      "evidence_id": "EVT-015",
+      "work_item_id": "US-102"
+    },
+    {
+      "timestamp": "2030-04-11T11:05:00Z",
+      "kind": "rework",
+      "evidence_id": "EVT-017",
+      "work_item_id": "US-104"
+    },
+    {
+      "timestamp": "2030-04-11T12:00:00Z",
+      "kind": "dependency_opened",
+      "evidence_id": "DEP-001"
+    },
+    {
+      "timestamp": "2030-04-11T18:00:00Z",
+      "kind": "capacity_gap_crossing",
+      "discipline": "DEV",
+      "previous_gap_hours": 12.4,
+      "capacity_gap_hours": -9.6,
+      "sprint_day": 4
+    },
+    {
+      "timestamp": "2030-04-12T10:00:00Z",
+      "kind": "dependency_opened",
+      "evidence_id": "DEP-002"
+    },
+    {
+      "timestamp": "2030-04-15T09:30:00Z",
+      "kind": "post_planning_scope",
+      "evidence_id": "EVT-021",
+      "work_item_id": "US-111"
+    },
+    {
+      "timestamp": "2030-04-15T16:30:00Z",
+      "kind": "dependency_resolved",
+      "evidence_id": "DEP-001"
+    },
+    {
+      "timestamp": "2030-04-16T11:05:00Z",
+      "kind": "rework",
+      "evidence_id": "EVT-028",
+      "work_item_id": "US-105"
+    },
+    {
+      "timestamp": "2030-04-17T09:00:00Z",
+      "kind": "regression_started",
+      "evidence_id": "REG-001"
+    },
+    {
+      "timestamp": "2030-04-18T14:00:00Z",
+      "kind": "regression_completed",
+      "evidence_id": "REG-002"
+    },
+    {
+      "timestamp": "2030-04-18T18:00:00Z",
+      "kind": "capacity_gap_crossing",
+      "discipline": "QA",
+      "previous_gap_hours": 0.1,
+      "capacity_gap_hours": -5.9,
+      "sprint_day": 9
+    },
+    {
+      "timestamp": "2030-04-19T18:00:00Z",
+      "kind": "capacity_gap_crossing",
+      "discipline": "QA",
+      "previous_gap_hours": -5.9,
+      "capacity_gap_hours": 0.0,
+      "sprint_day": 10
+    }
+  ],
+  "insights": [
+    {
+      "kind": "capacity_answer",
+      "answer": "no",
+      "reason": "No \u2014 DEV is short by 45.00 h based on known demand.",
+      "missing_inputs": []
+    }
+  ]
+}

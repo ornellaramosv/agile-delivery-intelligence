@@ -19,7 +19,7 @@ All frontend/backend/data tests, lint, TypeScript, production build, and desktop
 
 Backend foundation implemented: additive fictional evidence, pure domain engine, read-only `/demo/sprint-08/capacity-health` endpoint, deterministic What Changed and missing-evidence handling. Four pillars: Causal Capacity, Cross-sprint Release Readiness, Adaptive Support Forecasting, Critical Disruption Context. See [Capacity Health](capacity-health.md).
 
-The Capacity Health frontend is **not implemented**. No v0.2 release or tag has been created. v0.1 engines, contracts, UI and frozen source files remain unchanged.
+The Capacity Health **Current Sprint frontend is implemented** at `/capacity-health`, with server-side API consumption, day/comparison selection and responsive evidence views. Retrospective UI is not implemented. No v0.2 release or tag has been created. v0.1 engines, contracts, UI and frozen source files remain unchanged.
 
 ## Future milestones
 

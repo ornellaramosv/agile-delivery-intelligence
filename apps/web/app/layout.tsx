@@ -20,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/sprint-health">Sprint Health</Link>
               <Link href="/delivery-flow">Delivery Flow</Link>
               <Link href="/quality-rework">Quality &amp; Rework</Link>
+              <Link href="/capacity-health">Capacity Health</Link>
             </nav>
           </header>
           <main id="main">{children}</main>
