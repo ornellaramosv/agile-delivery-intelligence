@@ -2,11 +2,12 @@ import { COMPARISONS, SPRINT_DAYS, capacityQuery, type CapacityResult, type Capa
 import { CapacityConsumption, DisciplineCapacity, SprintProgress } from "./capacity-panels";
 import { Dependencies, ReleaseReadiness, SupportIntelligence } from "./context-sections";
 import { WhatChanged } from "./what-changed";
+import { CapacityModeNavigation } from "./mode-navigation";
 import { timestamp } from "./format";
 
 export function CapacityHeading() {
   return <div className="health-heading"><p className="eyebrow">v0.2 — Current Sprint</p><h1>Capacity Health</h1>
-    <p>Remaining delivery demand, available capacity and the evidence behind changes.</p></div>;
+    <p>Remaining delivery demand, available capacity and the evidence behind changes.</p><CapacityModeNavigation mode="current_sprint" /></div>;
 }
 export function CapacitySelectors({ selection }: { selection: CapacitySelection }) {
   return <form action="/capacity-health" method="get" className="capacity-selectors" aria-label="Current Sprint snapshot">

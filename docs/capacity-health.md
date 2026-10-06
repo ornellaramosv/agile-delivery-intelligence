@@ -1,6 +1,6 @@
-# Capacity Health — v0.2 Current Sprint
+# Capacity Health — v0.2
 
-Capacity Health asks: **Can we still finish the remaining work with the capacity we have left?** It uses team-level DEV and QA hours, never individual rankings or utilization scores. The data foundation, pure domain engine, fixture service, and read-only API are implemented. The Current Sprint frontend is available at `/capacity-health`. Retrospective UI and the v0.2 release are not implemented.
+Capacity Health asks: **Can we still finish the remaining work with the capacity we have left?** It uses team-level DEV and QA hours, never individual rankings or utilization scores. The data foundation, pure domain engine, fixture service, and read-only API are implemented. The Current Sprint frontend is available at `/capacity-health`. The Retrospective frontend is available at `/capacity-health/retrospective`. No v0.2 release has been created.
 
 ## Capacity and progress
 
@@ -161,6 +161,16 @@ The page prioritizes the backend answer and hour-based gap, keeps story progress
 
 Targeted frontend tests cover presentation and request parameters; local desktop/mobile checks cover rendering and selectors. No full repository suite, deployment, tag or release is part of this slice.
 
+## Retrospective frontend
+
+`/capacity-health/retrospective` always requests `mode=retrospective`, `sprint_day=10`, `comparison=since_planning`. Mode navigation links it to Current Sprint without changing Current Sprint's selectable snapshot or comparison behavior.
+
+The final answer/reason and sprint progress come directly from the backend. The primary retrospective section is the chronological `retrospective_breakpoints` timeline, preserving event IDs, work items, cases, disciplines and supplied gap-crossing values. It does not reconstruct turning points from the daily series. Critical disruptions are included even when completed by sprint close.
+
+Separate DEV and QA Recharts line charts display backend remaining delivery demand, effective capacity and gap in hours. Styles identify measures, not health levels. Null values remain gaps; accessible expandable tables expose exact supplied values. Chart data preparation only projects fields without arithmetic. Only daily data is passed to the chart client component.
+
+What Changed retains the backend summary and supporting evidence, omitting duplicate timeline events from its additional evidence list. Release, support history and dependency sections reuse the Current Sprint presentation. Non-applicable releases remain hidden; elapsed dependency time is never treated as effort. Empty, loading and unavailable states are provided. Targeted frontend tests and TypeScript/lint validation cover both modes; no backend formulas, frozen data or v0.1 UI changed.
+
 ## Non-goals
 
-No Retrospective UI, SLA intelligence, individual productivity, rankings, aggregate health score, utilization score, good/bad labels, traffic-light thresholds, AI, recommendations, persistence, integrations, deployment, or release/tag creation. Capacity Health does not change Sprint Intelligence units or behavior.
+No SLA intelligence, individual productivity, rankings, aggregate health score, utilization score, good/bad labels, traffic-light thresholds, AI, recommendations, persistence, integrations, deployment, or release/tag creation. Capacity Health does not change Sprint Intelligence units or behavior.

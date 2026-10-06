@@ -1,5 +1,6 @@
 import { getApiOrigin } from "./api-origin";
 
+export type CapacityMode = "current_sprint" | "retrospective";
 export type Discipline = "DEV" | "QA";
 export type Comparison = "since_planning" | "since_previous_working_day";
 export type CapacitySelection = { sprint_day: number; comparison: Comparison };
@@ -42,13 +43,18 @@ export type ReleaseReadiness = { status: "not_applicable"; summary: null } | {
 export type CapacityFact = { timestamp: string; kind: string; evidence_id: string; work_item_id?: string;
   task_id?: string; case_id?: string; reference_id?: string; category?: string; discipline?: string;
   hours?: number; remaining_hours?: number; source?: string };
+export type CapacityBreakpoint = { timestamp: string; kind: string; evidence_id?: string;
+  work_item_id?: string; case_id?: string; discipline?: string; sprint_day?: number;
+  previous_gap_hours?: number; capacity_gap_hours?: number };
+export type DailyCapacity = { sprint_day: number; timestamp: string; disciplines: Record<Discipline, CapacityDiscipline> };
 export type CapacityResult = {
   sprint: { id: string; name: string; project: string; backlog: string };
-  mode_context: { mode: "current_sprint"; sprint_day: number; comparison: Comparison; snapshot_at: string;
+  mode_context: { mode: CapacityMode; sprint_day: number; comparison: Comparison; snapshot_at: string;
     primary_answer: { answer: "yes" | "no" | "insufficient_data"; reason: string; missing_inputs: string[] } };
   sprint_progress: { original_baseline: Progress; current_scope: Progress; post_planning_scope: Progress };
   disciplines: Record<Discipline, CapacityDiscipline>;
-  daily_capacity: { sprint_day: number }[];
+  daily_capacity: DailyCapacity[];
+  retrospective_breakpoints: CapacityBreakpoint[];
   critical_disruptions: { case_id: string; active: boolean; linked_work_item_id: string | null;
     events: { id: string; event_type: string; description?: string }[] }[];
   what_changed: { comparison: Comparison; from_at: string; to_at: string;
@@ -62,12 +68,20 @@ export type CapacityResult = {
 
 /** Called from the server page only; backend values are returned without metric calculations. */
 export async function getSprintCapacityHealth(selection: CapacitySelection): Promise<CapacityResult> {
+  return fetchCapacityHealth(selection, "current_sprint");
+}
+export async function getRetrospectiveCapacityHealth(): Promise<CapacityResult> {
+  return fetchCapacityHealth({ sprint_day: 10, comparison: "since_planning" }, "retrospective");
+}
+async function fetchCapacityHealth(selection: CapacitySelection, mode: CapacityMode): Promise<CapacityResult> {
   const url = new URL("/demo/sprint-08/capacity-health", getApiOrigin());
   url.search = capacityQuery(selection).toString();
+  url.searchParams.set("mode", mode);
   const response = await fetch(url, { cache: "no-store", signal: AbortSignal.timeout(10_000) });
   if (!response.ok) throw new Error(`Capacity Health API returned ${response.status}`);
   const data: CapacityResult = await response.json();
-  if (!data.sprint || data.mode_context?.mode !== "current_sprint" || !data.mode_context.primary_answer
+  if (!data.sprint || data.mode_context?.mode !== mode || !data.mode_context.primary_answer
+      || (mode === "retrospective" && !Array.isArray(data.retrospective_breakpoints))
       || !data.sprint_progress || !data.disciplines?.DEV || !data.disciplines.QA
       || !data.what_changed?.by_discipline || !Array.isArray(data.what_changed.facts)
       || !data.release_readiness || (data.release_readiness.status === "applicable" && !data.release_readiness.summary)

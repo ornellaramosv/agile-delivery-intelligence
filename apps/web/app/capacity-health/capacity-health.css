@@ -44,3 +44,12 @@
   .capacity-table th:first-child { width: 46%; }
   .capacity-table th, .capacity-table td { padding: 0.6rem 0.25rem; }
 }
+.capacity-mode-navigation { margin-top: 1rem; font-size: 0.9rem; }
+.capacity-mode-navigation [aria-current="page"] { font-weight: 700; text-decoration-thickness: 2px; }
+.capacity-turning-points { border-top: 3px solid #245e78; padding-top: 1.25rem; }
+.capacity-turning-points li { border-left: 2px solid var(--border); padding-left: 1rem; }
+.capacity-turning-points time { font-size: 0.8rem; color: var(--muted); }
+.capacity-evolution-chart { width: 100%; height: 260px; min-width: 0; }
+.capacity-evolution-legend { list-style: none; padding: 0; font-size: 0.75rem; color: var(--muted); }
+.capacity-health .capacity-evolution-table { table-layout: fixed; }
+.capacity-health .capacity-evolution-table th:first-child { width: 15%; }

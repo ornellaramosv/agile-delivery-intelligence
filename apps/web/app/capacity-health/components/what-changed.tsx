@@ -11,11 +11,12 @@ function Evidence({ facts }: { facts: CapacityFact[] }) {
     <small>{timestamp(f.timestamp)} · Evidence: {f.evidence_id}{f.source ? ` · ${f.source}` : ""}</small>
   </li>)}</ul>;
 }
-export function WhatChanged({ data }: { data: CapacityResult }) {
+export function WhatChanged({ data, retrospective = false }: { data: CapacityResult; retrospective?: boolean }) {
   const changes = data.what_changed;
   const observations = changes.facts.filter(f => ["effort_recorded", "remaining_delivery_observed"].includes(f.kind));
-  const events = changes.facts.filter(f => !["effort_recorded", "remaining_delivery_observed"].includes(f.kind));
-  return <section className="health-section" aria-labelledby="what-changed"><h2 id="what-changed">What Changed?</h2>
+  const events = changes.facts.filter(f => !["effort_recorded", "remaining_delivery_observed"].includes(f.kind)
+    && (!retrospective || !data.retrospective_breakpoints.some(b => b.evidence_id === f.evidence_id && b.kind === f.kind && b.timestamp === f.timestamp)));
+  return <section className="health-section" aria-labelledby="what-changed"><h2 id="what-changed">{retrospective ? "What changed from Planning" : "What Changed?"}</h2>
     <p>{COMPARISONS[changes.comparison]} · {timestamp(changes.from_at)} → {timestamp(changes.to_at)}</p>
     <div className="capacity-columns">{(["DEV", "QA"] as const).map(d => <article className="capacity-panel" key={d} aria-label={`${d} changes`}><h3>{d}</h3>
       <dl className="capacity-metrics"><div><dt>Remaining delivery demand change</dt><dd>{hours(changes.by_discipline[d].remaining_delivery_change_hours, true)}</dd></div>
@@ -24,7 +25,7 @@ export function WhatChanged({ data }: { data: CapacityResult }) {
         <dt>{label}</dt><dd>{hours(changes.by_discipline[d].consumption_change_hours[key as keyof typeof CONSUMPTION_LABELS], true)}</dd></div>)}</dl></details>
     </article>)}</div>
     <p className="quiet-note">Signed changes are supplied by the backend. Evidence explains scope additions, QA returns and non-delivery work; it is not a productivity assessment.</p>
-    {events.length > 0 ? <details className="capacity-facts" open><summary>Scope, support, rework and dependency evidence</summary><Evidence facts={events} /></details> : <p>No change events in this comparison window.</p>}
+    {events.length > 0 ? <details className="capacity-facts" open={!retrospective}><summary>{retrospective ? "Additional supporting evidence" : "Scope, support, rework and dependency evidence"}</summary><Evidence facts={events} /></details> : <p>{retrospective ? "Turning-point evidence is presented in the timeline above." : "No change events in this comparison window."}</p>}
     {observations.length > 0 ? <details className="capacity-facts"><summary>Recorded effort and remaining-work observations</summary><Evidence facts={observations} /></details> : null}
   </section>;
 }
