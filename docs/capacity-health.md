@@ -121,6 +121,8 @@ Optional query parameters:
 
 The response contains `sprint`, `mode_context`, `planning`, `disciplines`, `daily_capacity`, `release_readiness`, `scope_change`, `support`, `dependencies`, `critical_disruptions`, `what_changed`, `retrospective_breakpoints`, and `insights`. The primary answer is in `mode_context.primary_answer` and the capacity-answer insight. Daily capacity includes only days up to the requested snapshot.
 
+`support.history` exposes the historical forecast periods in chronological start-date order. Each period includes `sprint_id`, `recency_weight`, `standard_case_count`, and `actual_hours` aggregated only from standard cases. Discipline keys are uppercase (`DEV`, `QA`, `ARCHITECTURE` where present); absent disciplines are omitted. Critical cases contribute neither counts nor hours. No history returns an empty list. This evidence accompanies forecast/reserve/actual values without changing any forecasting formula.
+
 What Changed exposes net remaining-delivery and consumption differences plus dated evidence for task effort/remaining observations, QA returns, new scope, support events, regression, dependencies and critical interruptions. Final remaining observations reference the frozen Task IDs. It does not infer causality from correlations or manufacture recommendations. Retrospective breakpoints identify those major events and sign changes in a calculable capacity gap. Null gaps do not manufacture crossings.
 
 Current Sprint uses these observations to answer the remaining-capacity question. Retrospective uses the same engine and evidence to explain prior turning points. No frontend calculations are needed for either mode.

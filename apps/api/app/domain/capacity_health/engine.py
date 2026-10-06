@@ -12,6 +12,22 @@ EFFORT_CATEGORY = {'planned': 'baseline_delivery', 'rework': 'rework', 'scope_ad
 CATEGORIES = (*EFFORT_CATEGORY.values(), 'support', 'release_regression', 'technical_enablement')
 
 
+def support_history(periods):
+    """Expose chronological standard-case evidence without altering forecasts."""
+    history = []
+    for period in sorted(periods, key=lambda p: (p['start_date'], p['sprint_id'])):
+        standard = [case for case in period['cases'] if case['case_class'] == 'standard']
+        actual = {}
+        for case in standard:
+            for discipline, hours in case['actual_hours'].items():
+                key = discipline.upper()
+                actual[key] = actual.get(key, number(0)) + number(hours)
+        history.append({'sprint_id': period['sprint_id'],
+                        'recency_weight': period['recency_weight'],
+                        'standard_case_count': len(standard), 'actual_hours': actual})
+    return history
+
+
 def latest(rows, cutoff, default):
     observed = [r for r in rows if r['timestamp'] <= cutoff]
     return max(observed, key=lambda r: (r['timestamp'], r.get('id', ''))) if observed else default
@@ -273,7 +289,8 @@ def calculate_capacity_health(*, sprint, work_items, tasks, events, capacity_pla
             'disciplines': current['disciplines'], 'daily_capacity': daily,
             'release_readiness': release_state(release_regression, cases, events, at, dependencies, active),
             'scope_change': scope_change,
-            'support': {'cases': case_results, 'excluded_critical_history_ids': [c['id'] for period in support_cases['historical_sprints']
+            'support': {'history': support_history(support_cases['historical_sprints']),
+                        'cases': case_results, 'excluded_critical_history_ids': [c['id'] for period in support_cases['historical_sprints']
                                                                               for c in period['cases'] if c['case_class'] == 'critical']},
             'dependencies': {'items': dependency_results, 'duration_unit': 'elapsed calendar hours; not effort'},
             'critical_disruptions': critical,

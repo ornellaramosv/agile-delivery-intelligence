@@ -325,3 +325,42 @@ def test_reject_inconsistent_effort_evidence(inputs, defect):
         ledger['task_remaining_observations'][0]['remaining_hours'] = -1
     with pytest.raises(ValueError):
         calculate_capacity_health(**inputs)
+
+
+def test_support_history_api_exposes_approved_periods():
+    response = TestClient(app).get('/demo/sprint-08/capacity-health')
+    assert response.status_code == 200
+    assert response.json()['support']['history'] == [
+        {'sprint_id': 'ATLAS-SPRINT-04', 'recency_weight': .1, 'standard_case_count': 8,
+         'actual_hours': {'DEV': 16, 'QA': 24, 'ARCHITECTURE': 6}},
+        {'sprint_id': 'ATLAS-SPRINT-05', 'recency_weight': .2, 'standard_case_count': 7,
+         'actual_hours': {'DEV': 14, 'QA': 21, 'ARCHITECTURE': 4}},
+        {'sprint_id': 'ATLAS-SPRINT-06', 'recency_weight': .3, 'standard_case_count': 5,
+         'actual_hours': {'DEV': 10, 'QA': 15, 'ARCHITECTURE': 2}},
+        {'sprint_id': 'ATLAS-SPRINT-07', 'recency_weight': .4, 'standard_case_count': 4,
+         'actual_hours': {'DEV': 8, 'QA': 12, 'ARCHITECTURE': 1}},
+    ]
+
+
+def test_support_history_is_chronological_and_excludes_all_critical_effort(inputs, result):
+    periods = inputs['support_cases']['historical_sprints']
+    periods.reverse()
+    for period in periods:
+        period['cases'].append({'id': 'CRITICAL-HISTORY-TEST', 'case_class': 'critical',
+                                'actual_hours': {'DEV': 999, 'QA': 999, 'Architecture': 999, 'DevOps': 999}})
+    changed = calculate_capacity_health(**inputs)
+    assert changed['support']['history'] == result['support']['history']
+    assert changed['disciplines'] == result['disciplines']
+
+
+def test_support_history_omits_unavailable_disciplines(inputs):
+    for period in inputs['support_cases']['historical_sprints']:
+        for case in period['cases']:
+            case['actual_hours'].pop('Architecture', None)
+    history = calculate_capacity_health(**inputs)['support']['history']
+    assert all(set(period['actual_hours']) == {'DEV', 'QA'} for period in history)
+
+
+def test_support_history_empty_when_evidence_absent(inputs):
+    inputs['support_cases']['historical_sprints'] = []
+    assert calculate_capacity_health(**inputs)['support']['history'] == []
