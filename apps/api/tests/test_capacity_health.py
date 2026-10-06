@@ -364,3 +364,54 @@ def test_support_history_omits_unavailable_disciplines(inputs):
 def test_support_history_empty_when_evidence_absent(inputs):
     inputs['support_cases']['historical_sprints'] = []
     assert calculate_capacity_health(**inputs)['support']['history'] == []
+
+
+def test_day_10_sprint_progress_api():
+    response = TestClient(app).get('/demo/sprint-08/capacity-health')
+    assert response.status_code == 200
+    assert response.json()['sprint_progress'] == {
+        'original_baseline': {'total': 10, 'closed': 6, 'open': 4, 'completion_rate': .6},
+        'current_scope': {'total': 11, 'closed': 7, 'open': 4, 'completion_rate': .6364},
+        'post_planning_scope': {'total': 1, 'closed': 1, 'open': 0},
+    }
+
+
+@pytest.mark.parametrize('day,closed,total,added', [(1, 0, 10, 0), (5, 1, 10, 0), (6, 2, 11, 1)])
+def test_selected_day_progress_uses_replay(inputs, day, closed, total, added):
+    progress = calculate_capacity_health(**inputs, sprint_day=day)['sprint_progress']
+    assert progress['original_baseline'] == {
+        'total': 10, 'closed': closed, 'open': 10 - closed, 'completion_rate': Fraction(closed, 10)}
+    assert progress['current_scope'] == {
+        'total': total, 'closed': closed, 'open': total - closed, 'completion_rate': Fraction(closed, total)}
+    assert progress['post_planning_scope'] == {'total': added, 'closed': 0, 'open': added}
+
+
+@pytest.mark.parametrize('day,scope_closed,required_closed,cases_closed', [
+    (1, 3, 0, 0), (6, 5, 2, 1), (7, 6, 3, 1), (10, 6, 3, 1),
+])
+def test_release_summary_tracks_selected_evidence(inputs, day, scope_closed, required_closed, cases_closed):
+    release = calculate_capacity_health(**inputs, sprint_day=day)['release_readiness']
+    assert release['summary'] == {
+        'total_scope_items': 6, 'closed_scope_items': scope_closed, 'pending_scope_items': 6 - scope_closed,
+        'current_sprint_required_total': 3, 'current_sprint_required_closed': required_closed,
+        'current_sprint_required_pending': 3 - required_closed,
+        'included_customer_cases_total': 1, 'included_customer_cases_engineering_closed': cases_closed,
+        'included_customer_cases_pending': 1 - cases_closed,
+    }
+
+
+def test_release_summary_uses_engineering_not_customer_closure(inputs):
+    case = inputs['support_cases']['current_cases'][0]
+    case['events'] = [e for e in case['events'] if e['event_type'] != 'engineering_closed']
+    release = calculate_capacity_health(**inputs)['release_readiness']
+    assert case['customer_closed_at'] is not None
+    assert release['summary']['included_customer_cases_engineering_closed'] == 0
+    assert release['summary']['included_customer_cases_pending'] == 1
+
+
+def test_no_release_summary_is_not_applicable(inputs):
+    inputs['release_regression'] = None
+    inputs['capacity_ledger']['time_entries'] = [
+        e for e in inputs['capacity_ledger']['time_entries'] if e.get('category') != 'release_regression']
+    release = calculate_capacity_health(**inputs)['release_readiness']
+    assert release == {'status': 'not_applicable', 'ready_for_regression': None, 'summary': None}

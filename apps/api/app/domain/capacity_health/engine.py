@@ -49,7 +49,7 @@ def support_remaining(case, cutoff, discipline, baseline_at):
 
 def release_state(release, cases, events, cutoff, dependencies, active_ids):
     if not release:
-        return {'status': 'not_applicable', 'ready_for_regression': None}
+        return {'status': 'not_applicable', 'ready_for_regression': None, 'summary': None}
     states = {}
     for event in sorted(events, key=lambda e: (e['timestamp'], e['id'])):
         if event['timestamp'] <= cutoff and event['to_state'] and event['from_state'] != event['to_state']:
@@ -64,8 +64,24 @@ def release_state(release, cases, events, cutoff, dependencies, active_ids):
     completed = [e for e in release['events'] if e['timestamp'] <= cutoff and e['event_type'] == 'regression_completed']
     ready = all(i['closed'] for i in scope) and all(c['engineering_closed'] for c in case_states)
     scope_ids = {s['work_item_id'] for s in scope}
+    required = [item for item in scope if item['work_item_id'] in active_ids]
+    closed_count = sum(item['closed'] for item in scope)
+    required_closed = sum(item['closed'] for item in required)
+    cases_closed = sum(case['engineering_closed'] for case in case_states)
+    summary = {
+        'total_scope_items': len(scope),
+        'closed_scope_items': closed_count,
+        'pending_scope_items': len(scope) - closed_count,
+        'current_sprint_required_total': len(required),
+        'current_sprint_required_closed': required_closed,
+        'current_sprint_required_pending': len(required) - required_closed,
+        'included_customer_cases_total': len(case_states),
+        'included_customer_cases_engineering_closed': cases_closed,
+        'included_customer_cases_pending': len(case_states) - cases_closed,
+    }
     return {'release_id': release['release_id'], 'previous_release_id': release['previous_release_id'],
             'status': 'applicable', 'ready_for_regression': ready, 'scope': scope, 'customer_cases': case_states,
+            'summary': summary,
             'current_sprint_required_ids': sorted(scope_ids & set(active_ids)),
             'current_sprint_future_release_ids': sorted(set(active_ids) - scope_ids),
             'regression_phase': 'completed' if completed else 'in_progress' if started else 'not_started',
@@ -192,6 +208,18 @@ def calculate_capacity_health(*, sprint, work_items, tasks, events, capacity_pla
     baseline = set(sprint['original_baseline_work_item_ids'])
     active = scope(selected)
     added = active - baseline
+    story_states = flow['daily_snapshots'][selected - 1]['story_states']
+
+    def progress(ids, include_rate=True):
+        closed_count = sum(story_states.get(item_id) == 'Closed' for item_id in ids)
+        result = {'total': len(ids), 'closed': closed_count, 'open': len(ids) - closed_count}
+        if include_rate:
+            result['completion_rate'] = number(closed_count) / len(ids) if ids else None
+        return result
+
+    sprint_progress = {'original_baseline': progress(baseline),
+                       'current_scope': progress(active),
+                       'post_planning_scope': progress(added, include_rate=False)}
     def task_total(ids, field, discipline=None):
         return sum(number(t[field]) for t in tasks if t['work_item_id'] in ids
                    and (discipline is None or discipline_map[t['id']] == discipline)
@@ -288,7 +316,7 @@ def calculate_capacity_health(*, sprint, work_items, tasks, events, capacity_pla
             'planning': {'snapshot_at': planning_at, 'disciplines': planning['disciplines']},
             'disciplines': current['disciplines'], 'daily_capacity': daily,
             'release_readiness': release_state(release_regression, cases, events, at, dependencies, active),
-            'scope_change': scope_change,
+            'scope_change': scope_change, 'sprint_progress': sprint_progress,
             'support': {'history': support_history(support_cases['historical_sprints']),
                         'cases': case_results, 'excluded_critical_history_ids': [c['id'] for period in support_cases['historical_sprints']
                                                                               for c in period['cases'] if c['case_class'] == 'critical']},
