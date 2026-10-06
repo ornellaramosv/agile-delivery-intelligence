@@ -111,3 +111,24 @@ An open Bug with `blocks_story_closure = true` represents additional delivery wo
 **Dataset version: v1 — frozen for Sprint Intelligence implementation**
 
 Frozen story IDs, bug IDs, dates, workflow events, task effort, initial states, final states, baseline membership, and scope-added membership must not change during Sprint Intelligence implementation unless a Product Owner-approved defect is discovered. The validation suite pins the semantic contents of all five JSON files with SHA-256 digests (formatting and object-key order are ignored). Do not refresh these digests to accommodate implementation changes; an approved dataset defect is required.
+
+## Capacity Health evidence (v0.2)
+
+The six additional Sprint 08 files and two `capacity-history` files are **fictional additive evidence**, not part of the frozen v1 file set. Existing v1 records and digests are unchanged. See [Capacity Health](../docs/capacity-health.md) for calculations and semantics.
+
+| File | Shape and required evidence |
+| --- | --- |
+| `sprint-08/capacity-plan.json` | Sprint ID, `disciplines` (DEV/QA), `daily_schedule` with sprint day/date and gross hours per discipline, `reserves` with support/regression hours. Planning allocations, not calculated capacity. |
+| `sprint-08/task-capacity-map.json` | One `{task_id, discipline}` per frozen Task. No duplicated estimates, completed/remaining totals or effort classifications. |
+| `sprint-08/capacity-ledger.json` | `time_entries` with unique ID, UTC timestamp, positive hours and **either** Task ID **or** category/reference ID/discipline. Non-task categories: support, release_regression, technical_enablement. Task categories come from frozen effort_kind. `task_remaining_observations`: unique ID, timestamp, Task ID, non-negative remaining hours. |
+| `sprint-08/dependencies.json` | ID, type, owning technical area, affected Work Item IDs, opened/resolved timestamps (nullable resolution), description, dated remaining-hour observations per discipline. Technical time entries reference dependency IDs. |
+| `sprint-08/scope-decisions.json` | ID, Work Item ID, support case ID, delivery event ID, timestamp, recorded decision. Entry time must match the frozen scope event. |
+| `sprint-08/release-regression.json` | Release ID, previous release ID, explicit story scope, included customer case IDs, dated regression start/completion event IDs, observed remaining hours. Current stories reference frozen events; older stories include origin sprint, closure timestamp and certification evidence ID. Null represents no active release. |
+| `capacity-history/support-cases.json` | `historical_sprints`: sprint ID/start date, positive recency weight, evidence_complete flag, individual cases with ID, case_class and actual effort by area. `current_cases`: ID, case_class, received timestamp, planning remaining hours, nullable linked Work Item ID, nullable customer closure, engineering lifecycle events and remaining observations. Converted cases also reference the frozen scope event. |
+| `capacity-history/regression-history.json` | Release ID, positive scope count, non-negative actual QA hours, positive recency weight. Weights sum to one. Missing/invalid scope evidence cannot produce a forecast. |
+
+`case_class` is `standard` or `critical`. Engineering lifecycle events in this fixture are received, qa_validation, technical_investigation, not_reproducible, entered_sprint, prepared_for_future_release, engineering_closed. They are support lifecycle evidence, **not new User Story workflow states**. Customer closure is independent. Critical events may retain bypass/displacement/urgent-package context. External-area hours remain evidence, not automatically DEV/QA consumption.
+
+All effort is non-negative and team-level. Ledger Task entries reconcile to final frozen completed hours and occur between creation and completion/final snapshot; intermediate remaining observations preserve re-estimation without overwriting original estimates. Support entries for a converted case precede formal sprint entry; post-entry work is represented once by its Tasks. Regression effort is QA-only and occurs inside its recorded execution window after release readiness. Dependency effort is separate from elapsed duration. No forecasts, capacity snapshots, gaps, pressure, health conclusions, or employee identifiers are stored.
+
+Historical zero-case observations are explicit complete periods, distinct from missing history. They inform frequency but cannot alone establish hours per case. Forecast statuses are calculated, insufficient_history, or not_applicable. These and primary answers are **engine outputs**, not stored fixture values. Unknown required forecasts propagate null; known lower bounds can prove a no, and zero delivery demand yields yes. See the approved [missing-evidence rules](../docs/capacity-health.md#remaining-capacity-and-the-primary-answer).

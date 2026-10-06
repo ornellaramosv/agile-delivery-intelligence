@@ -1,0 +1,1222 @@
+{
+  "time_entries": [
+    {
+      "id": "TIME-097",
+      "timestamp": "2030-04-08T16:00:00Z",
+      "category": "support",
+      "reference_id": "SUP-08-001",
+      "discipline": "DEV",
+      "hours": 2
+    },
+    {
+      "id": "TIME-098",
+      "timestamp": "2030-04-08T16:00:00Z",
+      "category": "support",
+      "reference_id": "SUP-08-001",
+      "discipline": "QA",
+      "hours": 1
+    },
+    {
+      "id": "TIME-001",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-001",
+      "hours": 2
+    },
+    {
+      "id": "TIME-003",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-002",
+      "hours": 2
+    },
+    {
+      "id": "TIME-012",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-006",
+      "hours": 1
+    },
+    {
+      "id": "TIME-020",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-007",
+      "hours": 2
+    },
+    {
+      "id": "TIME-030",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-009",
+      "hours": 7
+    },
+    {
+      "id": "TIME-043",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-015",
+      "hours": 3
+    },
+    {
+      "id": "TIME-054",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-018",
+      "hours": 3
+    },
+    {
+      "id": "TIME-065",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-020",
+      "hours": 2
+    },
+    {
+      "id": "TIME-075",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-021",
+      "hours": 1
+    },
+    {
+      "id": "TIME-002",
+      "timestamp": "2030-04-09T14:30:00Z",
+      "task_id": "TASK-001",
+      "hours": 2
+    },
+    {
+      "id": "TIME-099",
+      "timestamp": "2030-04-09T16:00:00Z",
+      "category": "support",
+      "reference_id": "SUP-08-002",
+      "discipline": "QA",
+      "hours": 1
+    },
+    {
+      "id": "TIME-004",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-002",
+      "hours": 2
+    },
+    {
+      "id": "TIME-013",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-006",
+      "hours": 1
+    },
+    {
+      "id": "TIME-021",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-007",
+      "hours": 2
+    },
+    {
+      "id": "TIME-031",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-009",
+      "hours": 7
+    },
+    {
+      "id": "TIME-044",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-015",
+      "hours": 3
+    },
+    {
+      "id": "TIME-055",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-018",
+      "hours": 3
+    },
+    {
+      "id": "TIME-066",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-020",
+      "hours": 2
+    },
+    {
+      "id": "TIME-076",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-021",
+      "hours": 1
+    },
+    {
+      "id": "TIME-085",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-022",
+      "hours": 1
+    },
+    {
+      "id": "TIME-005",
+      "timestamp": "2030-04-10T10:00:00Z",
+      "task_id": "TASK-002",
+      "hours": 1
+    },
+    {
+      "id": "TIME-100",
+      "timestamp": "2030-04-10T16:00:00Z",
+      "category": "support",
+      "reference_id": "SUP-08-002",
+      "discipline": "QA",
+      "hours": 2
+    },
+    {
+      "id": "TIME-006",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-003",
+      "hours": 2
+    },
+    {
+      "id": "TIME-014",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-006",
+      "hours": 2
+    },
+    {
+      "id": "TIME-022",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-007",
+      "hours": 3
+    },
+    {
+      "id": "TIME-032",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-009",
+      "hours": 7
+    },
+    {
+      "id": "TIME-045",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-015",
+      "hours": 3
+    },
+    {
+      "id": "TIME-056",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-018",
+      "hours": 3
+    },
+    {
+      "id": "TIME-067",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-020",
+      "hours": 2
+    },
+    {
+      "id": "TIME-077",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-021",
+      "hours": 1
+    },
+    {
+      "id": "TIME-086",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-022",
+      "hours": 1
+    },
+    {
+      "id": "TIME-023",
+      "timestamp": "2030-04-11T11:00:00Z",
+      "task_id": "TASK-007",
+      "hours": 2
+    },
+    {
+      "id": "TIME-033",
+      "timestamp": "2030-04-11T12:00:00Z",
+      "task_id": "TASK-009",
+      "hours": 5
+    },
+    {
+      "id": "TIME-101",
+      "timestamp": "2030-04-11T16:00:00Z",
+      "category": "support",
+      "reference_id": "SUP-08-003",
+      "discipline": "QA",
+      "hours": 2
+    },
+    {
+      "id": "TIME-007",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-003",
+      "hours": 3
+    },
+    {
+      "id": "TIME-015",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-006",
+      "hours": 3
+    },
+    {
+      "id": "TIME-024",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-008",
+      "hours": 2
+    },
+    {
+      "id": "TIME-034",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-010",
+      "hours": 2
+    },
+    {
+      "id": "TIME-046",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-015",
+      "hours": 3
+    },
+    {
+      "id": "TIME-057",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-018",
+      "hours": 3
+    },
+    {
+      "id": "TIME-068",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-020",
+      "hours": 2
+    },
+    {
+      "id": "TIME-078",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-021",
+      "hours": 1
+    },
+    {
+      "id": "TIME-087",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-022",
+      "hours": 1
+    },
+    {
+      "id": "TIME-035",
+      "timestamp": "2030-04-12T11:00:00Z",
+      "task_id": "TASK-010",
+      "hours": 2
+    },
+    {
+      "id": "TIME-102",
+      "timestamp": "2030-04-12T16:00:00Z",
+      "category": "support",
+      "reference_id": "SUP-08-003",
+      "discipline": "QA",
+      "hours": 2
+    },
+    {
+      "id": "TIME-103",
+      "timestamp": "2030-04-12T16:00:00Z",
+      "category": "support",
+      "reference_id": "SUP-08-003",
+      "discipline": "DEV",
+      "hours": 3
+    },
+    {
+      "id": "TIME-008",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-003",
+      "hours": 3
+    },
+    {
+      "id": "TIME-016",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-006",
+      "hours": 3
+    },
+    {
+      "id": "TIME-025",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-008",
+      "hours": 2
+    },
+    {
+      "id": "TIME-047",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-015",
+      "hours": 4
+    },
+    {
+      "id": "TIME-058",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-018",
+      "hours": 3
+    },
+    {
+      "id": "TIME-069",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-020",
+      "hours": 2
+    },
+    {
+      "id": "TIME-079",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-021",
+      "hours": 1
+    },
+    {
+      "id": "TIME-088",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-022",
+      "hours": 2
+    },
+    {
+      "id": "TIME-104",
+      "timestamp": "2030-04-15T09:15:00Z",
+      "category": "support",
+      "reference_id": "SUP-08-003",
+      "discipline": "QA",
+      "hours": 1
+    },
+    {
+      "id": "TIME-089",
+      "timestamp": "2030-04-15T11:30:00Z",
+      "task_id": "TASK-022",
+      "hours": 1
+    },
+    {
+      "id": "TIME-009",
+      "timestamp": "2030-04-15T12:00:00Z",
+      "task_id": "TASK-003",
+      "hours": 2
+    },
+    {
+      "id": "TIME-010",
+      "timestamp": "2030-04-15T15:00:00Z",
+      "task_id": "TASK-004",
+      "hours": 2
+    },
+    {
+      "id": "TIME-107",
+      "timestamp": "2030-04-15T16:00:00Z",
+      "category": "technical_enablement",
+      "reference_id": "DEP-001",
+      "discipline": "DEV",
+      "hours": 3
+    },
+    {
+      "id": "TIME-017",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-006",
+      "hours": 2
+    },
+    {
+      "id": "TIME-026",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-008",
+      "hours": 2
+    },
+    {
+      "id": "TIME-036",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-011",
+      "hours": 4
+    },
+    {
+      "id": "TIME-048",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-015",
+      "hours": 3
+    },
+    {
+      "id": "TIME-059",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-018",
+      "hours": 3
+    },
+    {
+      "id": "TIME-070",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-020",
+      "hours": 2
+    },
+    {
+      "id": "TIME-080",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-021",
+      "hours": 1
+    },
+    {
+      "id": "TIME-090",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-023",
+      "hours": 3
+    },
+    {
+      "id": "TIME-037",
+      "timestamp": "2030-04-16T11:00:00Z",
+      "task_id": "TASK-011",
+      "hours": 3
+    },
+    {
+      "id": "TIME-049",
+      "timestamp": "2030-04-16T12:00:00Z",
+      "task_id": "TASK-015",
+      "hours": 3
+    },
+    {
+      "id": "TIME-011",
+      "timestamp": "2030-04-16T14:00:00Z",
+      "task_id": "TASK-005",
+      "hours": 3
+    },
+    {
+      "id": "TIME-105",
+      "timestamp": "2030-04-16T16:00:00Z",
+      "category": "support",
+      "reference_id": "SUP-08-004",
+      "discipline": "QA",
+      "hours": 1
+    },
+    {
+      "id": "TIME-106",
+      "timestamp": "2030-04-16T16:00:00Z",
+      "category": "support",
+      "reference_id": "SUP-08-004",
+      "discipline": "DEV",
+      "hours": 2
+    },
+    {
+      "id": "TIME-018",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-006",
+      "hours": 1
+    },
+    {
+      "id": "TIME-027",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-008",
+      "hours": 2
+    },
+    {
+      "id": "TIME-038",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-012",
+      "hours": 4
+    },
+    {
+      "id": "TIME-050",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-016",
+      "hours": 1
+    },
+    {
+      "id": "TIME-060",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-018",
+      "hours": 3
+    },
+    {
+      "id": "TIME-071",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-020",
+      "hours": 2
+    },
+    {
+      "id": "TIME-081",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-021",
+      "hours": 1
+    },
+    {
+      "id": "TIME-091",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-023",
+      "hours": 3
+    },
+    {
+      "id": "TIME-051",
+      "timestamp": "2030-04-17T11:00:00Z",
+      "task_id": "TASK-016",
+      "hours": 2
+    },
+    {
+      "id": "TIME-092",
+      "timestamp": "2030-04-17T14:00:00Z",
+      "task_id": "TASK-023",
+      "hours": 3
+    },
+    {
+      "id": "TIME-019",
+      "timestamp": "2030-04-17T15:00:00Z",
+      "task_id": "TASK-006",
+      "hours": 1
+    },
+    {
+      "id": "TIME-108",
+      "timestamp": "2030-04-17T16:00:00Z",
+      "category": "technical_enablement",
+      "reference_id": "DEP-002",
+      "discipline": "DEV",
+      "hours": 2
+    },
+    {
+      "id": "TIME-109",
+      "timestamp": "2030-04-17T16:00:00Z",
+      "category": "release_regression",
+      "reference_id": "REL-08",
+      "discipline": "QA",
+      "hours": 6
+    },
+    {
+      "id": "TIME-028",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-008",
+      "hours": 2
+    },
+    {
+      "id": "TIME-039",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-012",
+      "hours": 5
+    },
+    {
+      "id": "TIME-061",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-018",
+      "hours": 3
+    },
+    {
+      "id": "TIME-072",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-020",
+      "hours": 2
+    },
+    {
+      "id": "TIME-082",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-021",
+      "hours": 1
+    },
+    {
+      "id": "TIME-093",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-024",
+      "hours": 1
+    },
+    {
+      "id": "TIME-094",
+      "timestamp": "2030-04-18T10:00:00Z",
+      "task_id": "TASK-024",
+      "hours": 1
+    },
+    {
+      "id": "TIME-040",
+      "timestamp": "2030-04-18T12:00:00Z",
+      "task_id": "TASK-012",
+      "hours": 3
+    },
+    {
+      "id": "TIME-110",
+      "timestamp": "2030-04-18T14:00:00Z",
+      "category": "release_regression",
+      "reference_id": "REL-08",
+      "discipline": "QA",
+      "hours": 5
+    },
+    {
+      "id": "TIME-041",
+      "timestamp": "2030-04-18T15:00:00Z",
+      "task_id": "TASK-013",
+      "hours": 2
+    },
+    {
+      "id": "TIME-052",
+      "timestamp": "2030-04-18T16:00:00Z",
+      "task_id": "TASK-017",
+      "hours": 2
+    },
+    {
+      "id": "TIME-095",
+      "timestamp": "2030-04-18T16:00:00Z",
+      "task_id": "TASK-025",
+      "hours": 1
+    },
+    {
+      "id": "TIME-062",
+      "timestamp": "2030-04-18T17:00:00Z",
+      "task_id": "TASK-018",
+      "hours": 3
+    },
+    {
+      "id": "TIME-073",
+      "timestamp": "2030-04-18T17:00:00Z",
+      "task_id": "TASK-020",
+      "hours": 2
+    },
+    {
+      "id": "TIME-083",
+      "timestamp": "2030-04-18T17:00:00Z",
+      "task_id": "TASK-021",
+      "hours": 1
+    },
+    {
+      "id": "TIME-063",
+      "timestamp": "2030-04-19T11:00:00Z",
+      "task_id": "TASK-018",
+      "hours": 3
+    },
+    {
+      "id": "TIME-042",
+      "timestamp": "2030-04-19T14:00:00Z",
+      "task_id": "TASK-014",
+      "hours": 4
+    },
+    {
+      "id": "TIME-053",
+      "timestamp": "2030-04-19T15:30:00Z",
+      "task_id": "TASK-017",
+      "hours": 3
+    },
+    {
+      "id": "TIME-096",
+      "timestamp": "2030-04-19T16:30:00Z",
+      "task_id": "TASK-025",
+      "hours": 2
+    },
+    {
+      "id": "TIME-029",
+      "timestamp": "2030-04-19T17:00:00Z",
+      "task_id": "TASK-008",
+      "hours": 2
+    },
+    {
+      "id": "TIME-064",
+      "timestamp": "2030-04-19T17:00:00Z",
+      "task_id": "TASK-019",
+      "hours": 3
+    },
+    {
+      "id": "TIME-074",
+      "timestamp": "2030-04-19T17:00:00Z",
+      "task_id": "TASK-020",
+      "hours": 2
+    },
+    {
+      "id": "TIME-084",
+      "timestamp": "2030-04-19T17:00:00Z",
+      "task_id": "TASK-021",
+      "hours": 1
+    }
+  ],
+  "task_remaining_observations": [
+    {
+      "id": "OBS-001",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-001",
+      "remaining_hours": 2
+    },
+    {
+      "id": "OBS-002",
+      "timestamp": "2030-04-09T14:30:00Z",
+      "task_id": "TASK-001",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-003",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-002",
+      "remaining_hours": 3
+    },
+    {
+      "id": "OBS-004",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-002",
+      "remaining_hours": 1
+    },
+    {
+      "id": "OBS-005",
+      "timestamp": "2030-04-10T10:00:00Z",
+      "task_id": "TASK-002",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-006",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-003",
+      "remaining_hours": 8
+    },
+    {
+      "id": "OBS-007",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-003",
+      "remaining_hours": 5
+    },
+    {
+      "id": "OBS-008",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-003",
+      "remaining_hours": 2
+    },
+    {
+      "id": "OBS-009",
+      "timestamp": "2030-04-15T12:00:00Z",
+      "task_id": "TASK-003",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-010",
+      "timestamp": "2030-04-15T15:00:00Z",
+      "task_id": "TASK-004",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-011",
+      "timestamp": "2030-04-16T14:00:00Z",
+      "task_id": "TASK-005",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-012",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-006",
+      "remaining_hours": 13
+    },
+    {
+      "id": "OBS-013",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-006",
+      "remaining_hours": 12
+    },
+    {
+      "id": "OBS-014",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-006",
+      "remaining_hours": 10
+    },
+    {
+      "id": "OBS-015",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-006",
+      "remaining_hours": 7
+    },
+    {
+      "id": "OBS-016",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-006",
+      "remaining_hours": 4
+    },
+    {
+      "id": "OBS-017",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-006",
+      "remaining_hours": 2
+    },
+    {
+      "id": "OBS-018",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-006",
+      "remaining_hours": 1
+    },
+    {
+      "id": "OBS-019",
+      "timestamp": "2030-04-17T15:00:00Z",
+      "task_id": "TASK-006",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-020",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-007",
+      "remaining_hours": 7
+    },
+    {
+      "id": "OBS-021",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-007",
+      "remaining_hours": 5
+    },
+    {
+      "id": "OBS-022",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-007",
+      "remaining_hours": 2
+    },
+    {
+      "id": "OBS-023",
+      "timestamp": "2030-04-11T11:00:00Z",
+      "task_id": "TASK-007",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-024",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-008",
+      "remaining_hours": 18
+    },
+    {
+      "id": "OBS-025",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-008",
+      "remaining_hours": 16
+    },
+    {
+      "id": "OBS-026",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-008",
+      "remaining_hours": 14
+    },
+    {
+      "id": "OBS-027",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-008",
+      "remaining_hours": 12
+    },
+    {
+      "id": "OBS-028",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-008",
+      "remaining_hours": 10
+    },
+    {
+      "id": "OBS-029",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-009",
+      "remaining_hours": 19
+    },
+    {
+      "id": "OBS-030",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-009",
+      "remaining_hours": 12
+    },
+    {
+      "id": "OBS-031",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-009",
+      "remaining_hours": 5
+    },
+    {
+      "id": "OBS-032",
+      "timestamp": "2030-04-11T12:00:00Z",
+      "task_id": "TASK-009",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-033",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-010",
+      "remaining_hours": 2
+    },
+    {
+      "id": "OBS-034",
+      "timestamp": "2030-04-12T11:00:00Z",
+      "task_id": "TASK-010",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-035",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-011",
+      "remaining_hours": 3
+    },
+    {
+      "id": "OBS-036",
+      "timestamp": "2030-04-16T11:00:00Z",
+      "task_id": "TASK-011",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-037",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-012",
+      "remaining_hours": 8
+    },
+    {
+      "id": "OBS-038",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-012",
+      "remaining_hours": 3
+    },
+    {
+      "id": "OBS-039",
+      "timestamp": "2030-04-18T12:00:00Z",
+      "task_id": "TASK-012",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-040",
+      "timestamp": "2030-04-18T15:00:00Z",
+      "task_id": "TASK-013",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-041",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-015",
+      "remaining_hours": 19
+    },
+    {
+      "id": "OBS-042",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-015",
+      "remaining_hours": 16
+    },
+    {
+      "id": "OBS-043",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-015",
+      "remaining_hours": 13
+    },
+    {
+      "id": "OBS-044",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-015",
+      "remaining_hours": 10
+    },
+    {
+      "id": "OBS-045",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-015",
+      "remaining_hours": 6
+    },
+    {
+      "id": "OBS-046",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-015",
+      "remaining_hours": 3
+    },
+    {
+      "id": "OBS-047",
+      "timestamp": "2030-04-16T12:00:00Z",
+      "task_id": "TASK-015",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-048",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-016",
+      "remaining_hours": 2
+    },
+    {
+      "id": "OBS-049",
+      "timestamp": "2030-04-17T11:00:00Z",
+      "task_id": "TASK-016",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-050",
+      "timestamp": "2030-04-18T16:00:00Z",
+      "task_id": "TASK-017",
+      "remaining_hours": 3
+    },
+    {
+      "id": "OBS-051",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-018",
+      "remaining_hours": 27
+    },
+    {
+      "id": "OBS-052",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-018",
+      "remaining_hours": 24
+    },
+    {
+      "id": "OBS-053",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-018",
+      "remaining_hours": 21
+    },
+    {
+      "id": "OBS-054",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-018",
+      "remaining_hours": 18
+    },
+    {
+      "id": "OBS-055",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-018",
+      "remaining_hours": 15
+    },
+    {
+      "id": "OBS-056",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-018",
+      "remaining_hours": 12
+    },
+    {
+      "id": "OBS-057",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-018",
+      "remaining_hours": 9
+    },
+    {
+      "id": "OBS-058",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-018",
+      "remaining_hours": 6
+    },
+    {
+      "id": "OBS-059",
+      "timestamp": "2030-04-18T17:00:00Z",
+      "task_id": "TASK-018",
+      "remaining_hours": 3
+    },
+    {
+      "id": "OBS-060",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-020",
+      "remaining_hours": 34
+    },
+    {
+      "id": "OBS-061",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-020",
+      "remaining_hours": 32
+    },
+    {
+      "id": "OBS-062",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-020",
+      "remaining_hours": 30
+    },
+    {
+      "id": "OBS-063",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-020",
+      "remaining_hours": 28
+    },
+    {
+      "id": "OBS-064",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-020",
+      "remaining_hours": 26
+    },
+    {
+      "id": "OBS-065",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-020",
+      "remaining_hours": 24
+    },
+    {
+      "id": "OBS-066",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-020",
+      "remaining_hours": 22
+    },
+    {
+      "id": "OBS-067",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-020",
+      "remaining_hours": 20
+    },
+    {
+      "id": "OBS-068",
+      "timestamp": "2030-04-18T17:00:00Z",
+      "task_id": "TASK-020",
+      "remaining_hours": 18
+    },
+    {
+      "id": "OBS-069",
+      "timestamp": "2030-04-08T17:00:00Z",
+      "task_id": "TASK-021",
+      "remaining_hours": 27
+    },
+    {
+      "id": "OBS-070",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-021",
+      "remaining_hours": 26
+    },
+    {
+      "id": "OBS-071",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-021",
+      "remaining_hours": 25
+    },
+    {
+      "id": "OBS-072",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-021",
+      "remaining_hours": 24
+    },
+    {
+      "id": "OBS-073",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-021",
+      "remaining_hours": 23
+    },
+    {
+      "id": "OBS-074",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-021",
+      "remaining_hours": 22
+    },
+    {
+      "id": "OBS-075",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-021",
+      "remaining_hours": 21
+    },
+    {
+      "id": "OBS-076",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-021",
+      "remaining_hours": 20
+    },
+    {
+      "id": "OBS-077",
+      "timestamp": "2030-04-18T17:00:00Z",
+      "task_id": "TASK-021",
+      "remaining_hours": 19
+    },
+    {
+      "id": "OBS-078",
+      "timestamp": "2030-04-09T17:00:00Z",
+      "task_id": "TASK-022",
+      "remaining_hours": 5
+    },
+    {
+      "id": "OBS-079",
+      "timestamp": "2030-04-10T17:00:00Z",
+      "task_id": "TASK-022",
+      "remaining_hours": 4
+    },
+    {
+      "id": "OBS-080",
+      "timestamp": "2030-04-11T17:00:00Z",
+      "task_id": "TASK-022",
+      "remaining_hours": 3
+    },
+    {
+      "id": "OBS-081",
+      "timestamp": "2030-04-12T17:00:00Z",
+      "task_id": "TASK-022",
+      "remaining_hours": 1
+    },
+    {
+      "id": "OBS-082",
+      "timestamp": "2030-04-15T11:30:00Z",
+      "task_id": "TASK-022",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-083",
+      "timestamp": "2030-04-15T17:00:00Z",
+      "task_id": "TASK-023",
+      "remaining_hours": 6
+    },
+    {
+      "id": "OBS-084",
+      "timestamp": "2030-04-16T17:00:00Z",
+      "task_id": "TASK-023",
+      "remaining_hours": 3
+    },
+    {
+      "id": "OBS-085",
+      "timestamp": "2030-04-17T14:00:00Z",
+      "task_id": "TASK-023",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-086",
+      "timestamp": "2030-04-17T17:00:00Z",
+      "task_id": "TASK-024",
+      "remaining_hours": 1
+    },
+    {
+      "id": "OBS-087",
+      "timestamp": "2030-04-18T10:00:00Z",
+      "task_id": "TASK-024",
+      "remaining_hours": 0
+    },
+    {
+      "id": "OBS-088",
+      "timestamp": "2030-04-18T16:00:00Z",
+      "task_id": "TASK-025",
+      "remaining_hours": 2
+    }
+  ]
+}

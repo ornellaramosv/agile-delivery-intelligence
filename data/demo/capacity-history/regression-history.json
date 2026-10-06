@@ -1,0 +1,20 @@
+[
+  {
+    "release_id": "REL-05",
+    "scope_count": 5,
+    "actual_qa_hours": 7,
+    "recency_weight": 0.2
+  },
+  {
+    "release_id": "REL-06",
+    "scope_count": 8,
+    "actual_qa_hours": 12,
+    "recency_weight": 0.3
+  },
+  {
+    "release_id": "REL-07",
+    "scope_count": 6,
+    "actual_qa_hours": 8,
+    "recency_weight": 0.5
+  }
+]

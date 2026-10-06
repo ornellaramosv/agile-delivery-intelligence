@@ -1,0 +1,99 @@
+{
+  "sprint_id": "ATLAS-SPRINT-08",
+  "disciplines": [
+    "DEV",
+    "QA"
+  ],
+  "daily_schedule": [
+    {
+      "sprint_day": 1,
+      "date": "2030-04-08",
+      "gross_hours": {
+        "DEV": 20,
+        "QA": 10
+      }
+    },
+    {
+      "sprint_day": 2,
+      "date": "2030-04-09",
+      "gross_hours": {
+        "DEV": 20,
+        "QA": 10
+      }
+    },
+    {
+      "sprint_day": 3,
+      "date": "2030-04-10",
+      "gross_hours": {
+        "DEV": 20,
+        "QA": 10
+      }
+    },
+    {
+      "sprint_day": 4,
+      "date": "2030-04-11",
+      "gross_hours": {
+        "DEV": 20,
+        "QA": 10
+      }
+    },
+    {
+      "sprint_day": 5,
+      "date": "2030-04-12",
+      "gross_hours": {
+        "DEV": 20,
+        "QA": 10
+      }
+    },
+    {
+      "sprint_day": 6,
+      "date": "2030-04-15",
+      "gross_hours": {
+        "DEV": 20,
+        "QA": 10
+      }
+    },
+    {
+      "sprint_day": 7,
+      "date": "2030-04-16",
+      "gross_hours": {
+        "DEV": 20,
+        "QA": 10
+      }
+    },
+    {
+      "sprint_day": 8,
+      "date": "2030-04-17",
+      "gross_hours": {
+        "DEV": 20,
+        "QA": 10
+      }
+    },
+    {
+      "sprint_day": 9,
+      "date": "2030-04-18",
+      "gross_hours": {
+        "DEV": 20,
+        "QA": 10
+      }
+    },
+    {
+      "sprint_day": 10,
+      "date": "2030-04-19",
+      "gross_hours": {
+        "DEV": 20,
+        "QA": 10
+      }
+    }
+  ],
+  "reserves": {
+    "DEV": {
+      "support_hours": 13,
+      "regression_hours": 0
+    },
+    "QA": {
+      "support_hours": 10,
+      "regression_hours": 9
+    }
+  }
+}

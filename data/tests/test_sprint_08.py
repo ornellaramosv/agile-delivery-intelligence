@@ -101,7 +101,13 @@ class Sprint08Validation(unittest.TestCase):
                     )
 
     def test_frozen_v1_scenario_content(self):
-        self.assertEqual({path.name for path in SCENARIO.glob("*.json")}, set(FROZEN_V1_SHA256))
+        # v0.2 adds separate evidence files; the five v1 digests remain unchanged.
+        capacity_files = {
+            "capacity-plan.json", "capacity-ledger.json", "task-capacity-map.json",
+            "dependencies.json", "scope-decisions.json", "release-regression.json",
+        }
+        self.assertEqual({path.name for path in SCENARIO.glob("*.json")},
+                         set(FROZEN_V1_SHA256) | capacity_files)
         for filename, expected in FROZEN_V1_SHA256.items():
             with self.subTest(file=filename):
                 canonical = json.dumps(

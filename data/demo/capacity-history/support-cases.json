@@ -1,0 +1,474 @@
+{
+  "historical_sprints": [
+    {
+      "sprint_id": "ATLAS-SPRINT-04",
+      "start_date": "2030-02-11",
+      "recency_weight": 0.1,
+      "evidence_complete": true,
+      "cases": [
+        {
+          "id": "SUP-04-001",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 6
+          }
+        },
+        {
+          "id": "SUP-04-002",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-04-003",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-04-004",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-04-005",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-04-006",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-04-007",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-04-008",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        }
+      ]
+    },
+    {
+      "sprint_id": "ATLAS-SPRINT-05",
+      "start_date": "2030-02-25",
+      "recency_weight": 0.2,
+      "evidence_complete": true,
+      "cases": [
+        {
+          "id": "SUP-05-001",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 4
+          }
+        },
+        {
+          "id": "SUP-05-002",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-05-003",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-05-004",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-05-005",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-05-006",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-05-007",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        }
+      ]
+    },
+    {
+      "sprint_id": "ATLAS-SPRINT-06",
+      "start_date": "2030-03-11",
+      "recency_weight": 0.3,
+      "evidence_complete": true,
+      "cases": [
+        {
+          "id": "SUP-06-001",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 2
+          }
+        },
+        {
+          "id": "SUP-06-002",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-06-003",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-06-004",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-06-005",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        }
+      ]
+    },
+    {
+      "sprint_id": "ATLAS-SPRINT-07",
+      "start_date": "2030-03-25",
+      "recency_weight": 0.4,
+      "evidence_complete": true,
+      "cases": [
+        {
+          "id": "SUP-07-001",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 1
+          }
+        },
+        {
+          "id": "SUP-07-002",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-07-003",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "SUP-07-004",
+          "case_class": "standard",
+          "actual_hours": {
+            "DEV": 2,
+            "QA": 3,
+            "Architecture": 0
+          }
+        },
+        {
+          "id": "INC-07-001",
+          "case_class": "critical",
+          "actual_hours": {
+            "DEV": 6,
+            "QA": 0,
+            "Architecture": 2
+          },
+          "description": "Fictional urgent client package; bypassed initial QA triage. Excluded from standard support history."
+        }
+      ]
+    }
+  ],
+  "current_cases": [
+    {
+      "id": "SUP-08-001",
+      "case_class": "standard",
+      "received_at": "2030-04-05T14:00:00Z",
+      "planning_remaining_hours": {
+        "DEV": 2,
+        "QA": 1
+      },
+      "linked_work_item_id": null,
+      "customer_closed_at": "2030-04-10T17:00:00Z",
+      "events": [
+        {
+          "id": "SUP-08-001-E1",
+          "timestamp": "2030-04-05T14:00:00Z",
+          "event_type": "received"
+        },
+        {
+          "id": "SUP-08-001-E2",
+          "timestamp": "2030-04-05T15:00:00Z",
+          "event_type": "qa_validation"
+        },
+        {
+          "id": "SUP-08-001-E3",
+          "timestamp": "2030-04-08T10:00:00Z",
+          "event_type": "technical_investigation"
+        },
+        {
+          "id": "SUP-08-001-E4",
+          "timestamp": "2030-04-09T10:00:00Z",
+          "event_type": "not_reproducible"
+        },
+        {
+          "id": "SUP-08-001-E5",
+          "timestamp": "2030-04-09T11:00:00Z",
+          "event_type": "engineering_closed"
+        }
+      ],
+      "remaining_observations": [
+        {
+          "timestamp": "2030-04-08T17:30:00Z",
+          "remaining_hours": {
+            "DEV": 0,
+            "QA": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "SUP-08-002",
+      "case_class": "standard",
+      "received_at": "2030-04-09T09:00:00Z",
+      "planning_remaining_hours": {
+        "DEV": 0,
+        "QA": 0
+      },
+      "linked_work_item_id": null,
+      "customer_closed_at": "2030-04-11T17:00:00Z",
+      "events": [
+        {
+          "id": "SUP-08-002-E1",
+          "timestamp": "2030-04-09T09:00:00Z",
+          "event_type": "received"
+        },
+        {
+          "id": "SUP-08-002-E2",
+          "timestamp": "2030-04-09T10:00:00Z",
+          "event_type": "qa_validation"
+        },
+        {
+          "id": "SUP-08-002-E3",
+          "timestamp": "2030-04-10T16:10:00Z",
+          "event_type": "not_reproducible"
+        },
+        {
+          "id": "SUP-08-002-E4",
+          "timestamp": "2030-04-10T17:00:00Z",
+          "event_type": "engineering_closed"
+        }
+      ],
+      "remaining_observations": [
+        {
+          "timestamp": "2030-04-09T17:30:00Z",
+          "remaining_hours": {
+            "DEV": 0,
+            "QA": 2
+          }
+        },
+        {
+          "timestamp": "2030-04-10T17:30:00Z",
+          "remaining_hours": {
+            "DEV": 0,
+            "QA": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "SUP-08-003",
+      "case_class": "standard",
+      "received_at": "2030-04-11T09:00:00Z",
+      "planning_remaining_hours": {
+        "DEV": 0,
+        "QA": 0
+      },
+      "linked_work_item_id": "US-111",
+      "scope_event_id": "EVT-021",
+      "customer_closed_at": null,
+      "events": [
+        {
+          "id": "SUP-08-003-E1",
+          "timestamp": "2030-04-11T09:00:00Z",
+          "event_type": "received"
+        },
+        {
+          "id": "SUP-08-003-E2",
+          "timestamp": "2030-04-11T10:00:00Z",
+          "event_type": "qa_validation"
+        },
+        {
+          "id": "SUP-08-003-E3",
+          "timestamp": "2030-04-12T12:00:00Z",
+          "event_type": "technical_investigation"
+        },
+        {
+          "id": "SUP-08-003-E4",
+          "timestamp": "2030-04-15T09:30:00Z",
+          "event_type": "entered_sprint"
+        },
+        {
+          "id": "SUP-08-003-E5",
+          "timestamp": "2030-04-19T17:05:00Z",
+          "event_type": "prepared_for_future_release"
+        },
+        {
+          "id": "SUP-08-003-E6",
+          "timestamp": "2030-04-19T17:10:00Z",
+          "event_type": "engineering_closed"
+        }
+      ],
+      "remaining_observations": [
+        {
+          "timestamp": "2030-04-11T17:30:00Z",
+          "remaining_hours": {
+            "DEV": 3,
+            "QA": 3
+          }
+        },
+        {
+          "timestamp": "2030-04-12T17:30:00Z",
+          "remaining_hours": {
+            "DEV": 0,
+            "QA": 1
+          }
+        },
+        {
+          "timestamp": "2030-04-15T09:30:00Z",
+          "remaining_hours": {
+            "DEV": 0,
+            "QA": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "SUP-08-004",
+      "case_class": "standard",
+      "received_at": "2030-04-16T09:00:00Z",
+      "planning_remaining_hours": {
+        "DEV": 0,
+        "QA": 0
+      },
+      "linked_work_item_id": null,
+      "customer_closed_at": null,
+      "events": [
+        {
+          "id": "SUP-08-004-E1",
+          "timestamp": "2030-04-16T09:00:00Z",
+          "event_type": "received"
+        },
+        {
+          "id": "SUP-08-004-E2",
+          "timestamp": "2030-04-16T10:00:00Z",
+          "event_type": "qa_validation"
+        },
+        {
+          "id": "SUP-08-004-E3",
+          "timestamp": "2030-04-16T12:00:00Z",
+          "event_type": "technical_investigation"
+        },
+        {
+          "id": "SUP-08-004-E4",
+          "timestamp": "2030-04-16T16:30:00Z",
+          "event_type": "not_reproducible"
+        },
+        {
+          "id": "SUP-08-004-E5",
+          "timestamp": "2030-04-16T17:00:00Z",
+          "event_type": "engineering_closed"
+        }
+      ],
+      "remaining_observations": [
+        {
+          "timestamp": "2030-04-16T17:30:00Z",
+          "remaining_hours": {
+            "DEV": 0,
+            "QA": 0
+          }
+        }
+      ]
+    }
+  ]
+}

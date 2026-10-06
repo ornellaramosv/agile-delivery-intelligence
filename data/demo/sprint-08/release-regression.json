@@ -1,0 +1,61 @@
+{
+  "release_id": "REL-08",
+  "previous_release_id": "REL-07",
+  "scope": [
+    {
+      "work_item_id": "US-081",
+      "origin_sprint_id": "ATLAS-SPRINT-06",
+      "closed_at": "2030-04-04T15:00:00Z",
+      "certification_evidence_id": "CERT-081"
+    },
+    {
+      "work_item_id": "US-091",
+      "origin_sprint_id": "ATLAS-SPRINT-07",
+      "closed_at": "2030-04-05T15:00:00Z",
+      "certification_evidence_id": "CERT-091"
+    },
+    {
+      "work_item_id": "US-092",
+      "origin_sprint_id": "ATLAS-SPRINT-07",
+      "closed_at": "2030-04-05T15:00:00Z",
+      "certification_evidence_id": "CERT-092"
+    },
+    {
+      "work_item_id": "US-101",
+      "origin_sprint_id": "ATLAS-SPRINT-08"
+    },
+    {
+      "work_item_id": "US-102",
+      "origin_sprint_id": "ATLAS-SPRINT-08"
+    },
+    {
+      "work_item_id": "US-110",
+      "origin_sprint_id": "ATLAS-SPRINT-08"
+    }
+  ],
+  "customer_case_ids": [
+    "SUP-08-001"
+  ],
+  "events": [
+    {
+      "id": "REG-001",
+      "timestamp": "2030-04-17T09:00:00Z",
+      "event_type": "regression_started"
+    },
+    {
+      "id": "REG-002",
+      "timestamp": "2030-04-18T14:00:00Z",
+      "event_type": "regression_completed"
+    }
+  ],
+  "remaining_observations": [
+    {
+      "timestamp": "2030-04-17T16:30:00Z",
+      "remaining_hours": 5
+    },
+    {
+      "timestamp": "2030-04-18T14:00:00Z",
+      "remaining_hours": 0
+    }
+  ]
+}

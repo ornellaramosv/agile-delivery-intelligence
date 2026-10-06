@@ -107,3 +107,14 @@ Frozen story IDs, bug IDs, dates, workflow events, task effort, initial states, 
 - Local validation does not certify Vercel cloud packaging. Manual endpoint and UI verification remains mandatory; no provider authentication or deployment is part of this task.
 
 - Vercel CLI 61.1.0 failed when its pre-install parser followed a root requirements include. Keep the canonical runtime pins directly in root `requirements.txt`; `apps/api/requirements.txt` references it for local development. No dependency versions changed.
+
+## Capacity Health backend foundation (v0.2)
+
+- Extend the fixture with separate fictional capacity evidence; retain the five frozen v1 JSON files and their SHA-256 checks. The existing file-inventory test now explicitly permits the six requested additions without weakening frozen content checks.
+- Map Task IDs to DEV/QA only. Use the frozen Task effort/classification as authority. A dated ledger refines daily time and intermediate remaining estimates; validate reconciliation, never add ledger and final Task totals together. No inferred/interpolated application progress.
+- Use a pure Python domain package, repository-relative service and thin demo route, following the existing engines. Query day, comparison and consumer intent; reject unsupported choices. No dependencies or frontend changes.
+- Keep exact `Fraction` arithmetic internally; format numbers only at the API boundary. Forecast weights must sum to one. Complete zero-case periods inform frequency but have no observed hours-per-case. Keep the approved weights; do not redistribute them or invent a rate. A missing weighted case-effort observation leaves that forecast unavailable.
+- Apply the Product Owner-approved answer enum `yes | no | insufficient_data`. Zero delivery demand yields yes; known demand can establish a no even when forecasts are unavailable. Preserve null dependent metrics, expose missing input names and explicit bounds. `not_applicable` is not missing evidence. Zero future/effective capacity never produces infinity.
+- Track engineering closure separately from customer closure. The US-111 conversion boundary comes from frozen EVT-021. Critical actual and remaining effort remain visible; critical cases never train standard support forecasts or consume the standard forecast residual.
+- Model REL-08 with three earlier Closed stories and three selected current stories. Regression readiness uses story/engineering-case closure only. Pipeline/Architecture dependencies are context, with elapsed calendar duration separate from actual/remaining technical hours.
+- Keep What Changed deterministic and timestamp-based, including source IDs and gap sign crossings. No recommended actions, thresholds, employee analytics, frontend, release, or deployment. See [Capacity Health](capacity-health.md).

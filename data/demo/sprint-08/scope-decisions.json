@@ -1,0 +1,10 @@
+[
+  {
+    "id": "SCOPE-001",
+    "work_item_id": "US-111",
+    "support_case_id": "SUP-08-003",
+    "delivery_event_id": "EVT-021",
+    "timestamp": "2030-04-15T09:30:00Z",
+    "decision": "Validated client priority enters sprint; original baseline retained."
+  }
+]

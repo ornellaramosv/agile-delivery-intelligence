@@ -1,0 +1,102 @@
+[
+  {
+    "task_id": "TASK-001",
+    "discipline": "QA"
+  },
+  {
+    "task_id": "TASK-002",
+    "discipline": "QA"
+  },
+  {
+    "task_id": "TASK-003",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-004",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-005",
+    "discipline": "QA"
+  },
+  {
+    "task_id": "TASK-006",
+    "discipline": "QA"
+  },
+  {
+    "task_id": "TASK-007",
+    "discipline": "QA"
+  },
+  {
+    "task_id": "TASK-008",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-009",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-010",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-011",
+    "discipline": "QA"
+  },
+  {
+    "task_id": "TASK-012",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-013",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-014",
+    "discipline": "QA"
+  },
+  {
+    "task_id": "TASK-015",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-016",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-017",
+    "discipline": "QA"
+  },
+  {
+    "task_id": "TASK-018",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-019",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-020",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-021",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-022",
+    "discipline": "QA"
+  },
+  {
+    "task_id": "TASK-023",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-024",
+    "discipline": "DEV"
+  },
+  {
+    "task_id": "TASK-025",
+    "discipline": "QA"
+  }
+]

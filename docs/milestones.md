@@ -2,7 +2,7 @@
 
 ## v0.1.0 — Sprint Intelligence
 
-**Feature complete — pending portfolio release preparation**
+**Released — stable**
 
 - Burndown Intelligence — domain engine, read-only demo endpoint, and first Sprint Health UI implemented; chart shows Actual Remaining Work and an Original Baseline reference
 - Delivery Flow — domain engine, read-only demo endpoint, and workflow composition UI implemented
@@ -13,11 +13,16 @@ Repository foundation and the frozen Sprint 08 v1 dataset are complete. Burndown
 
 Flatline semantics are Product Owner-confirmed: only consecutive zero-delta days qualify. Upward days are separate. Sprint 08's default Flatline remains Days 5–6 at 11 remaining delivery work units; no Flatline decision remains pending.
 
-All frontend/backend/data tests, lint, TypeScript, production build, and desktop/mobile browser checks passed for this milestone. Release creation and deployment await a separate Product Owner-approved preparation task.
+All frontend/backend/data tests, lint, TypeScript, production build, and desktop/mobile browser checks passed for this milestone. v0.1 is released and remains stable during v0.2 work; no release or deployment is part of the Capacity Health backend task.
+
+## v0.2.0 — Capacity Health
+
+Backend foundation implemented: additive fictional evidence, pure domain engine, read-only `/demo/sprint-08/capacity-health` endpoint, deterministic What Changed and missing-evidence handling. Four pillars: Causal Capacity, Cross-sprint Release Readiness, Adaptive Support Forecasting, Critical Disruption Context. See [Capacity Health](capacity-health.md).
+
+The Capacity Health frontend is **not implemented**. No v0.2 release or tag has been created. v0.1 engines, contracts, UI and frozen source files remain unchanged.
 
 ## Future milestones
 
-- Capacity Health
 - Impediment Intelligence
 - Alerts and Scrum Master management
 - Portfolio Intelligence

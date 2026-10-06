@@ -1,0 +1,56 @@
+[
+  {
+    "id": "DEP-001",
+    "type": "pipeline",
+    "owner": "DevOps",
+    "work_item_ids": [
+      "US-107"
+    ],
+    "opened_at": "2030-04-11T12:00:00Z",
+    "resolved_at": "2030-04-15T16:30:00Z",
+    "description": "Version-retrieval integration pipeline needs an updated service contract.",
+    "remaining_observations": [
+      {
+        "timestamp": "2030-04-11T12:00:00Z",
+        "remaining_hours": {
+          "DEV": 3,
+          "QA": 0
+        }
+      },
+      {
+        "timestamp": "2030-04-15T16:30:00Z",
+        "remaining_hours": {
+          "DEV": 0,
+          "QA": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "DEP-002",
+    "type": "architecture",
+    "owner": "Architecture",
+    "work_item_ids": [
+      "US-108"
+    ],
+    "opened_at": "2030-04-12T10:00:00Z",
+    "resolved_at": null,
+    "description": "Bulk-registration validation contract review remains open; further DEV enablement work is estimated separately.",
+    "remaining_observations": [
+      {
+        "timestamp": "2030-04-12T10:00:00Z",
+        "remaining_hours": {
+          "DEV": 4,
+          "QA": 0
+        }
+      },
+      {
+        "timestamp": "2030-04-17T17:00:00Z",
+        "remaining_hours": {
+          "DEV": 2,
+          "QA": 0
+        }
+      }
+    ]
+  }
+]
