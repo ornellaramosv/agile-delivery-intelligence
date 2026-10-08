@@ -87,12 +87,12 @@ Frozen story IDs, bug IDs, dates, workflow events, task effort, initial states, 
 - Present the backend ratio with native horizontal meter semantics and neutral styling, paired with passed/eligible text. Format the supplied ratio to one decimal percentage without recomputing it. Keep unknown outcomes and null rates explicit.
 - Render all active-scope story classifications and eligibility explanations. Render each rework cycle separately with meaningful Bug/event evidence and a plain Active rework or Completed label. Show task effort at story and sprint levels without normalization or per-cycle allocation.
 - Reuse existing page styles unchanged and add scoped CSS only. Server rendering needs no new dependencies or chart code. Test presentation against a captured API response and verify desktop/mobile against the local production app.
-- v0.1.0 is Feature complete — pending portfolio release preparation after all checks passed. No release or deployment is performed. See [Quality & Rework UI](quality-rework-ui.md).
+- v0.1.0 is released and stable. The original UI implementation task performed no release or deployment. See [Quality & Rework UI](quality-rework-ui.md).
 
 
 ## Portfolio presentation preparation
 
-- Public presentation uses the existing desktop captures, relative documentation links, and an explicit fictional-data statement. The README describes only the three implemented v0.1 slices and clearly separates planned exploration.
+- Public presentation uses the existing desktop captures, relative documentation links, and an explicit fictional-data statement. The initial README described the three implemented v0.1 slices; it now also documents the implemented v0.2 Capacity Health modes and clearly separates planned exploration.
 - Confirmed publication decision: no open-source license is granted at this stage; no LICENSE file is added.
 - QA performs certification/validation. `qa_passed` records certification success; `closed` records the final completed story state. Existing quality API acceptance-named fields and cycle-completion calculations remain unchanged. No universal claim about organizational product-acceptance ownership is implied.
 - Prepare the local unborn branch as `main` and use the approved author name. Author email still requires confirmation before any first commit; no email is invented or changed. No commit, remote, release, or deployment is part of this preparation.

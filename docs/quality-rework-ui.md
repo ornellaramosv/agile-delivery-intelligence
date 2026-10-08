@@ -26,4 +26,4 @@ Desktop/mobile screenshots and browser checks use the real local API and product
 
 Verification completed: 59 frontend tests (25 new), 88 backend tests, and 21 frozen-fixture tests passed. Lint, TypeScript, and production build passed. Browser checks at 1440px desktop and 390px mobile verified readable ratio/evidence, no horizontal page overflow, no browser errors, and navigation across all three views after chart hydration. Byte comparisons confirmed 45 frozen-fixture, backend, shell, and existing UI source files remained unchanged.
 
-Milestone status: **Feature complete — pending portfolio release preparation**. No Product Owner or UX decision remains for this slice.
+v0.1.0 milestone status: **Released — stable**. No Product Owner or UX decision remains for this slice.

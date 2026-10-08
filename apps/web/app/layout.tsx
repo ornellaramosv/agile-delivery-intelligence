@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="shell">
           <header>
             <Link className="project-name" href="/">Agile Delivery Intelligence (ADI)</Link>
-            <p>v0.1.0 — Sprint Intelligence</p>
+            <p>v0.2.0 — Capacity Health · Pre-release</p>
             <nav aria-label="Main navigation">
               <Link href="/sprint-health">Sprint Health</Link>
               <Link href="/delivery-flow">Delivery Flow</Link>

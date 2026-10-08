@@ -13,13 +13,19 @@ Repository foundation and the frozen Sprint 08 v1 dataset are complete. Burndown
 
 Flatline semantics are Product Owner-confirmed: only consecutive zero-delta days qualify. Upward days are separate. Sprint 08's default Flatline remains Days 5–6 at 11 remaining delivery work units; no Flatline decision remains pending.
 
-All frontend/backend/data tests, lint, TypeScript, production build, and desktop/mobile browser checks passed for this milestone. v0.1 is released and remains stable during v0.2 work; no release or deployment is part of the Capacity Health backend task.
+All frontend/backend/data tests, lint, TypeScript, production build, and desktop/mobile browser checks passed for this milestone. v0.1 is released and remains stable during v0.2 work.
 
 ## v0.2.0 — Capacity Health
+
+**Feature-complete — pending final release**
+
+Current Sprint and Retrospective are Product Owner-approved. SLA intelligence is not implemented.
 
 Backend foundation implemented: additive fictional evidence, pure domain engine, read-only `/demo/sprint-08/capacity-health` endpoint, deterministic What Changed and missing-evidence handling. Four pillars: Causal Capacity, Cross-sprint Release Readiness, Adaptive Support Forecasting, Critical Disruption Context. See [Capacity Health](capacity-health.md).
 
 The Capacity Health **Current Sprint frontend is implemented** at `/capacity-health`, with server-side API consumption, day/comparison selection and responsive evidence views. The Retrospective frontend at `/capacity-health/retrospective` presents backend final outcomes, turning points and daily DEV/QA evolution, with mode navigation back to Current Sprint. No v0.2 release or tag has been created. v0.1 engines, contracts, UI and frozen source files remain unchanged.
+
+Final v0.2 pre-release validation passed: 147 backend tests, 35 data tests, 117 frontend tests, lint, TypeScript, and production build. This cleanup changes product copy and documentation only; Capacity Health calculations and frozen v0.1 fixtures remain unchanged.
 
 ## Future milestones
 
@@ -27,4 +33,4 @@ The Capacity Health **Current Sprint frontend is implemented** at `/capacity-hea
 - Alerts and Scrum Master management
 - Portfolio Intelligence
 - Carry-over Intelligence
-- Release Readiness
+- Broader standalone Release Readiness (Capacity Health already includes cross-sprint release-readiness evidence)

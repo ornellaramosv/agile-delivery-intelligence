@@ -6,9 +6,9 @@ ADI is a delivery-intelligence layer that turns Agile execution data into delive
 
 Azure DevOps, Jira, ClickUp, and Linear are strong work-tracking systems. ADI explores a complementary intelligence layer; it does not replace them. The current demo uses fictional JSON data, with no external integrations.
 
-**Status: Active portfolio project** · **v0.1.0 — Sprint Intelligence: Released.**
+**Status: Active portfolio project** · **v0.1.0 — Sprint Intelligence: Released and stable.** · **v0.2.0 — Capacity Health: Feature-complete, pending final release.**
 
-Three implemented views connect remaining work, workflow position, and QA/rework evidence. **All displayed project and sprint data are fictional demo data.**
+Implemented views connect remaining work, workflow position, QA/rework evidence, and DEV/QA capacity in Current Sprint and Retrospective modes. **All displayed project and sprint data are fictional demo data.**
 
 ## Live Demo
 
@@ -58,6 +58,17 @@ Shows First-pass QA, the eligible population, stories requiring rework, cycle st
 
 [Quality & Rework definitions](docs/quality-rework-intelligence.md)
 
+## v0.2.0 — Capacity Health
+
+**Feature-complete — pending final release.** Current Sprint and Retrospective are implemented end to end.
+
+- **Current Sprint** compares remaining delivery demand with effective DEV/QA capacity and explains sprint progress, changes, release readiness, support demand, dependencies, and critical disruptions.
+- **Retrospective** presents the final outcome, chronological turning points, and daily DEV/QA capacity evolution from Planning to close.
+
+Both views use backend-derived results and traceable fictional evidence. Capacity is not progress; no individual productivity or utilization score is produced. **SLA intelligence is not implemented.**
+
+[Capacity Health semantics and evidence](docs/capacity-health.md)
+
 ## Demo data
 
 Project **Atlas**, backlog **Core Services**, and **Sprint 08** are fictional. The frozen scenario reflects common software-delivery patterns: successful QA paths, QA returns, Bugs that block story closure, carry-over, scope added after baseline, and unfinished stories.
@@ -75,12 +86,12 @@ FastAPI
         ↓
 Typed Next.js API Clients
         ↓
-Sprint Intelligence UI
+ADI Intelligence UI
 ```
 
-The **Burndown Intelligence Engine**, **Delivery Flow Intelligence Engine**, and **Quality & Rework Intelligence Engine** perform business calculations in Python. Fixture-loading services connect these pure domain functions to read-only FastAPI routes. Typed Next.js server clients fetch the results; the frontend formats and presents them without recalculating business metrics.
+The **Burndown Intelligence Engine**, **Delivery Flow Intelligence Engine**, **Quality & Rework Intelligence Engine**, and **Capacity Health Engine** perform business calculations in Python. Fixture-loading services connect these pure domain functions to read-only FastAPI routes. Typed Next.js server clients fetch the results; the frontend formats and presents them without recalculating business metrics.
 
-There is no database, authentication, external integration, or AI recommendation service in v0.1.0.
+There is no database, authentication, external integration, or AI recommendation service.
 
 ## Engineering and product principles
 
@@ -106,7 +117,7 @@ QA performs certification/validation. A return from QA to DEV represents require
 
 ## Automated validation
 
-Latest verified suite: **91 backend tests**, **21 dataset tests**, and **69 frontend tests**; **lint, TypeScript checks, and production build passing**.
+Final v0.2 pre-release validation: **147 backend tests**, **35 dataset tests** (21 frozen Sprint 08 checks and 14 Capacity Health checks), and **117 frontend tests**; **lint, TypeScript checks, and production build passing**.
 
 Coverage includes event reconstruction, immutable baseline and fixture checks, synthetic domain cases, API/domain parity, and frontend presentation and loading/error/empty states. These are validation evidence, not a quality score.
 
@@ -155,7 +166,7 @@ npm ci
 npm run dev
 ```
 
-Open `http://localhost:3000`. Use the existing navigation for Sprint Health, Delivery Flow, and Quality & Rework. Start the backend in a second terminal to load the demo results.
+Open `http://localhost:3000`. Use the existing navigation for Sprint Health, Delivery Flow, Quality & Rework, and Capacity Health (Current Sprint and Retrospective). Start the backend in a second terminal to load the demo results.
 
 ### Backend
 
@@ -177,6 +188,7 @@ The API provides `GET /health` and these read-only routes:
 GET /demo/sprint-08/burndown
 GET /demo/sprint-08/delivery-flow
 GET /demo/sprint-08/quality-rework
+GET /demo/sprint-08/capacity-health
 ```
 
 ### API configuration
@@ -211,6 +223,7 @@ docs/    # Product principles, intelligence semantics, decisions, screenshots
 - [Burndown Intelligence](docs/burndown-intelligence.md)
 - [Delivery Flow Intelligence](docs/delivery-flow-intelligence.md)
 - [Quality & Rework Intelligence](docs/quality-rework-intelligence.md)
+- [Capacity Health](docs/capacity-health.md)
 - [Technical Decisions](docs/technical-decisions.md)
 - [Sprint 08 Audit](data/demo/sprint-08/AUDIT.md)
 - [Vercel Deployment](docs/deployment-vercel.md)
@@ -218,9 +231,9 @@ docs/    # Product principles, intelligence semantics, decisions, screenshots
 
 ## Roadmap
 
-**Current:** v0.1.0 — Sprint Intelligence is released and deployed. This is an active portfolio project, not a claim of enterprise production readiness.
+**Current:** v0.1.0 — Sprint Intelligence is released and stable. v0.2.0 — Capacity Health, including Current Sprint and Retrospective, is feature-complete and pending final release. This is an active portfolio project, not a claim of enterprise production readiness.
 
-**Future planned exploration — not implemented:** Capacity Health, Impediment Intelligence, Portfolio Intelligence, Carry-over Intelligence, Release Readiness, and external work-tracking integrations. No delivery timelines are committed.
+**Future planned exploration — not implemented:** Impediment Intelligence, Portfolio Intelligence, Carry-over Intelligence, and external work-tracking integrations. Cross-sprint release-readiness evidence is already part of Capacity Health; a broader standalone Release Readiness capability remains future work. SLA intelligence is not implemented. No delivery timelines are committed.
 
 ## License
 
