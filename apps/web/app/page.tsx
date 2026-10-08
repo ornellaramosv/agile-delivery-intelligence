@@ -5,7 +5,7 @@ export default function HomePage() {
     <>
       <h1>ADI doesn&apos;t track the work. It explains the delivery.</h1>
       <p>Transform Agile execution data into delivery risk, causal context, and management traceability.</p>
-      <p>Sprint Intelligence v0.1.0 is released and stable. Capacity Health v0.2.0 is feature-complete and pending final release.</p>
+      <p>Sprint Intelligence v0.1.0 is released and stable. Capacity Health v0.2.0 is released and stable.</p>
       <h2>Explore the delivery evidence</h2>
       <ul>
         <li><Link href="/sprint-health">Sprint Health</Link> explains remaining delivery work, daily movement, and its causes.</li>

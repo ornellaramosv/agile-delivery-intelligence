@@ -1,6 +1,6 @@
 # Capacity Health — v0.2
 
-Capacity Health asks: **Can we still finish the remaining work with the capacity we have left?** It uses team-level DEV and QA hours, never individual rankings or utilization scores. The data foundation, pure domain engine, fixture service, and read-only API are implemented. The Current Sprint frontend is available at `/capacity-health`. The Retrospective frontend is available at `/capacity-health/retrospective`. v0.2.0 is feature-complete and pending final release; both frontend modes are Product Owner-approved. No v0.2 release has been created.
+Capacity Health asks: **Can we still finish the remaining work with the capacity we have left?** It uses team-level DEV and QA hours, never individual rankings or utilization scores. The data foundation, pure domain engine, fixture service, and read-only API are implemented. The Current Sprint frontend is available at `/capacity-health`. The Retrospective frontend is available at `/capacity-health/retrospective`. v0.2.0 is released and stable; both frontend modes are Product Owner-approved. The Product Owner has manually validated both modes in production.
 
 ## Capacity and progress
 

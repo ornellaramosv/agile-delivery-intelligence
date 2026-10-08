@@ -6,7 +6,7 @@ ADI is a delivery-intelligence layer that turns Agile execution data into delive
 
 Azure DevOps, Jira, ClickUp, and Linear are strong work-tracking systems. ADI explores a complementary intelligence layer; it does not replace them. The current demo uses fictional JSON data, with no external integrations.
 
-**Status: Active portfolio project** · **v0.1.0 — Sprint Intelligence: Released and stable.** · **v0.2.0 — Capacity Health: Feature-complete, pending final release.**
+**Status: Active portfolio project** · **v0.1.0 — Sprint Intelligence: Released and stable.** · **v0.2.0 — Capacity Health: Released and stable.**
 
 Implemented views connect remaining work, workflow position, QA/rework evidence, and DEV/QA capacity in Current Sprint and Retrospective modes. **All displayed project and sprint data are fictional demo data.**
 
@@ -60,7 +60,7 @@ Shows First-pass QA, the eligible population, stories requiring rework, cycle st
 
 ## v0.2.0 — Capacity Health
 
-**Feature-complete — pending final release.** Current Sprint and Retrospective are implemented end to end.
+**Released — stable.** Current Sprint and Retrospective are implemented end to end.
 
 - **Current Sprint** compares remaining delivery demand with effective DEV/QA capacity and explains sprint progress, changes, release readiness, support demand, dependencies, and critical disruptions.
 - **Retrospective** presents the final outcome, chronological turning points, and daily DEV/QA capacity evolution from Planning to close.
@@ -231,7 +231,7 @@ docs/    # Product principles, intelligence semantics, decisions, screenshots
 
 ## Roadmap
 
-**Current:** v0.1.0 — Sprint Intelligence is released and stable. v0.2.0 — Capacity Health, including Current Sprint and Retrospective, is feature-complete and pending final release. This is an active portfolio project, not a claim of enterprise production readiness.
+**Current:** v0.1.0 — Sprint Intelligence is released and stable. v0.2.0 — Capacity Health, including Current Sprint and Retrospective, is released and stable. This is an active portfolio project, not a claim of enterprise production readiness.
 
 **Future planned exploration — not implemented:** Impediment Intelligence, Portfolio Intelligence, Carry-over Intelligence, and external work-tracking integrations. Cross-sprint release-readiness evidence is already part of Capacity Health; a broader standalone Release Readiness capability remains future work. SLA intelligence is not implemented. No delivery timelines are committed.
 

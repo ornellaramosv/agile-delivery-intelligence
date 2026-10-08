@@ -17,13 +17,13 @@ All frontend/backend/data tests, lint, TypeScript, production build, and desktop
 
 ## v0.2.0 — Capacity Health
 
-**Feature-complete — pending final release**
+**Released — stable**
 
 Current Sprint and Retrospective are Product Owner-approved. SLA intelligence is not implemented.
 
 Backend foundation implemented: additive fictional evidence, pure domain engine, read-only `/demo/sprint-08/capacity-health` endpoint, deterministic What Changed and missing-evidence handling. Four pillars: Causal Capacity, Cross-sprint Release Readiness, Adaptive Support Forecasting, Critical Disruption Context. See [Capacity Health](capacity-health.md).
 
-The Capacity Health **Current Sprint frontend is implemented** at `/capacity-health`, with server-side API consumption, day/comparison selection and responsive evidence views. The Retrospective frontend at `/capacity-health/retrospective` presents backend final outcomes, turning points and daily DEV/QA evolution, with mode navigation back to Current Sprint. No v0.2 release or tag has been created. v0.1 engines, contracts, UI and frozen source files remain unchanged.
+The Capacity Health **Current Sprint frontend is implemented** at `/capacity-health`, with server-side API consumption, day/comparison selection and responsive evidence views. The Retrospective frontend at `/capacity-health/retrospective` presents backend final outcomes, turning points and daily DEV/QA evolution, with mode navigation back to Current Sprint. The Product Owner has manually validated Current Sprint and Retrospective in production. v0.1 engines, contracts, UI and frozen source files remain unchanged.
 
 Final v0.2 pre-release validation passed: 147 backend tests, 35 data tests, 117 frontend tests, lint, TypeScript, and production build. This cleanup changes product copy and documentation only; Capacity Health calculations and frozen v0.1 fixtures remain unchanged.
 
